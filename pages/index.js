@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
-import { BsFillMoonStarsFill, BsLinkedin, BsGithub } from "react-icons/bs";
+import {
+  BsFillMoonStarsFill,
+  BsLinkedin,
+  BsGithub,
+  BsFillTelephoneFill,
+} from "react-icons/bs";
 import { GiCrystalGrowth, GiAlienStare, GiUfo } from "react-icons/gi";
 import { FaFreeCodeCamp } from "react-icons/fa";
 import { IoMdPlanet } from "react-icons/io";
@@ -13,32 +18,36 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <div className={darkMode ? "dark" : ""}>
-        <nav className="fixed top-0 right-0 h-screen w-14 m-0 flex flex-col bg-blue-300 text-slate-900 shadow-lg">
-          <ul>
+        <nav className="fixed top-0 right-0 h-screen w-14 m-0 bg-blue-300 text-slate-900 shadow-lg">
             <BsFillMoonStarsFill
               onClick={() => SetDarmMode(!darkMode)}
-              className="text-3xl m-3 mb-30 hover:text-blue-500"
+              className="text-2xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear"
             />
-          </ul>
-          <ul>
+          <ul className="flex flex-col h-screen justify-center">
+          <li className="has-tooltip">
             <a href="#home">
-              <IoMdPlanet className="icon" />
+              <IoMdPlanet className="icon"/>
             </a>
-          </ul>
-          <ul>
-            <a href="#home">
+            <span className="tooltip m-1">Home</span>
+          </li>
+          <li className="has-tooltip">
+            <a href="#projects">
               <GiCrystalGrowth className="icon" />
             </a>
-          </ul>
-          <ul>
-            <a href="#home">
-              <GiAlienStare className="icon" />
+            <span className="tooltip">Projects</span>
+          </li>
+          <li className="has-tooltip">
+            <a href="#about">
+              <GiAlienStare className="icon has-tooltip" />
             </a>
-          </ul>
-          <ul>
+            <span className="tooltip m-1">About</span>
+          </li>
+          <li className="has-tooltip">
             <a href="#contact">
-              <GiUfo className="icon" />
+              <GiUfo className="icon has-tooltip" />
             </a>
+            <span className="tooltip">Contact</span>
+            </li>
           </ul>
         </nav>
         <section className="home" id="home">
@@ -69,9 +78,10 @@ export default function Home() {
         <section className="contact" id="contact">
           <div>
             <h3>Where to find me?</h3>
-            <BsLinkedin />
-            <BsGithub />
-            <FaFreeCodeCamp />
+            <BsLinkedin className="icon" />
+            <BsGithub className="icon" />
+            <FaFreeCodeCamp className="icon" />
+            <BsFillTelephoneFill className="icon" />
           </div>
           {/** message form */}
           <form method="post">
