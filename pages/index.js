@@ -1,55 +1,22 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
+import NavBar from "./NavBar";
 import {
-  BsFillMoonStarsFill,
   BsLinkedin,
   BsGithub,
   BsFillTelephoneFill,
 } from "react-icons/bs";
-import { GiCrystalGrowth, GiAlienStare, GiUfo } from "react-icons/gi";
 import { FaFreeCodeCamp } from "react-icons/fa";
-import { IoMdPlanet } from "react-icons/io";
 import { useState } from "react";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
 
 export default function Home() {
-  const [darkMode, SetDarmMode] = useState(false);
+  const [darkMode, SetDarkMode] = useState(false);
   return (
     <main className="flex min-h-screen flex-col items-center">
       <div className={darkMode ? "dark" : ""}>
-        <nav className="fixed top-0 right-0 h-screen w-14 m-0 bg-blue-300 text-slate-900 shadow-lg">
-            <BsFillMoonStarsFill
-              onClick={() => SetDarmMode(!darkMode)}
-              className="text-2xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear"
-            />
-          <ul className="flex flex-col h-screen justify-center">
-          <li className="has-tooltip">
-            <a href="#home">
-              <IoMdPlanet className="icon"/>
-            </a>
-            <span className="tooltip m-1">Home</span>
-          </li>
-          <li className="has-tooltip">
-            <a href="#projects">
-              <GiCrystalGrowth className="icon" />
-            </a>
-            <span className="tooltip">Projects</span>
-          </li>
-          <li className="has-tooltip">
-            <a href="#about">
-              <GiAlienStare className="icon has-tooltip" />
-            </a>
-            <span className="tooltip m-1">About</span>
-          </li>
-          <li className="has-tooltip">
-            <a href="#contact">
-              <GiUfo className="icon has-tooltip" />
-            </a>
-            <span className="tooltip">Contact</span>
-            </li>
-          </ul>
-        </nav>
+        <NavBar />
         <section className="home" id="home">
           {" "}
           <h1 className="text-lg">Hi! I'm Nicol Wesołowska</h1>
