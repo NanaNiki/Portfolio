@@ -42,6 +42,8 @@ export default function Home() {
           <h1>Here are my projects</h1>
         </section>
         <section className="about">
+        {/** changing avatars */}
+        <Image src="/AVartsy.jpg" width={200} height={200} className=" rounded-full"/>
           <p>
             So far, I have been professionally involved in culture and creative
             work in Poland and in international european environments.{" "}
