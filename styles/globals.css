@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.icon {
+  @apply inline-flex items-center justify-center 
+  rounded-2xl m-2 mb-20 cursor-pointer text-4xl hover:text-blue-500;
+}
+
 /* :root {
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;

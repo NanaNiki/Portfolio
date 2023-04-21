@@ -13,37 +13,50 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <div className={darkMode ? "dark" : ""}>
-        <nav>
+        <nav className="fixed top-0 right-0 h-screen w-14 m-0 flex flex-col bg-blue-300 text-slate-900 shadow-lg">
           <ul>
             <BsFillMoonStarsFill
               onClick={() => SetDarmMode(!darkMode)}
-              className="curser-pointer text-xl hover:text-cyan-500"
+              className="text-3xl m-3 mb-30 hover:text-blue-500"
             />
           </ul>
           <ul>
-            <IoMdPlanet />
+            <a href="#home">
+              <IoMdPlanet className="icon" />
+            </a>
           </ul>
           <ul>
-            <GiCrystalGrowth />
+            <a href="#home">
+              <GiCrystalGrowth className="icon" />
+            </a>
           </ul>
           <ul>
-            <GiAlienStare />
+            <a href="#home">
+              <GiAlienStare className="icon" />
+            </a>
           </ul>
           <ul>
-            <GiUfo />
+            <a href="#contact">
+              <GiUfo className="icon" />
+            </a>
           </ul>
         </nav>
-        <section className="home">
+        <section className="home" id="home">
           {" "}
           <h1 className="text-lg">Hi! I'm Nicol Wesołowska</h1>
           <h5>Fresh Baby Front End Developer</h5>
         </section>
-        <section className="projects">
+        <section className="projects" id="projects">
           <h1>Here are my projects</h1>
         </section>
-        <section className="about">
-        {/** changing avatars */}
-        <Image src="/AVartsy.jpg" width={200} height={200} className=" rounded-full"/>
+        <section className="about" id="about">
+          {/** changing avatars */}
+          <Image
+            src="/AVartsy.jpg"
+            width={200}
+            height={200}
+            className=" rounded-full"
+          />
           <p>
             So far, I have been professionally involved in culture and creative
             work in Poland and in international european environments.{" "}
@@ -53,7 +66,7 @@ export default function Home() {
             what's even better it might end up being useful.
           </p>
         </section>
-        <section className="contact">
+        <section className="contact" id="contact">
           <div>
             <h3>Where to find me?</h3>
             <BsLinkedin />
