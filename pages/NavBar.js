@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiCrystalGrowth, GiAlienStare, GiUfo } from "react-icons/gi";
 import { IoMdPlanet } from "react-icons/io";
 
 export default function NavBar() {
-    const [darkMode, SetDarkMode] = useState(false);
-      return (
+  const [darkMode, SetDarkMode] = useState(false);
+  return (
     <nav className="fixed top-0 right-0 h-screen w-14 m-0 bg-blue-300 text-slate-900 shadow-lg">
       <BsFillMoonStarsFill
         onClick={() => SetDarkMode(!darkMode)}
@@ -17,7 +17,7 @@ export default function NavBar() {
           <a href="#home">
             <IoMdPlanet className="icon" />
           </a>
-          <span className="tooltip m-1">Home</span>
+          <span className="tooltip mx-1">Home</span>
         </li>
         <li className="has-tooltip">
           <a href="#projects">
@@ -29,7 +29,7 @@ export default function NavBar() {
           <a href="#about">
             <GiAlienStare className="icon has-tooltip" />
           </a>
-          <span className="tooltip m-1">About</span>
+          <span className="tooltip mx-1">About</span>
         </li>
         <li className="has-tooltip">
           <a href="#contact">
@@ -40,4 +40,4 @@ export default function NavBar() {
       </ul>
     </nav>
   );
-};
+}

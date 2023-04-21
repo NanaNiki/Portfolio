@@ -1,11 +1,7 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import NavBar from "./NavBar";
-import {
-  BsLinkedin,
-  BsGithub,
-  BsFillTelephoneFill,
-} from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsFillTelephoneFill } from "react-icons/bs";
 import { FaFreeCodeCamp } from "react-icons/fa";
 import { useState } from "react";
 
