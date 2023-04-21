@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaFreeCodeCamp, FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
@@ -15,13 +16,26 @@ export default function Contact() {
     >
       <div className="text-end">
         <h3 className="m-2">Where to find me?</h3>
-        <BsLinkedin className="icon" />
-        <BsGithub className="icon" />
-        <FaFreeCodeCamp className="icon" />
-        <FaPhoneAlt className="icon" />
+        <Link
+          href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
+          target="_blank"
+        >
+          {" "}
+          <BsLinkedin className="icon" />
+        </Link>
+        <Link href="https://github.com/NanaNiki" target="_blank">
+          {" "}
+          <BsGithub className="icon" />
+        </Link>
+        <Link href="https://www.freecodecamp.org/NanaNiki" target="_blank">
+          {" "}
+          <FaFreeCodeCamp className="icon" />
+        </Link>
+        <Link href="tel:+48723901724" target="_blank">
+          {" "}
+          <FaPhoneAlt className="icon" />
+        </Link>
       </div>
-      {/** message form */}
-
       <form method="post" className="mt-20 mx-auto w-full">
         <fieldset>
           <label htmlFor="name" id="name-label" className="block opacity-30">
