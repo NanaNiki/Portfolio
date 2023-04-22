@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { SiGmail } from "react-icons/si";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaFreeCodeCamp, FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
@@ -31,11 +32,12 @@ export default function Contact() {
           {" "}
           <FaFreeCodeCamp className="icon" />
         </Link>
-        <Link href="tel:+48723901724" target="_blank">
+        <Link href="mailto:nicol.wesolowska@gmail.com" target="_blank">
           {" "}
-          <FaPhoneAlt className="icon" />
+          <SiGmail className="icon" />
         </Link>
       </div>
+      {/** 
       <form method="post" className="mt-20 mx-auto w-full">
         <fieldset>
           <label htmlFor="name" id="name-label" className="block opacity-30">
@@ -73,14 +75,14 @@ export default function Contact() {
             className="shadow-md m-1.5 p-2 w-96 h-40 rounded-3xl"
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          {/** here to change the submit form into email? or direct it to ok just research it :* */}
-          <div className="flex justify-center">
+            <div className="flex justify-center">
             <button type="submit" className="submit">
               Send
             </button>
           </div>
         </fieldset>
-      </form>
+      </form>      
+       */}
     </section>
   );
 }

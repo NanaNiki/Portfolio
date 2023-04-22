@@ -4,7 +4,7 @@ import { IoMdPlanet } from "react-icons/io";
 
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 right-0 h-screen w-14 m-0 bg-blue-300 text-slate-900 shadow-lg z-50 dark:bg-slate-950">
+    <nav className="fixed top-0 right-0 h-screen w-14 m-0 z-50">
       <ul className="flex flex-col h-screen justify-center">
         <li className="has-tooltip">
           <a href="#home">

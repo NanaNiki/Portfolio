@@ -5,14 +5,14 @@
 
 .icon {
   @apply inline-flex items-center mx-1 mt-1
-   cursor-pointer w-12 h-12 p-2 bg-sky-200 rounded-full
-    hover:text-blue-500 hover:bg-blue-800 transition-all 
-    duration-300 ease-linear dark:text-sky-100 dark:bg-blue-900;
+   cursor-pointer w-12 h-12 p-2 rounded-full text-black text-opacity-100
+    hover:text-opacity-40 transition-all 
+    duration-300 ease-linear dark:text-white
+    dark:text-opacity-30 dark:hover:text-opacity-90;
 }
 .tooltip {
   @apply w-auto px-1.5 py-1 rounded-md shadow-md
-   text-blue-500 text-xs font-bold 
-    opacity-0;
+   text-xs font-bold opacity-0;
 }
 .has-tooltip:hover .tooltip {
   @apply opacity-100 transition-all duration-500 ease-linear;
