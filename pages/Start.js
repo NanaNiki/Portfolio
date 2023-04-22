@@ -6,8 +6,6 @@ export default function Start() {
       {" "}
       <h1 className="text-lg">Hi! I'm Nicol Wesołowska</h1>
       <h5>Fresh Baby Front End Developer</h5>
-     
-     
     </section>
   );
 }

@@ -10,7 +10,7 @@ export default function About() {
           src="/AVartsy.jpg"
           width={200}
           height={200}
-          className="rounded-full"
+          className="rounded-full shadow-xl dark:shadow-slate-900"
           alt="ai generated avatar of nicol wesolowska"
         />
       </div>
