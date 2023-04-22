@@ -11,7 +11,7 @@ export default function About() {
           width={200}
           height={200}
           className="rounded-full"
-          alt="ai generated avater of nicol wesolowska"
+          alt="ai generated avatar of nicol wesolowska"
         />
       </div>
 

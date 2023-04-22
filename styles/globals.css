@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background-rgb: 0, 0, 0;
+  }
+}*/
 
 .icon {
   @apply inline-flex items-center mx-1 mt-1
    cursor-pointer w-12 h-12 p-2 bg-sky-200 rounded-full
-    hover:text-blue-500 hover:bg-blue-800 transition-all duration-300 ease-linear;
+    hover:text-blue-500 hover:bg-blue-800 transition-all 
+    duration-300 ease-linear dark:text-sky-100 dark:bg-blue-900;
 }
 .tooltip {
   @apply w-auto px-1.5 py-1 rounded-md shadow-md
@@ -32,27 +38,11 @@ section {
  .submit{
   @apply bg-gradient-to-r from-red-500 to-rose-400 text-white rounded-full py-1 px-3 m-1 shadow-lg
   opacity-70 hover:opacity-100 w-96
-
  }
 
-/* :root {
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
- @media (prefers-color-scheme: dark) {
-  :root {
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-*/
+ ::-webkit-scrollbar {
+  @apply w-2 bg-blue-200 dark:bg-gray-900
+ }
+ ::-webkit-scrollbar-thumb {
+  @apply bg-blue-900 bg-opacity-50 rounded-full dark:bg-blue-950
+ }
