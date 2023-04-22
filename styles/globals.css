@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .icon {
   @apply inline-flex items-center mx-1 mt-1
    cursor-pointer w-12 h-12 p-2 rounded-full text-black text-opacity-100
@@ -19,11 +18,11 @@
 }
 
 section {
-  @apply relative flex flex-col h-screen py-24 pr-24 pl-16 text-center;
+  @apply relative flex flex-col h-screen pr-24 pl-16 text-center;
 }
 .button-about {
   @apply bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg
-  opacity-70 hover:opacity-100;
+  opacity-80 hover:opacity-100;
 }
 
 .contact-input {
@@ -36,6 +35,27 @@ section {
 }
 .dark {
   color-scheme: dark;
+}
+
+.home {
+  @apply bg-orange-200 rounded-ee-full shadow-xl dark:bg-gradient-to-br from-slate-700 to-slate-950  dark:shadow-gray-500;
+}
+
+.projects {
+  @apply pt-16;
+}
+
+.divider-1 {
+  @apply right-0 absolute w-full overflow-hidden fill-slate-400 
+  rounded-full rotate-180 mt-5;
+}
+.about {
+  @apply bg-cyan-200 rounded-e-full dark:bg-gradient-to-r from-slate-900 to-teal-950
+   dark:shadow-cyan-800 shadow-inner;
+}
+
+.contact {
+  @apply  bg-rose-200 rounded-ss-full dark:bg-gradient-to-b from-slate-950 to-rose-950
 }
 
 /*

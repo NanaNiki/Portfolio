@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="about bg-cyan-200 rounded-e-full" id="about">
+    <section className="about" id="about">
       {/** changing avatars */}
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-row justify-center pt-10">
         <Image
           src="/AVartsy.jpg"
           width={200}

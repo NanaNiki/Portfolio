@@ -3,19 +3,19 @@ import Link from "next/link";
 import { SiGmail } from "react-icons/si";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaFreeCodeCamp, FaPhoneAlt } from "react-icons/fa";
-import { useState } from "react";
+//import { useState } from "react";
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  //const [name, setName] = useState("");
+ // const [email, setEmail] = useState("");
+  //const [message, setMessage] = useState("");
 
   return (
     <section
-      className="contact bg-rose-200 rounded-ss-full flex flex-col justify-items-center"
+      className="contact"
       id="contact"
     >
-      <div className="text-end">
+      <div className="text-end pt-10 mt-20">
         <h3 className="m-2">Where to find me?</h3>
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
