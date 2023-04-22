@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background-rgb: 0, 0, 0;
-  }
-}*/
 
 .icon {
   @apply inline-flex items-center mx-1 mt-1
