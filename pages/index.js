@@ -43,9 +43,9 @@ export default function Home() {
       <div className={darkMode ? "dark" : ""}>
         <BsFillMoonStarsFill
           onClick={handleDarkMode}
-          className="text-xl m-4 hover:text-blue-500 
+          className="z-50 text-xl m-4 hover:text-blue-500 
         transition-all duration-200 ease-linear
-         dark:text-blue-300 dark:hover:text-cyan-300 fixed top-0 right-0 z-50 cursor-pointer"
+         dark:text-blue-300 dark:hover:text-cyan-300 fixed top-0 right-0 cursor-pointer"
         />
         <NavBar />
         <Start />

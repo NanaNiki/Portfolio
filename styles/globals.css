@@ -44,7 +44,7 @@ section {
 
 .divider-1 {
   @apply right-0 absolute w-full overflow-hidden fill-slate-400 
-  rounded-full mt-5 /* rotate-180 */; 
+  rounded-full mt-5 /* rotate-180 */;
 }
 .about {
   @apply bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600;
