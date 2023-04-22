@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
-      (("theme" in localStorage) &&
+      (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.add("dark");
@@ -45,7 +45,7 @@ export default function Home() {
           onClick={handleDarkMode}
           className="text-xl m-4 hover:text-blue-500 
         transition-all duration-200 ease-linear
-         dark:text-cyan-200 fixed top-0 left-0 z-50"
+         dark:text-blue-300 dark:hover:text-cyan-300 fixed top-0 left-0 z-50 cursor-pointer"
         />
         <NavBar />
         <Start />
