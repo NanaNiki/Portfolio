@@ -34,12 +34,12 @@ section {
   @apply bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg
   opacity-80 hover:opacity-100;
 }
-.home {
-  @apply rounded-ee-full mb-8 bg-orange-200 shadow-xl shadow-orange-300;
+.start {
+  @apply h-screen rounded-ee-full mb-8 bg-orange-200 shadow-xl shadow-orange-300;
 }
 
 .projects {
-  @apply pt-16;
+  @apply pt-16 h-screen;
 }
 
 .divider-1 {
@@ -47,10 +47,10 @@ section {
   rounded-full mt-5 /* rotate-180 */;
 }
 .about {
-  @apply bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600;
+  @apply h-screen bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600;
 }
 .contact {
-  @apply bg-rose-400 rounded-ss-full;
+  @apply h-screen bg-rose-400 rounded-ss-full;
 }
 .divider-2 {
   @apply bottom-0 left-0 absolute w-full overflow-hidden rounded-ss-full;
