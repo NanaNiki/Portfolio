@@ -7,26 +7,26 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 export default function Contact() {
   return (
     <section className="contact" id="contact">
-      <div className="text-end pt-10 mt-20">
+      <div className="text-contact text-end pr-20 pt-20">
         <h3 className="m-2">Where to find me?</h3>
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
           target="_blank"
         >
           {" "}
-          <BsLinkedin className="icon" />
+          <BsLinkedin className="icon hover:opacity-40" />
         </Link>
         <Link href="https://github.com/NanaNiki" target="_blank">
           {" "}
-          <BsGithub className="icon" />
+          <BsGithub className="icon hover:opacity-40" />
         </Link>
         <Link href="https://www.freecodecamp.org/NanaNiki" target="_blank">
           {" "}
-          <FaFreeCodeCamp className="icon" />
+          <FaFreeCodeCamp className="icon hover:opacity-40" />
         </Link>
         <Link href="mailto:nicol.wesolowska@gmail.com" target="_blank">
           {" "}
-          <SiGmail className="icon" />
+          <SiGmail className="icon hover:opacity-40" />
         </Link>
       </div>
       <div className="divider-2">

@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-stone-100 dark:bg-gray-950">
+    <main className="min-h-screen flex flex-col items-center bg-stone-100 dark:bg-gray-950">
       <div className={darkMode ? "dark" : ""}>
         <BsFillMoonStarsFill
           onClick={handleDarkMode}
