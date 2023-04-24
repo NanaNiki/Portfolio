@@ -31,26 +31,29 @@ export default function Projects() {
     },
   ];
   
-  const MoreInfo = () => {
+  const MoreInfo = (key) => {
     return (
       <>
         {project.map((project) => (
-          <div className="flex flex-row justify-end">
-            <a href={project.code} target="_blank">
-              <BsGithub className="icon-project m-2" />
-            </a>
-            <a href={project.live}>
-              <button className="button-live">Live Demo</button>
-            </a>
-          </div>
+          key === project.id ? (
+            <div className="flex flex-row justify-end" key={i}>
+              <a href={project.code} target="_blank">
+                <BsGithub className="icon-project m-2" />
+              </a>
+              <a href={project.live}>
+                <button className="button-live">Live Demo</button>
+              </a>
+            </div>
+          ) : null
         ))}
       </>
     );
   };
+  
 
   return (
     <section className="projects" id="projects">
-      <h1 className="z-50 font-bold mt-2 ms-10 lg:text-3xl">
+      <h1 className="z-50 font-bold mt-4 ms-10 lg:text-3xl">
         Here are my projects
       </h1>
       <div className="divider-1">
@@ -67,7 +70,7 @@ export default function Projects() {
         </svg>
       </div>
 
-      <div className="flex flex-row m-auto">
+      <div className="card-box flex flex-row m-auto">
         <div className="card">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
           <div className="p-4">
@@ -99,11 +102,10 @@ export default function Projects() {
                 <li
                   className="project-name"
                   id="RQM"
-                  key={project.id}
                   
                 >
                   Random Quote Machine
-                  <MoreInfo selector="RQM"/>
+                  <MoreInfo key="RQM"/>
                 </li>
 
                 <li className="project-name" id="MDP">
