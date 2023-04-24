@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 
 export default function Projects() {
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
   const project = [
     {
       id: "RQM",
@@ -30,6 +30,10 @@ export default function Projects() {
       live: "https://nananiki.github.io/fCC-PC/",
     },
   ];
+
+  const getSelected = () => {
+    setSelectedProject(project[index])
+  }
   
   const MoreInfo = (key) => {
     return (
