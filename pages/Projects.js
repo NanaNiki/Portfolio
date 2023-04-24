@@ -17,6 +17,40 @@ export default function Projects() {
           <path d="M0,0H1200V5.63c-149.93,53.32-314.09,65.64-475.83,36.89-43-7.64-84.23-20.12-127.61-26.46-59-8.63-112.48,12.24-165.56,35.4C372.07,68.22,314,86.24,248.8,81c-86.53-7-172.46-45.71-248.8-84.81V0Z"></path>
         </svg>
       </div>
+     
+      <div className="flex flex-row m-auto">
+        <div className="card">
+          {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
+          <div className="p-4">
+            <h2 className="card-title">E-commerce Webstie</h2>
+            <p className="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              auctor elit eu odio posuere, vitae vestibulum est dictum.
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
+          <div className="p-4">
+            <h2 className="card-title">Emotions Menager</h2>
+            <p className="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              auctor elit eu odio posuere, vitae vestibulum est dictum.
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
+          <div className="p-4">
+            <h2 className="card-title">freeCodeCamp Projects</h2>
+            <p className="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              auctor elit eu odio posuere, vitae vestibulum est dictum.
+            </p>
+          </div>
+        </div>
+      </div>
+      
     </section>
   );
 }

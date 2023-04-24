@@ -39,13 +39,11 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center bg-stone-100 dark:bg-gray-950">
+    <main className="min-h-screen w-full flex flex-col items-center bg-stone-100 dark:bg-gray-950">
       <div className={darkMode ? "dark" : ""}>
         <BsFillMoonStarsFill
           onClick={handleDarkMode}
-          className="z-50 text-xl m-4 hover:text-blue-500 
-        transition-all duration-200 ease-linear
-         dark:text-blue-300 dark:hover:text-cyan-300 fixed top-0 right-0 cursor-pointer"
+          className="button-darkmode"
         />
         <NavBar />
         <Start />

@@ -7,7 +7,7 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 export default function Contact() {
   return (
     <section className="contact" id="contact">
-      <div className="text-contact text-end pr-20 pt-20">
+      <div className="text-contact text-end pr-20 pt-20 z-50">
         <h3 className="m-2">Where to find me?</h3>
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
@@ -28,7 +28,15 @@ export default function Contact() {
           {" "}
           <SiGmail className="icon hover:opacity-40" />
         </Link>
-      </div>
+      <div className="flex flex-row justify-end m-auto">
+      <Link href="/CVNW.pdf" download target="_blank">
+      <button className="button-resume">
+              Resume
+            </button>
+      </Link>
+           
+          </div>
+          </div>
       <div className="divider-2">
         <svg
           id="visual"

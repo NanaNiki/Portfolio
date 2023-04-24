@@ -7,45 +7,60 @@
 }
 
 body {
-  @apply text-lg
+  @apply text-lg;
 }
-
+.button-darkmode {
+  @apply z-50 text-xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear fixed top-0 right-0 cursor-pointer
+   dark:text-blue-300 dark:hover:text-cyan-300;
+}
 .icon {
   @apply inline-flex items-center
-   cursor-pointer w-14 h-14 p-2 rounded-full text-black text-opacity-100
-    hover:opacity-40 transition-all duration-300 ease-linear;
+   cursor-pointer w-14 h-14 p-2 rounded-full text-black text-opacity-100 hover:opacity-40 transition-all duration-300 ease-linear
+   dark:text-white dark:text-opacity-30 dark:hover:text-opacity-90;
 }
 .tooltip {
-  @apply w-auto px-1.5 py-1 rounded-md shadow-md
-   text-xs font-bold opacity-0;
+  @apply w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0;
 }
 .has-tooltip:hover .tooltip {
   @apply opacity-100 transition-all duration-500 ease-linear;
 }
 section {
-  @apply relative flex flex-col h-screen pl-3 pr-14 text-center;
+  @apply relative flex flex-col h-screen w-screen pl-3 pr-14 text-center;
 }
 .button-about {
-  @apply text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg
-  opacity-80 hover:opacity-100 focus:opacity-100 border-transparent border-b-2 focus:border-teal-300 dark:focus:border-white ;
+  @apply text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2
+  hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white;
 }
 .start {
-  @apply h-screen rounded-ee-full mb-8 bg-orange-200 shadow-xl shadow-orange-300;
+  @apply rounded-ee-full mb-8 bg-orange-200 shadow-xl shadow-orange-300
+  dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500;
 }
-
-.projects {
-  @apply pt-16 h-screen;
+.card {
+  @apply rounded-3xl shadow-lg overflow-hidden m-2 bg-slate-300
+  dark:bg-gradient-to-b from-gray-300 to-white dark:shadow-slate-500;
+}
+.card-title {
+  @apply font-bold text-lg mb-2 
+  dark:text-slate-900;
+}
+.card-text {
+  @apply text-gray-700 p-2 text-center;
 }
 
 .divider-1 {
-  @apply top-2 right-0 absolute w-full overflow-hidden fill-slate-400 
-  rounded-full rotate-180;
+  @apply top-2 right-0 absolute w-full overflow-hidden fill-slate-400 rounded-full rotate-180;
 }
 .about {
-  @apply h-screen bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600;
+  @apply bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600
+  dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800 dark:text-white dark:text-opacity-70;
 }
 .contact {
-  @apply h-screen bg-rose-400 rounded-ss-full;
+  @apply bg-rose-400 rounded-ss-full
+  dark:bg-gradient-to-b from-slate-950 to-rose-950;
+}
+.button-resume {
+  @apply w-64 mt-2 font-semibold bg-gradient-to-tl from-rose-500 to-red-300 rounded-full p-2 m-1 shadow-lg shadow-rose-800 transition-all duration-100
+ hover:shadow-rose-300 active:border-2 active:border-rose-700 dark:opacity-60 dark:shadow-transparent dark:hover:shadow-rose-700 dark:active:text-rose-800;
 }
 .divider-2 {
   @apply bottom-0 left-0 absolute w-full overflow-hidden rounded-ss-full;
@@ -60,21 +75,6 @@ section {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .icon {
-    @apply dark:text-white dark:text-opacity-30 dark:hover:text-opacity-90;
-  }
-  .start {
-    @apply dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500;
-  }
-  .about {
-    @apply dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800 dark:text-white dark:text-opacity-70;
-  }
-  .contact {
-    @apply dark:bg-gradient-to-b from-slate-950 to-rose-950;
-  }
-}
-
 @media (max-width: 640px) {
   .image {
     width: 100px;
@@ -82,7 +82,7 @@ section {
   }
 
   .text-about {
-    @apply mt-5 px-5 text-xs  ;
+    @apply mt-5 px-5 text-xs;
   }
 
   .button-about {
@@ -90,7 +90,6 @@ section {
   }
 
   .text-contact {
-    @apply pr-0 pt-32
+    @apply pr-0 pt-32;
   }
-
 }

@@ -17,7 +17,7 @@ export default function About() {
     } else if (type === "long") {
       setAvatar({
         image: "/AVsoldaat.jpg",
-        text: "With my background in the art industry and experience in many fields of body expression (dancing-acting-directing-and-teaching) I can bring a unique perspective to the world of web development. \n\nI have a passion for creating engaging user experience. I believe that delivering the desired outcome is heavly tied with evoking the right emotions of the user. That’s where coding stands for me, an interdisciplinary space of translation. Also there's nothing quite like the feeling of watching an idea come to life. I deeply value effective communication and co-creation of healthy and motivating working environment. \n\nAlso, I'm a certified energy healer, sunflower-seed addict, music lover, and internet child with a love for forests and any spin on ramen. As a self-proclaimed dragon slayer in the making, I'm always up for a challenge and eager to learn new things. I'm excited to bring my passion and problem-solving skills to any beautiful team or project.",
+        text: "With my background in the art industry and experience in many fields of body expression (dancing-acting-directing-and-teaching) I believe, I can bring a unique perspective to the world of web development. \n\nI have a passion for creating engaging user experience. I believe that delivering the desired outcome is heavly tied with evoking the right emotions of the user. That’s where coding stands for me, an interdisciplinary space of translation. Also there's nothing quite like the feeling of watching an idea come to life. I deeply value effective communication and co-creation of healthy and motivating working environment. \n\nAlso, I'm a certified energy healer, sunflower-seed addict, music lover, and internet child with a love for forests and any spin on ramen. As a self-proclaimed dragon slayer in the making, I'm always up for a challenge and eager to learn new things. I'm excited to bring my passion and problem-solving skills to any beautiful team or project.",
       });
     } else if (type === "funny") {
       setAvatar({
@@ -56,7 +56,7 @@ export default function About() {
             Funny
           </button>
         </div>
-      
+
         <p className="text-about text-justify mt-5 xl:px-60 md:px-20 lg:text-xl md:text-lg sm:text-base">
           {avatar.text.split("\n").map((paragraph, index) => (
             <React.Fragment key={index}>
@@ -65,7 +65,7 @@ export default function About() {
             </React.Fragment>
           ))}
         </p>
-        </div>
+      </div>
     </section>
   );
 }
