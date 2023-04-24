@@ -1,9 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
+import { BsGithub } from "react-icons/bs";
 
 export default function Projects() {
+  const [selectedId, setSelectedId] = useState(null);
+  const project = [
+    {
+      id: "RQM",
+      code: "https://github.com/NanaNiki/fCC-RQM",
+      live: "https://nananiki.github.io/fCC-RQM/",
+    },
+    {
+      id: "MDP",
+      code: "https://github.com/NanaNiki/fCC-MDP",
+      live: "https://nananiki.github.io/fCC-MDP/",
+    },
+    {
+      id: "MD",
+      code: "https://github.com/NanaNiki/fCC-MD",
+      live: "https://nananiki.github.io/fCC-MD/",
+    },
+    {
+      id: "JSC",
+      code: "https://github.com/NanaNiki/fCC-JSC",
+      live: "https://nananiki.github.io/fCC-JSC/",
+    },
+    {
+      id: "PC",
+      code: "https://github.com/NanaNiki/fCC-PC",
+      live: "https://nananiki.github.io/fCC-PC/",
+    },
+  ];
+  
+  const MoreInfo = () => {
+    return (
+      <>
+        {project.map((project) => (
+          <div className="flex flex-row justify-end">
+            <a href={project.code} target="_blank">
+              <BsGithub className="icon-project m-2" />
+            </a>
+            <a href={project.live}>
+              <button className="button-live">Live Demo</button>
+            </a>
+          </div>
+        ))}
+      </>
+    );
+  };
+
   return (
     <section className="projects" id="projects">
-      <h1 className="z-50">Here are my projects</h1>
+      <h1 className="z-50 font-bold mt-2 ms-10 lg:text-3xl">
+        Here are my projects
+      </h1>
       <div className="divider-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120">
           <path
@@ -17,7 +66,7 @@ export default function Projects() {
           <path d="M0,0H1200V5.63c-149.93,53.32-314.09,65.64-475.83,36.89-43-7.64-84.23-20.12-127.61-26.46-59-8.63-112.48,12.24-165.56,35.4C372.07,68.22,314,86.24,248.8,81c-86.53-7-172.46-45.71-248.8-84.81V0Z"></path>
         </svg>
       </div>
-     
+
       <div className="flex flex-row m-auto">
         <div className="card">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
@@ -33,24 +82,54 @@ export default function Projects() {
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
           <div className="p-4">
             <h2 className="card-title">Emotions Menager</h2>
-            <p className="card-text">
+            <p className="card-text ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               auctor elit eu odio posuere, vitae vestibulum est dictum.
             </p>
           </div>
         </div>
         <div className="card">
-          {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
+          {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover"> CAROUSEL*/}
           <div className="p-4">
             <h2 className="card-title">freeCodeCamp Projects</h2>
-            <p className="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              auctor elit eu odio posuere, vitae vestibulum est dictum.
-            </p>
+            <div className="card-text">
+              Earning the Front End development Libraries Certification I build
+              five projects:
+              <ul className=" list-inside list-disc">
+                <li
+                  className="project-name"
+                  id="RQM"
+                  key={project.id}
+                  
+                >
+                  Random Quote Machine
+                  <MoreInfo selector="RQM"/>
+                </li>
+
+                <li className="project-name" id="MDP">
+                  Markdown Previewer
+                </li>
+                <MoreInfo />
+                <li className="project-name" id="DM">
+                  Drum Machine
+                </li>
+                <MoreInfo />
+                <li className="project-name" id="JSC">
+                  JavaScript Calculator
+                </li>
+                <MoreInfo />
+                <li className="project-name" id="PC">
+                  25 + 5 Clock
+                </li>
+                <MoreInfo />
+              </ul>
+              <div className="font-semibold flex flex-row justify-end">
+                React JavaScript Html Bootsrap CSS
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
     </section>
   );
 }
