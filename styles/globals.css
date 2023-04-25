@@ -35,12 +35,15 @@ section {
   @apply rounded-ee-full mb-8 bg-orange-200 shadow-xl shadow-orange-300
   dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500;
 }
+.divider-1 {
+  @apply top-0 right-0 absolute w-screen overflow-hidden fill-slate-400 rounded-full rotate-180;
+}
 .card {
-  @apply w-full rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60
+  @apply z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60
   dark:bg-gradient-to-b from-gray-300 to-white dark:shadow-slate-500;
 }
 .card-title {
-  @apply font-bold text-lg mb-2 
+  @apply font-bold text-lg my-2 
   dark:text-slate-900;
 }
 .card-text {
@@ -50,17 +53,14 @@ section {
   @apply cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold;
 }
 .icon-project {
-  @apply text-slate-900 text-2xl mt-1.5
+  @apply text-slate-900 text-xl
    hover:text-blue-700;
 }
 .button-live {
-  @apply bg-gradient-to-t from-slate-100 to-slate-200 my-auto px-2 py-1 rounded-full shadow-lg text-slate-900 font-semibold
+  @apply bg-gradient-to-t from-slate-100 to-slate-200 my-auto text-sm font-semibold px-1 py-0.5 rounded-full shadow-md text-slate-900
    hover:shadow-blue-700 hover:shadow-md hover:text-blue-700;
 }
 
-.divider-1 {
-  @apply top-2 right-0 absolute w-screen overflow-hidden fill-slate-400 rounded-full rotate-180;
-}
 .about {
   @apply bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600
   dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800 dark:text-white dark:text-opacity-70;
@@ -96,8 +96,12 @@ section {
     @apply mt-5 px-5 text-xs;
   }
 
-  .button-about, .icon-project {
+  .button-about,
+  .icon-project {
     @apply text-sm;
+  }
+  .button-live {
+    @apply text-xs;
   }
 
   .card-text,
