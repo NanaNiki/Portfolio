@@ -50,12 +50,12 @@ section {
   @apply cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold;
 }
 .icon-project {
-  @apply text-slate-900 w-7 h-7
-  hover:text-blue-500;
+  @apply text-slate-900 text-2xl
+   hover:text-blue-700;
 }
 .button-live {
-  @apply bg-slate-200 m-1 px-2 py-1 rounded-full shadow-lg text-slate-900 font-semibold
-   hover:shadow-blue-500 hover:shadow-md hover:text-blue-500;
+  @apply bg-gradient-to-t from-slate-100 to-slate-200 my-auto px-2 py-1 rounded-full shadow-lg text-slate-900 font-semibold
+   hover:shadow-blue-700 hover:shadow-md hover:text-blue-700;
 }
 
 .divider-1 {
@@ -96,7 +96,7 @@ section {
     @apply mt-5 px-5 text-xs;
   }
 
-  .button-about {
+  .button-about, .icon-project {
     @apply text-sm;
   }
 

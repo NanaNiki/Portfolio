@@ -1,59 +1,59 @@
 import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 
-export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
-  const project = [
-    {
-      id: "RQM",
-      code: "https://github.com/NanaNiki/fCC-RQM",
-      live: "https://nananiki.github.io/fCC-RQM/",
-    },
-    {
-      id: "MDP",
-      code: "https://github.com/NanaNiki/fCC-MDP",
-      live: "https://nananiki.github.io/fCC-MDP/",
-    },
-    {
-      id: "MD",
-      code: "https://github.com/NanaNiki/fCC-MD",
-      live: "https://nananiki.github.io/fCC-MD/",
-    },
-    {
-      id: "JSC",
-      code: "https://github.com/NanaNiki/fCC-JSC",
-      live: "https://nananiki.github.io/fCC-JSC/",
-    },
-    {
-      id: "PC",
-      code: "https://github.com/NanaNiki/fCC-PC",
-      live: "https://nananiki.github.io/fCC-PC/",
-    },
-  ];
+const projectData = [
+  {
+    id: "RQM",
+    code: "https://github.com/NanaNiki/fCC-RQM",
+    live: "https://nananiki.github.io/fCC-RQM/",
+  },
+  {
+    id: "MDP",
+    code: "https://github.com/NanaNiki/fCC-MDP",
+    live: "https://nananiki.github.io/fCC-MDP/",
+  },
+  {
+    id: "DM",
+    code: "https://github.com/NanaNiki/fCC-MD",
+    live: "https://nananiki.github.io/fCC-MD/",
+  },
+  {
+    id: "JSC",
+    code: "https://github.com/NanaNiki/fCC-JSC",
+    live: "https://nananiki.github.io/fCC-JSC/",
+  },
+  {
+    id: "PC",
+    code: "https://github.com/NanaNiki/fCC-PC",
+    live: "https://nananiki.github.io/fCC-PC/",
+  },
+];
 
-  const getSelected = () => {
-    setSelectedProject(project[index])
-  }
-  
-  const MoreInfo = (key) => {
-    return (
-      <>
-        {project.map((project) => (
-          key === project.id ? (
-            <div className="flex flex-row justify-end" key={i}>
-              <a href={project.code} target="_blank">
-                <BsGithub className="icon-project m-2" />
-              </a>
-              <a href={project.live}>
-                <button className="button-live">Live Demo</button>
-              </a>
-            </div>
-          ) : null
-        ))}
-      </>
-    );
+export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null)
+
+  const getCodeAndLive = (id) => {
+    const project = projectData.find((item) => item.id === id);
+    if (project && project.id === selectedProject) {
+      return (
+        <div className="flex flex-row justify-end">
+          <a href={project.code} target="_blank">
+            <BsGithub className="icon-project m-2" />
+          </a>
+          <a href={project.live}>
+            <button className="button-live">Live Demo</button>
+          </a>
+        </div>
+      );
+    }
+    return null;
   };
-  
+
+
+  const toggleCodeAndLive = (id) => {
+    setSelectedProject((prev) => (prev === id ? null : id));
+  };
+
 
   return (
     <section className="projects" id="projects">
@@ -102,32 +102,27 @@ export default function Projects() {
             <div className="card-text">
               Earning the Front End development Libraries Certification I build
               five projects:
-              <ul className=" list-inside list-disc">
-                <li
-                  className="project-name"
-                  id="RQM"
-                  
-                >
+              <ul className="list-inside list-disc m-2">
+                <li className="project-name" id="RQM" onClick={() => toggleCodeAndLive("RQM")}>
                   Random Quote Machine
-                  <MoreInfo key="RQM"/>
+                  {getCodeAndLive("RQM")}
                 </li>
-
-                <li className="project-name" id="MDP">
+                <li className="project-name" id="MDP"   onClick={() => toggleCodeAndLive("MDP")}>
                   Markdown Previewer
+                  {getCodeAndLive("MDP")}
                 </li>
-                <MoreInfo />
-                <li className="project-name" id="DM">
+                <li className="project-name" id="DM"  onClick={() => toggleCodeAndLive("DM")}>
                   Drum Machine
+                  {getCodeAndLive("DM")}
                 </li>
-                <MoreInfo />
-                <li className="project-name" id="JSC">
+                <li className="project-name" id="JSC"   onClick={() => toggleCodeAndLive("JSC")}>
                   JavaScript Calculator
+                  {getCodeAndLive("JSC")}
                 </li>
-                <MoreInfo />
-                <li className="project-name" id="PC">
+                <li className="project-name" id="PC"   onClick={() => toggleCodeAndLive("PC")}>
                   25 + 5 Clock
+                  {getCodeAndLive("PC")}
                 </li>
-                <MoreInfo />
               </ul>
               <div className="font-semibold flex flex-row justify-end">
                 React JavaScript Html Bootsrap CSS
