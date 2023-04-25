@@ -14,8 +14,8 @@ const projectData = [
   },
   {
     id: "DM",
-    code: "https://github.com/NanaNiki/fCC-MD",
-    live: "https://nananiki.github.io/fCC-MD/",
+    code: "https://github.com/NanaNiki/fCC-DM",
+    live: "https://nananiki.github.io/fCC-DM/",
   },
   {
     id: "JSC",
@@ -40,7 +40,7 @@ export default function Projects() {
           <a href={project.code} target="_blank">
             <BsGithub className="icon-project m-2" />
           </a>
-          <a href={project.live}>
+          <a href={project.live} target="_blank">
             <button className="button-live">Live Demo</button>
           </a>
         </div>
@@ -120,7 +120,7 @@ export default function Projects() {
                   {getCodeAndLive("JSC")}
                 </li>
                 <li className="project-name" id="PC"   onClick={() => toggleCodeAndLive("PC")}>
-                  25 + 5 Clock
+                  Pomodoro Clock
                   {getCodeAndLive("PC")}
                 </li>
               </ul>

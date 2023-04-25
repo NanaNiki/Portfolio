@@ -36,7 +36,7 @@ section {
   dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500;
 }
 .card {
-  @apply w-full rounded-3xl shadow-lg m-2 bg-slate-300
+  @apply w-full rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60
   dark:bg-gradient-to-b from-gray-300 to-white dark:shadow-slate-500;
 }
 .card-title {
@@ -50,7 +50,7 @@ section {
   @apply cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold;
 }
 .icon-project {
-  @apply text-slate-900 text-2xl
+  @apply text-slate-900 text-2xl mt-1.5
    hover:text-blue-700;
 }
 .button-live {
@@ -71,7 +71,7 @@ section {
 }
 .button-resume {
   @apply w-64 mt-2 font-semibold bg-gradient-to-tl from-rose-500 to-red-300 rounded-full p-2 m-1 shadow-lg shadow-rose-800 transition-all duration-100
- hover:shadow-rose-300 active:border-2 active:border-rose-700 dark:opacity-60 dark:shadow-transparent dark:hover:shadow-rose-700 dark:active:text-rose-800;
+ hover:shadow-rose-300 active:border-2 active:border-rose-700 dark:opacity-60 dark:shadow-transparent dark:hover:shadow-rose-700 dark:hover:text-rose-700 dark:active:text-rose-900;
 }
 .divider-2 {
   @apply bottom-0 left-0 absolute w-full overflow-hidden rounded-ss-full;
