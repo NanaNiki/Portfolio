@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section className="contact" id="contact">
       <div className="text-contact text-end pr-20 pt-20 z-50">
-        <h3 className="m-2">Where to find me?</h3>
+        <h3 className="m-2 font-semibold">Where to find me?</h3>
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
           target="_blank"
