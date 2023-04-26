@@ -34,7 +34,7 @@ section {
   hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white;
 }
 .start {
-  @apply rounded-ee-full mb-8 bg-orange-200 shadow-xl shadow-orange-300
+  @apply rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300
   dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500;
 }
 .divider-1 {
