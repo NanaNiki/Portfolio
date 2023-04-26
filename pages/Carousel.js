@@ -1,13 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const slideImages = [
-  "/rqmSQ.png",
-  "/mdpSQ.png",
-  "/dmSQ.png",
-  "/jscSQ.png",
-  "/pcSQ.png",
-];
+const slideImages = ["/rqm.png", "/mdp.png", "/dm.png", "/jsc.png", "/pc.png"];
 
 export default function Carousel({
   slides: customSlides,
