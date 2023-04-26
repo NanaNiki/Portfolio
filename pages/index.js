@@ -9,6 +9,20 @@ import Contact from "./Contact";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
 
+export function observeScroll(elements) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show')
+      } else {
+        entry.target.classList.remove('show')
+      }
+    })
+  })
+ elements.forEach((el) => observer.observe(el))
+  }
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -36,7 +50,7 @@ export default function Home() {
       setDarkMode(true);
       document.documentElement.classList.add("dark");
     }
-  };
+  }; 
 
   return (
     <main className="min-h-screen bg-stone-100 dark:bg-gray-950">

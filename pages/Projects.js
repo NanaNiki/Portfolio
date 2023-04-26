@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
 import Carousel from "./Carousel";
+import { observeScroll } from "./index";
 
 const projectData = [
   {
@@ -54,11 +55,14 @@ export default function Projects() {
     setSelectedProject((prev) => (prev === id ? null : id));
   };
 
+  useEffect(() => {
+    const animatedItems = document.querySelectorAll(".animated-item");
+    observeScroll(animatedItems);
+  }, []);
+
   return (
     <section className="projects" id="projects">
-      <h1 className="z-50 font-bold mt-4 ms-10 lg:text-3xl">
-        Here are my projects
-      </h1>
+      <h1 className="z-50 font-bold mt-5 lg:text-3xl">Here are my projects</h1>
       <div className="divider-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120">
           <path
@@ -74,7 +78,7 @@ export default function Projects() {
       </div>
 
       <div className="card-box flex flex-row my-auto mt-30">
-        <div className="card">
+        <div className="card animated-item hide delay-500">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
 
           <h2 className="card-title">E-commerce Webstie</h2>
@@ -83,7 +87,7 @@ export default function Projects() {
             elit eu odio posuere, vitae vestibulum est dictum.
           </p>
         </div>
-        <div className="card">
+        <div className="card animated-item hide delay-300">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
 
           <h2 className="card-title">Emotions Menager</h2>
@@ -92,7 +96,7 @@ export default function Projects() {
             elit eu odio posuere, vitae vestibulum est dictum.
           </p>
         </div>
-        <div className="card">
+        <div className="card animated-item hide delay-100">
           <div className="flex flex-row justify-center">
             <Carousel />
           </div>

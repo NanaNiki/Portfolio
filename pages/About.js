@@ -1,12 +1,18 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import { observeScroll } from "./index";
 
 export default function About() {
   const [avatar, setAvatar] = useState({
     image: "/AVartsy.jpg",
     text: "I'm a dedicated Junior Front-End Developer with a background in the art industry and a passion for coding user-friendly web applications. Working proffesionally in culture and commercial sector in Europe made me a creative problem solver with soft spot for a healthy and motivating working environment.\n\nAlso I love witnessing the process of building something from scratch and finding the best (of time being ‘now’ 😉)solutions to challenges along the way. I am excited to collaborate with a team that values creativity and communication.",
   });
+
+  useEffect(() => {
+    const animatedItems = document.querySelectorAll(".animated-item");
+    observeScroll(animatedItems);
+  }, []);
 
   const changeAvatar = (type) => {
     if (type === "short") {
@@ -41,23 +47,26 @@ export default function About() {
         </div>
         <div className="flex flex-row justify-center">
           <button
-            className="button-about"
+            className="button-about animated-item hide2 delay-75"
             onClick={() => changeAvatar("short")}
           >
             Short
           </button>
-          <button className="button-about" onClick={() => changeAvatar("long")}>
+          <button
+            className="button-about animated-item hide2 delay-100"
+            onClick={() => changeAvatar("long")}
+          >
             Long
           </button>
           <button
-            className="button-about"
+            className="button-about animated-item hide2 delay-300"
             onClick={() => changeAvatar("funny")}
           >
             Funny
           </button>
         </div>
 
-        <p className="text-about text-justify mt-5 xl:px-60 md:px-20 lg:text-xl md:text-lg sm:text-base">
+        <p className="text-about text-justify mt-5 xl:px-60 md:px-20 lg:text-lg md:text-lg sm:text-base">
           {avatar.text.split("\n").map((paragraph, index) => (
             <React.Fragment key={index}>
               {paragraph}

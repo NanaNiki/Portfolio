@@ -5,7 +5,9 @@
 .dark {
   color-scheme: dark;
 }
-
+html {
+  @apply scroll-smooth;
+}
 body {
   @apply text-lg;
 }
@@ -115,5 +117,22 @@ section {
 
   .text-contact {
     @apply pr-0 pt-32;
+  }
+}
+
+.hide {
+  @apply opacity-0 transition-all duration-1000 ease-in blur-md transform -translate-x-full
+}
+.hide2 {
+  @apply opacity-0 transition-all duration-1000 ease-in blur-md
+}
+
+.show {
+@apply opacity-100 blur-none translate-x-0
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    @apply transition-none
   }
 }
