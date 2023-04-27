@@ -34,7 +34,9 @@ export default function About() {
   };
   return (
     <>
-      <h1 className="z-50 font-bold mt-2 lg:text-3xl">About me</h1>
+      <h1 className="z-50 text-center font-bold mt-5 lg:text-3xl animated-item hide2 delay-75">
+        About me
+      </h1>
       <div className="flex flex-col mt-4 mx-auto">
         <div className="flex flex-row mx-auto mb-5">
           <Image

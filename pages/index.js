@@ -63,12 +63,11 @@ export default function Home() {
           onClick={handleDarkMode}
           className="button-darkmode absolute z-10"
         />
-        <section className="absolute start z-20" id="home">
+        <section className="start absolute z-20" id="home">
           <Start />
         </section>
       </section>
-      {/**
-       */}{" "}
+      
       <NavBar />
       <section className="projects" id="projects">
         <div className="divider-1">
@@ -119,8 +118,9 @@ export default function Home() {
               fill="#f43f5e"
             ></path>
           </svg>
-        </div>
+        </div> 
       </section>
+    
     </main>
   );
 }

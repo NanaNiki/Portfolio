@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Nicol Wesołowska Portfolio</title>
         <meta name="description" content="Portfolio app"></meta>
-        <link rel="shortcut icon" type="image/png" href="/logoicon.png" />
+        <link rel="shortcut icon" type="image/png" href="/logonw.png" />
       </Head>
       <Component {...pageProps} />
     </>
