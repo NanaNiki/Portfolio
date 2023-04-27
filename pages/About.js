@@ -33,8 +33,9 @@ export default function About() {
     }
   };
   return (
-    <section className="about" id="about">
-      <div className="flex flex-col mt-14 mx-auto">
+    <>
+      <h1 className="z-50 font-bold mt-2 lg:text-3xl">About me</h1>
+      <div className="flex flex-col mt-4 mx-auto">
         <div className="flex flex-row mx-auto mb-5">
           <Image
             src={avatar.image}
@@ -75,6 +76,6 @@ export default function About() {
           ))}
         </p>
       </div>
-    </section>
+    </>
   );
 }
