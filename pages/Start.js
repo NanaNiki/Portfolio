@@ -13,7 +13,10 @@ export default function Start() {
   }, []);
 
   return (
-    <>
+    <section
+    className="flex flex-col h-screen w-full pr-16 pl-3 absolute z-20 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500"
+    id="home"
+  >
       <div className="hide flex flex-row">
         <DiReact className="icon-fall " />
         <DiJavascript1 className="icon-fall" />
@@ -94,11 +97,11 @@ export default function Start() {
       <div className="absolute right-14 bottom-10  h-1/6 flex flex-col justify-between">
         <a
           href="#projects"
-          className="has-tooltip transition-all duration-300 ease-linear"
+          className="has-tooltip"
         >
           <div className="flex flex-row">
-            <GiCrystalGrowth className="tooltip2 text-white" />
-            <span className="font-bold text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 transition-all duration-500 ease-linear dark:text-white animated-item hide2">
+            <GiCrystalGrowth className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 text-white" />
+            <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2">
               Projects
             </span>
           </div>
@@ -106,11 +109,11 @@ export default function Start() {
 
         <a
           href="#about"
-          className="has-tooltip transition-all duration-300 ease-linear"
+          className="has-tooltip"
         >
           <div className="flex flex-row">
-            <GiAlienStare className="tooltip2 text-white" />
-            <span className="font-bold text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 transition-all duration-500 ease-linear dark:text-white animated-item hide2">
+            <GiAlienStare className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 text-white" />
+            <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2">
               About
             </span>
           </div>
@@ -118,16 +121,16 @@ export default function Start() {
 
         <a
           href="#contact"
-          className="has-tooltip transition-all duration-300 ease-linear"
+          className="has-tooltip"
         >
           <div className="flex flex-row">
-            <GiUfo className="tooltip2 text-white" />
-            <span className="font-bold text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 transition-all duration-500 ease-linear dark:text-white animated-item hide2">
+            <GiUfo className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 text-white" />
+            <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2">
               Contact
             </span>
           </div>
         </a>
       </div>
-    </>
+    </section>
   );
 }

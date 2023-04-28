@@ -10,7 +10,9 @@ export default function NavBar() {
           <a href="#home" className="transition-all duration-300 ease-linear">
             <IoMdPlanet className="icon mt-2" />
           </a>
-          <span className="tooltip mx-1">Home</span>
+          <span className="navbar-tooltip w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0 mx-1">
+            Home
+          </span>
         </li>
         <li className="has-tooltip">
           <a
@@ -19,13 +21,17 @@ export default function NavBar() {
           >
             <GiCrystalGrowth className="icon mt-2" />
           </a>
-          <span className="tooltip">Projects</span>
+          <span className="navbar-tooltip w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0">
+            Projects
+          </span>
         </li>
         <li className="has-tooltip">
           <a href="#about" className="transition-all duration-300 ease-linear">
             <GiAlienStare className="icon mt-2" />
           </a>
-          <span className="tooltip mx-1">About</span>
+          <span className="navbar-tooltip mx-1 w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0">
+            About
+          </span>
         </li>
         <li className="has-tooltip">
           <a
@@ -34,7 +40,9 @@ export default function NavBar() {
           >
             <GiUfo className="icon mt-2" />
           </a>
-          <span className="tooltip">Contact</span>
+          <span className="navbar-tooltip w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0">
+            Contact
+          </span>
         </li>
       </ul>
     </nav>

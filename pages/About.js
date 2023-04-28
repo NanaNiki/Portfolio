@@ -33,7 +33,10 @@ export default function About() {
     }
   };
   return (
-    <>
+    <section
+      className="relative flex flex-col h-screen w-full pr-16 pl-3 bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600 dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800"
+      id="about"
+    >
       <div className="special-flex-wrap flex flex-row my-auto justify-center lg:ms-12 md:ms-4 sm:ms-0 dark:text-white dark:text-opacity-80">
         <div className="flex flex-col justify-center">
           <h1 className="mb-4 text-center font-bold lg:text-3xl animated-item hide2 delay-75">
@@ -44,7 +47,6 @@ export default function About() {
               src={avatar.image}
               width={200}
               height={200}
-              priority
               className="image rounded-full shadow-xl dark:shadow-slate-900 "
               alt="ai generated avatar of nicol wesolowska"
             />
@@ -81,6 +83,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </>
+    </section>
   );
 }
