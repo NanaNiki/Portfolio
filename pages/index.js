@@ -67,7 +67,7 @@ export default function Home() {
           <Start />
         </section>
       </section>
-      
+
       <NavBar />
       <section className="projects" id="projects">
         <div className="divider-1">
@@ -118,9 +118,8 @@ export default function Home() {
               fill="#f43f5e"
             ></path>
           </svg>
-        </div> 
+        </div>
       </section>
-    
     </main>
   );
 }

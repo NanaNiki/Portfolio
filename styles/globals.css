@@ -16,9 +16,9 @@ section {
 }
 .start-tags {
   @apply font-bold text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 transition-all duration-500 ease-linear 
-  dark:text-white;
-  
+  dark:text-white;  
 }
+
 .button-darkmode {
   @apply text-xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear fixed top-0 right-0 cursor-pointer
    dark:text-blue-300 dark:hover:text-cyan-300;
@@ -34,9 +34,8 @@ section {
 .has-tooltip:hover .tooltip {
   @apply opacity-100 transition-all duration-500 ease-linear;
 }
-
 .tooltip2 {
-  @apply w-8 h-8 text-black dark:text-white rounded-md mx-2 blur-sm opacity-0;
+  @apply w-8 h-8  rounded-md mx-2 blur-sm opacity-0;
 }
 .has-tooltip:hover .tooltip2 {
   @apply opacity-40 blur-0 transition-all duration-500 ease-linear;
@@ -56,16 +55,19 @@ section {
   @apply top-0 right-0 absolute w-screen overflow-hidden fill-slate-400 rounded-full rotate-180;
 }
 
+.card-box {
+  @apply flex flex-row my-auto;
+}
 .card {
   @apply z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60
-  dark:bg-gradient-to-b from-gray-300 to-white dark:shadow-slate-500;
+  dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500;
 }
 .card-title {
   @apply font-bold text-lg my-2 
   dark:text-slate-900;
 }
 .card-text {
-  @apply text-gray-700 p-2 text-justify md:text-lg sm:text-sm;
+  @apply text-gray-700 p-2 text-justify md:text-base sm:text-sm;
 }
 .project-name {
   @apply cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold;
@@ -81,11 +83,17 @@ section {
 
 .about {
   @apply bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600
-  dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800 dark:text-white dark:text-opacity-70;
+  dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800;
+}
+.about-box {
+  @apply flex flex-row my-auto justify-center lg:ms-12 md:ms-4 sm:ms-2 dark:text-white dark:text-opacity-80;
 }
 .button-about {
   @apply text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2
   hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white;
+}
+.about-text {
+  @apply text-justify mt-5 xl:px-32 md:px-10 sm:px-10 lg:text-lg md:text-base sm:text-sm 
 }
 
 .contact {
@@ -115,8 +123,8 @@ section {
     height: 100px;
   }
 
-  .text-about {
-    @apply mt-5 px-5 text-xs;
+  .about-text {
+    @apply mt-3 px-5 text-xs;
   }
 
   .button-about,
@@ -132,8 +140,12 @@ section {
     @apply text-xs;
   }
 
-  .card-box {
+  .card-box, .about-box {
     @apply flex-wrap;
+  }
+
+  .about-box {
+    @apply ms-0
   }
 
   .text-contact {

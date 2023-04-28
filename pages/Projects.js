@@ -62,10 +62,10 @@ export default function Projects() {
 
   return (
     <>
-      <h1 className="z-50 text-center font-bold mt-5 lg:text-3xl animated-item hide2 delay-75">
+      <h1 className="z-50 text-center mt-10 dark:text-white dark:text-opacity-80 font-bold lg:text-3xl animated-item hide2 delay-75">
         Projects
       </h1>
-      <div className="card-box flex flex-row my-auto mt-30">
+      <div className="card-box">
         <div className="card animated-item hide delay-500">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
 
