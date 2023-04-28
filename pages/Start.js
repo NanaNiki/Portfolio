@@ -17,18 +17,21 @@ export default function Start() {
     className="flex flex-col h-screen w-full pr-16 pl-3 absolute z-20 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500"
     id="home"
   >
-      <div className="hide flex flex-row">
-        <DiReact className="icon-fall " />
-        <DiJavascript1 className="icon-fall" />
-        <AiFillHtml5 className="icon-fall" />
-        <DiCss3 className="icon-fall" />
-        <DiBootstrap className="icon-fall" />
-        <TbBrandNextjs className="icon-fall" />
-        <SiTailwindcss className="icon-fall" />
-      </div>
+  <div className="animates flex flex-row justify-between w-1/2">
+  <span className="animate left-20 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>
+  <span className="animate top-24 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>
+  <span className="animate bottom-96 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>        
+        <DiReact className="animate absolute bottom-96" />
+        <DiJavascript1 className="animate absolute -left-20 " />
+        <AiFillHtml5 className="animate" />
+        <DiCss3 className="animate" />
+        <DiBootstrap className="animate" />
+        <TbBrandNextjs className="animate" />
+        <SiTailwindcss className="animate" />
+  </div>
       {/** tutaj zmienic src href na url strony po tym jak juz deploy */}
       <a href="#home" className="transition-all duration-300 ease-linear">
-        <div className=" fill-black dark:fill-slate-200 absolute top-12 left-12">
+        <div className=" fill-black dark:fill-slate-200 absolute top-12 left-12 p-0.5 hover:rounded-full hover:shadow-md hover:shadow-cyan-300">
           <svg
             width="48"
             height="48"
@@ -82,7 +85,6 @@ export default function Start() {
           </svg>
         </div>
       </a>
-
       <div className="flex flex-col h-screen justify-end mb-40 ms-12">
         <span className="text-base">Hi! I'm</span>
         <h1 className="font-bold lg:text-4xl animated-item hide2">
@@ -106,7 +108,6 @@ export default function Start() {
             </span>
           </div>
         </a>
-
         <a
           href="#about"
           className="has-tooltip"
@@ -118,7 +119,6 @@ export default function Start() {
             </span>
           </div>
         </a>
-
         <a
           href="#contact"
           className="has-tooltip"

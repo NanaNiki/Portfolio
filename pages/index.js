@@ -55,7 +55,7 @@ export default function Home() {
         darkMode ? "dark" : ""
       }`}
     >
-      <section className="relative z-20 p-0 h-screen mb-8 bg-stone-100 dark:bg-gray-950">
+      <section className="overflow-hidden relative z-20 p-0 h-screen mb-8 bg-stone-100 dark:bg-gray-950">
         <BsFillMoonStarsFill
           onClick={handleDarkMode}
           className="z-10 text-xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear fixed top-0 right-0 cursor-pointer

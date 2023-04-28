@@ -17,7 +17,7 @@
 }
 
 .has-tooltip:hover .start-tag {
-  @apply opacity-40 blur-0 transition-all duration-700 ease-linear;
+  @apply opacity-40 blur-0 transition-all duration-500 ease-linear;
 }
 
 .hide {
@@ -29,6 +29,63 @@
 .show {
   @apply opacity-100 blur-none translate-x-0;
 }
+.animate{
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% 
+  {
+    transform: rotate(55deg) translateX(-100%) translateY(-100%);
+    filter: blur(0px);
+    opacity: 0%;
+  }
+  1% {
+    opacity: 100%;
+  }
+100% {
+  transform: rotate(55deg) translateX(600px) translateY(0%);
+  filter: blur(2px);
+  opacity: 2%; 
+}
+}
+.animates span:nth-child(1) {
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(0.65, 0.84, 0.44, 4)
+}
+
+.animates span:nth-child(2) {
+  animation-delay: 3s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 9)
+}
+
+.animates span:nth-child(3) {
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.220, 2)
+}
+
+.animates svg:nth-child(5) {
+  animation-delay: 120ms;
+}
+
+.animates svg:nth-child(6) {
+  animation-delay: 2s;
+}
+
+.animates svg:nth-child(7) {
+  animation-delay: 3s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.animates svg:nth-child(8) {
+  animation-delay: 5s;
+  animation-timing-function: cubic-bezier(0.86, 0.84, 0.44, 1);
+}
+
+.animates svg:nth-child(9) {
+  animation-delay: 130ms;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95)
+}
+
 
 @media (prefers-reduced-motion) {
   .hidden {
