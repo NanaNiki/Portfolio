@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiFillHtml5 } from "react-icons/ai";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
 import { GiCrystalGrowth, GiAlienStare, GiUfo } from "react-icons/gi";
 import { DiJavascript1, DiCss3, DiBootstrap, DiReact } from "react-icons/di";
+import { observeScroll } from "./index";
 
 export default function Start() {
+  useEffect(() => {
+    const animatedItems = document.querySelectorAll(".animated-item");
+    observeScroll(animatedItems);
+  }, []);
+
   return (
     <>
       <div className="hide flex flex-row">
@@ -76,32 +82,49 @@ export default function Start() {
 
       <div className="flex flex-col h-screen justify-end mb-40 ms-12">
         <span className="text-base">Hi! I'm</span>
-        <h1 className="font-bold lg:text-4xl"> Nicol Wesołowska</h1>
+        <h1 className="font-bold lg:text-4xl animated-item hide2">
+          {" "}
+          Nicol Wesołowska
+        </h1>
         <h5 className="lg:text-xl ">
           <span className="italic text-base">Fresh Baby </span> Front End
           Developer
         </h5>
       </div>
       <div className="absolute right-14 bottom-10  h-1/6 flex flex-col justify-between">
-
-        <a href="#projects" className="has-tooltip transition-all duration-300 ease-linear">
+        <a
+          href="#projects"
+          className="has-tooltip transition-all duration-300 ease-linear"
+        >
           <div className="flex flex-row">
             <GiCrystalGrowth className="tooltip2 text-white" />
-            <span className="start-tags">Projects</span>
+            <span className="font-bold text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 transition-all duration-500 ease-linear dark:text-white animated-item hide2">
+              Projects
+            </span>
           </div>
         </a>
 
-        <a href="#about" className="has-tooltip transition-all duration-300 ease-linear">
+        <a
+          href="#about"
+          className="has-tooltip transition-all duration-300 ease-linear"
+        >
           <div className="flex flex-row">
             <GiAlienStare className="tooltip2 text-white" />
-            <span className="start-tags">About</span>
+            <span className="font-bold text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 transition-all duration-500 ease-linear dark:text-white animated-item hide2">
+              About
+            </span>
           </div>
         </a>
 
-        <a href="#contact" className="has-tooltip transition-all duration-300 ease-linear">
+        <a
+          href="#contact"
+          className="has-tooltip transition-all duration-300 ease-linear"
+        >
           <div className="flex flex-row">
             <GiUfo className="tooltip2 text-white" />
-            <span className="start-tags">Contact</span>
+            <span className="font-bold text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 transition-all duration-500 ease-linear dark:text-white animated-item hide2">
+              Contact
+            </span>
           </div>
         </a>
       </div>

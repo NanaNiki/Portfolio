@@ -34,7 +34,7 @@ export default function About() {
   };
   return (
     <>
-      <div className="about-box">
+      <div className="special-flex-wrap flex flex-row my-auto justify-center lg:ms-12 md:ms-4 sm:ms-0 dark:text-white dark:text-opacity-80">
         <div className="flex flex-col justify-center">
           <h1 className="mb-4 text-center font-bold lg:text-3xl animated-item hide2 delay-75">
             About me
@@ -51,19 +51,19 @@ export default function About() {
           </div>
           <div className="flex flex-row justify-center">
             <button
-              className="button-about animated-item hide2 delay-75"
+              className="special-text-sm text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2 hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white animated-item hide2 delay-75"
               onClick={() => changeAvatar("short")}
             >
               Short
             </button>
             <button
-              className="button-about animated-item hide2 delay-100"
+              className="special-text-sm text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2 hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white animated-item hide2 delay-100"
               onClick={() => changeAvatar("long")}
             >
               Long
             </button>
             <button
-              className="button-about animated-item hide2 delay-300"
+              className="special-text-sm text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2 hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white animated-item hide2 delay-300"
               onClick={() => changeAvatar("funny")}
             >
               Funny
@@ -71,7 +71,7 @@ export default function About() {
           </div>
         </div>
         <div className="flex align-middle my-auto">
-          <p className="about-text">
+          <p className="special-text-about text-justify mt-5 xl:px-32 md:px-10 sm:px-10 lg:text-lg md:text-base sm:text-sm">
             {avatar.text.split("\n").map((paragraph, index) => (
               <React.Fragment key={index}>
                 {paragraph}

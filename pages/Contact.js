@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="text-contact text-end pr-20 pt-20 z-50">
+      <div className="special-text-contact text-end pr-20 pt-20 z-50">
         <h3 className="m-2 font-semibold">Where to find me?</h3>
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
@@ -36,7 +36,9 @@ export default function Contact() {
         </Link>
         <div className="flex flex-row justify-end m-auto">
           <Link href="/CVNW.pdf" download target="_blank">
-            <button className="button-resume">Resume</button>
+            <button className="w-64 mt-2 font-semibold bg-gradient-to-tl from-rose-500 to-red-300 rounded-full p-2 m-1 shadow-lg shadow-rose-800 transition-all duration-100 hover:shadow-rose-300 active:border-2 active:border-rose-700 dark:opacity-60 dark:shadow-transparent dark:hover:shadow-rose-700 dark:hover:text-rose-700 dark:active:text-rose-900">
+              Resume
+            </button>
           </Link>
         </div>
       </div>

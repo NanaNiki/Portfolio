@@ -40,10 +40,12 @@ export default function Projects() {
       return (
         <div className="flex flex-row justify-end">
           <a href={project.code} target="_blank">
-            <BsGithub className="icon-project mx-2 mt-1.5" />
+            <BsGithub className="special-text-sm mx-2 mt-1.5 text-slate-900 text-xl   hover:text-blue-700" />
           </a>
           <a href={project.live} target="_blank">
-            <button className="button-live">Live Demo</button>
+            <button className="special-text-xs bg-gradient-to-t from-slate-100 to-slate-200 my-auto text-sm font-semibold px-1 py-0.5 rounded-full shadow-md text-slate-900  hover:shadow-blue-700 hover:shadow-md hover:text-blue-700 ">
+              Live Demo
+            </button>
           </a>
         </div>
       );
@@ -65,37 +67,43 @@ export default function Projects() {
       <h1 className="z-50 text-center mt-10 dark:text-white dark:text-opacity-80 font-bold lg:text-3xl animated-item hide2 delay-75">
         Projects
       </h1>
-      <div className="card-box">
-        <div className="card animated-item hide delay-500">
+      <div className="special-flex-wrap flex flex-row my-auto">
+        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item hide delay-500">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
 
-          <h2 className="card-title">E-commerce Webstie</h2>
-          <p className="card-text">
+          <h2 className="font-bold text-lg my-2 dark:text-slate-900">
+            E-commerce Webstie
+          </h2>
+          <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
             elit eu odio posuere, vitae vestibulum est dictum.
           </p>
         </div>
-        <div className="card animated-item hide delay-300">
+        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item hide delay-300">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
 
-          <h2 className="card-title">Emotions Menager</h2>
-          <p className="card-text ">
+          <h2 className="font-bold text-lg my-2 dark:text-slate-900">
+            Emotions Menager
+          </h2>
+          <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
             elit eu odio posuere, vitae vestibulum est dictum.
           </p>
         </div>
-        <div className="card animated-item hide delay-100">
+        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item hide delay-100">
           <div className="flex flex-row justify-center">
             <Carousel />
           </div>
-          <h2 className="card-title">freeCodeCamp Projects</h2>
-          <div className="card-text">
+          <h2 className="font-bold text-lg my-2 dark:text-slate-900">
+            freeCodeCamp Projects
+          </h2>
+          <div className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
             Earning the Front End development Libraries Certification I build
             five projects:
             <ul className="list-inside list-disc m-2 text-start">
               <div className="flex flex-row justify-between">
                 <li
-                  className="project-name"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
                   id="RQM"
                   onClick={() => toggleCodeAndLive("RQM")}
                 >
@@ -107,7 +115,7 @@ export default function Projects() {
 
               <div className="flex flex-row justify-between">
                 <li
-                  className="project-name"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
                   id="MDP"
                   onClick={() => toggleCodeAndLive("MDP")}
                 >
@@ -119,7 +127,7 @@ export default function Projects() {
 
               <div className="flex flex-row justify-between">
                 <li
-                  className="project-name"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
                   id="DM"
                   onClick={() => toggleCodeAndLive("DM")}
                 >
@@ -131,7 +139,7 @@ export default function Projects() {
 
               <div className="flex flex-row justify-between">
                 <li
-                  className="project-name"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
                   id="JSC"
                   onClick={() => toggleCodeAndLive("JSC")}
                 >
@@ -143,7 +151,7 @@ export default function Projects() {
 
               <div className="flex flex-row justify-between">
                 <li
-                  className="project-name"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
                   id="PC"
                   onClick={() => toggleCodeAndLive("PC")}
                 >

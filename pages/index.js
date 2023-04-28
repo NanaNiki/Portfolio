@@ -54,23 +54,30 @@ export default function Home() {
 
   return (
     <main
-      className={`relative min-h-screen bg-stone-100 dark:bg-gray-950 ${
+      className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${
         darkMode ? "dark" : ""
       }`}
     >
       <section className="relative z-20 p-0 h-screen mb-8 bg-stone-100 dark:bg-gray-950">
         <BsFillMoonStarsFill
           onClick={handleDarkMode}
-          className="button-darkmode absolute z-10"
+          className="z-10 text-xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear fixed top-0 right-0 cursor-pointer
+   dark:text-blue-300 dark:hover:text-cyan-300"
         />
-        <section className="start absolute z-20" id="home">
+        <section
+          className="relative flex flex-col h-screen w-full pr-16 pl-3 absolute z-20 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500"
+          id="home"
+        >
           <Start />
         </section>
       </section>
 
       <NavBar />
-      <section className="projects" id="projects">
-        <div className="divider-1">
+      <section
+        className="relative flex flex-col h-screen w-full pr-16 pl-3 text-center"
+        id="projects"
+      >
+        <div className="top-0 right-0 absolute w-screen overflow-hidden fill-slate-400 rounded-full rotate-180">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120">
             <path
               d="M0,0H1200V46.29c-47.79,22.2-103.59,32.17-158,28-70.36-5.37-136.33-33.31-206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -85,12 +92,19 @@ export default function Home() {
         </div>
         <Projects />
       </section>
-      <section className="about" id="about">
+
+      <section
+        className="relative flex flex-col h-screen w-full pr-16 pl-3 bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600 dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800"
+        id="about"
+      >
         <About />
       </section>
-      <section className="contact" id="contact">
+      <section
+        className="relative flex flex-col h-screen w-full pr-16 pl-3 bg-rose-400 rounded-ss-full dark:bg-gradient-to-b from-slate-950 to-rose-950"
+        id="contact"
+      >
         <Contact />
-        <div className="divider-2">
+        <div className="bottom-0 left-0 absolute w-full overflow-hidden rounded-ss-full">
           <svg
             id="visual"
             viewBox="0 0 900 500"
