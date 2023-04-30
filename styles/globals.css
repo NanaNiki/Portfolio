@@ -29,38 +29,34 @@
 .show {
   @apply opacity-100 blur-none translate-x-0;
 }
-.animate{
-  animation: animate 8s linear infinite;
+.animate {
+  animation: animate 8.5s linear infinite;
 }
 @keyframes animate {
-  0% 
-  {
+  0% {
     transform: rotate(55deg) translateX(-100%) translateY(-100%);
     filter: blur(0px);
-    opacity: 0%;
-  }
-  1% {
     opacity: 100%;
   }
-100% {
-  transform: rotate(55deg) translateX(600px) translateY(0%);
-  filter: blur(2px);
-  opacity: 2%; 
-}
+  100% {
+    transform: rotate(55deg) translateX(600px) translateY(0%);
+    filter: blur(2px);
+    opacity: 2%;
+  }
 }
 .animates span:nth-child(1) {
   animation-delay: 0s;
-  animation-timing-function: cubic-bezier(0.65, 0.84, 0.44, 4)
+  animation-timing-function: cubic-bezier(0.65, 0.84, 0.44, 4);
 }
 
 .animates span:nth-child(2) {
   animation-delay: 3s;
-  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 9)
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 9);
 }
 
 .animates span:nth-child(3) {
   animation-delay: 0s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.220, 2)
+  animation-timing-function: cubic-bezier(0.23, 1, 0.22, 2);
 }
 
 .animates svg:nth-child(5) {
@@ -83,9 +79,8 @@
 
 .animates svg:nth-child(9) {
   animation-delay: 130ms;
-  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95)
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-
 
 @media (prefers-reduced-motion) {
   .hidden {
@@ -126,5 +121,8 @@
 
   .special-flex-wrap {
     @apply flex-wrap;
+  }
+  .start-tags-box {
+    @apply bottom-3 right-2;
   }
 }

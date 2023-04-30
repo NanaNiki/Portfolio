@@ -14,24 +14,24 @@ export default function Start() {
 
   return (
     <section
-    className="flex flex-col h-screen w-full pr-16 pl-3 absolute z-20 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500"
-    id="home"
-  >
-  <div className="animates flex flex-row justify-between w-1/2">
-  <span className="animate left-20 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>
-  <span className="animate top-24 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>
-  <span className="animate bottom-96 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>        
+      className="flex flex-col h-screen w-full p-3 absolute z-20 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500"
+      id="home"
+    >
+      <div className="animates flex flex-row justify-between w-1/2">
+        <span className="animate left-96 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>
+        <span className="animate top-9 w-48 h-[1px] bg-black dark:bg-white opacity-0 rounded-full absolute"></span>
+        <span className="animate bottom-96 w-48 h-[1px] bg-black dark:bg-white opacity-50 rounded-full absolute"></span>
         <DiReact className="animate absolute bottom-96" />
         <DiJavascript1 className="animate absolute -left-20 " />
-        <AiFillHtml5 className="animate" />
-        <DiCss3 className="animate" />
-        <DiBootstrap className="animate" />
+        <AiFillHtml5 className="animate opacity-0" />
+        <DiCss3 className="animate opacity-0" />
+        <DiBootstrap className="animate opacity-0" />
         <TbBrandNextjs className="animate" />
         <SiTailwindcss className="animate" />
-  </div>
+      </div>
       {/** tutaj zmienic src href na url strony po tym jak juz deploy */}
       <a href="#home" className="transition-all duration-300 ease-linear">
-        <div className=" fill-black dark:fill-slate-200 absolute top-12 left-12 p-0.5 hover:rounded-full hover:shadow-md hover:shadow-cyan-300">
+        <div className="logo fill-black dark:fill-slate-200 absolute top-12 left-12 p-0.5 hover:rounded-full hover:shadow-md hover:shadow-cyan-300">
           <svg
             width="48"
             height="48"
@@ -96,34 +96,25 @@ export default function Start() {
           Developer
         </h5>
       </div>
-      <div className="absolute right-14 bottom-10  h-1/6 flex flex-col justify-between">
-        <a
-          href="#projects"
-          className="has-tooltip"
-        >
-          <div className="flex flex-row">
+      <div className="start-tags-box h-1/6 w-full flex flex-col justify-around absolute lg:bottom-10 lg:right-8 md:bottom-5 md:right-4 sm:bottom-3 sm:right-2">
+        <a href="#projects" className="has-tooltip">
+          <div className="flex flex-row justify-end">
             <GiCrystalGrowth className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 text-white" />
             <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2">
               Projects
             </span>
           </div>
         </a>
-        <a
-          href="#about"
-          className="has-tooltip"
-        >
-          <div className="flex flex-row">
+        <a href="#about" className="has-tooltip">
+          <div className="flex flex-row justify-end">
             <GiAlienStare className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 text-white" />
             <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2">
               About
             </span>
           </div>
         </a>
-        <a
-          href="#contact"
-          className="has-tooltip"
-        >
-          <div className="flex flex-row">
+        <a href="#contact" className="has-tooltip">
+          <div className="flex flex-row justify-end">
             <GiUfo className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 text-white" />
             <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2">
               Contact
