@@ -24,14 +24,16 @@
   @apply opacity-0 transition-all duration-1000 ease-in blur-md transform -translate-x-full;
 }
 .hide2 {
-  @apply opacity-0 transition-all duration-300 ease-in blur-md;
+  @apply opacity-0 transition-all duration-700 ease-in blur-md;
 }
 .show {
   @apply opacity-100 blur-none translate-x-0;
 }
+
 .animate {
-  animation: animate 8.5s linear infinite;
+  animation: animate 9.5s linear infinite;
 }
+
 @keyframes animate {
   0% {
     transform: rotate(55deg) translateX(-100%) translateY(-100%);
@@ -39,47 +41,73 @@
     opacity: 100%;
   }
   100% {
-    transform: rotate(55deg) translateX(600px) translateY(0%);
+    transform: rotate(55deg) translateX(650px) translateY(0%);
     filter: blur(2px);
-    opacity: 2%;
+    opacity: 0%;
   }
 }
 .animates span:nth-child(1) {
-  animation-delay: 0s;
-  animation-timing-function: cubic-bezier(0.65, 0.84, 0.44, 4);
+  animation-delay: 13s;
+  animation-timing-function: cubic-bezier(0.02, 1, 0.02, 1);
 }
 
 .animates span:nth-child(2) {
-  animation-delay: 3s;
-  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 9);
+  animation-delay: 15s;
+  animation-timing-function: cubic-bezier(0.19, 0, 0.22, 3);
+}
+.animates span:nth-child(3) {
+  animation-delay: 10s;
+  animation-timing-function: cubic-bezier(0.1, 1, 0.1, 1);
 }
 
-.animates span:nth-child(3) {
-  animation-delay: 0s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.22, 2);
+.animates svg:nth-child(4) {
+  animation-delay: 10s;
 }
 
 .animates svg:nth-child(5) {
-  animation-delay: 120ms;
+  animation-delay: 10.12s;
 }
 
 .animates svg:nth-child(6) {
-  animation-delay: 2s;
+  animation-delay: 12s;
 }
 
 .animates svg:nth-child(7) {
-  animation-delay: 3s;
+  animation-delay: 13s;
   animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .animates svg:nth-child(8) {
-  animation-delay: 5s;
+  animation-delay: 15s;
   animation-timing-function: cubic-bezier(0.86, 0.84, 0.44, 1);
 }
 
 .animates svg:nth-child(9) {
-  animation-delay: 130ms;
+  animation-delay: 10.13s;
   animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.animates svg:nth-child(10) {
+  animation-delay: 10s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.blur {
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+@keyframes loading {
+  0% {
+    filter: blur(0%);
+  }
+  100% {
+    filter: blur(100%);
+  }
 }
 
 @media (prefers-reduced-motion) {
@@ -123,6 +151,9 @@
     @apply flex-wrap;
   }
   .start-tags-box {
-    @apply bottom-3 right-2;
+    @apply bottom-3 right-2 justify-end;
+  }
+  .start-introduction {
+    @apply mb-44 ms-2;
   }
 }

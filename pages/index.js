@@ -1,10 +1,9 @@
-import { Poppins } from "next/font/google";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState, useEffect } from "react";
 import Start from "./Start";
 import dynamic from "next/dynamic";
+import { useState, useEffect } from "react";
+import { Montserrat } from "next/font/google";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export function observeScroll(elements) {
   const observer = new IntersectionObserver((entries) => {
@@ -53,16 +52,9 @@ export default function Home() {
     <main
       className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${
         darkMode ? "dark" : ""
-      }`}
+      } ${montserrat.className}`}
     >
-      <section className="overflow-hidden relative z-20 p-0 h-screen mb-8 bg-stone-100 dark:bg-gray-950">
-        <BsFillMoonStarsFill
-          onClick={handleDarkMode}
-          className="z-10 text-xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear fixed top-0 right-0 cursor-pointer
-   dark:text-blue-300 dark:hover:text-cyan-300"
-        />
-        <Start />
-      </section>
+      <Start handleDarkMode={handleDarkMode} />
       <DynamicNavBar />
       <DynamicProjects />
       <DynamicAbout />

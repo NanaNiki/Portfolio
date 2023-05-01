@@ -39,10 +39,10 @@ export default function About() {
     >
       <div className="special-flex-wrap flex flex-row my-auto justify-center lg:ms-12 md:ms-4 sm:ms-0 dark:text-white dark:text-opacity-80">
         <div className="flex flex-col justify-center">
-          <h1 className="mb-4 text-center font-bold lg:text-3xl animated-item hide2 delay-75">
+          <h1 className="mb-3 text-center font-bold lg:text-3xl animated-item hide2 delay-75">
             About me
           </h1>
-          <div className="flex flex-row mx-auto mb-5">
+          <div className="flex flex-row mx-auto mb-3">
             <Image
               src={avatar.image}
               width={200}
