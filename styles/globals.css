@@ -47,66 +47,60 @@
   }
 }
 .animates span:nth-child(1) {
-  animation-delay: 13s;
+  animation-delay: 7s;
   animation-timing-function: cubic-bezier(0.02, 1, 0.02, 1);
 }
 
 .animates span:nth-child(2) {
-  animation-delay: 15s;
+  animation-delay: 9s;
   animation-timing-function: cubic-bezier(0.19, 0, 0.22, 3);
 }
 .animates span:nth-child(3) {
-  animation-delay: 10s;
+  animation-delay: 4s;
   animation-timing-function: cubic-bezier(0.1, 1, 0.1, 1);
 }
 
 .animates svg:nth-child(4) {
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 
 .animates svg:nth-child(5) {
-  animation-delay: 10.12s;
+  animation-delay: 4.12s;
 }
 
 .animates svg:nth-child(6) {
-  animation-delay: 12s;
+  animation-delay: 6s;
 }
 
 .animates svg:nth-child(7) {
-  animation-delay: 13s;
+  animation-delay: 7s;
   animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .animates svg:nth-child(8) {
-  animation-delay: 15s;
+  animation-delay: 9s;
   animation-timing-function: cubic-bezier(0.86, 0.84, 0.44, 1);
 }
 
 .animates svg:nth-child(9) {
-  animation-delay: 10.13s;
+  animation-delay: 4.13s;
   animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .animates svg:nth-child(10) {
-  animation-delay: 10s;
+  animation-delay: 2.5s;
 }
 
-.fade-in {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
+.loading {
+  animation: loading 3s ease-out 1;
 }
 
-.blur {
-  filter: blur(10px);
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
 
 @keyframes loading {
   0% {
     filter: blur(0%);
   }
   100% {
-    filter: blur(100%);
+    filter: blur(100%);   
   }
 }
 

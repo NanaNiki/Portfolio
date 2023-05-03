@@ -106,7 +106,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#projects" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiCrystalGrowth className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-300">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-500">
                 Projects
               </span>
             </div>
@@ -114,7 +114,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#about" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiAlienStare className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-500">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-700">
                 About
               </span>
             </div>
@@ -122,7 +122,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#contact" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiUfo className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-700">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-1000">
                 Contact
               </span>
             </div>

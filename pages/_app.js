@@ -1,16 +1,16 @@
 import "@/styles/globals.css";
 import Head from "next/head";
 import Loading from "./Loading";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setLoading(false);
-    }, 2000);
-    return () => clearTimeout(timer);
+    }, 3000);
   }, []);
 
   return (
@@ -20,13 +20,7 @@ export default function App({ Component, pageProps }) {
         <meta name="description" content="Portfolio app"></meta>
         <link rel="shortcut icon" type="image/png" href="/logotab.png" />
       </Head>
-      {loading ? (
-        <Loading className="blur"/>
-      ) : (
-        <div className="fade-in">
-          <Component {...pageProps} />
-        </div>
-      )}
+      {loading? <Loading /> : <Component {...pageProps} />}
     </>
   );
 }
