@@ -23,17 +23,17 @@ export default function Start({ handleDarkMode }) {
           className="z-20 text-xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear fixed top-0 right-0 cursor-pointer dark:text-blue-300 dark:hover:text-cyan-300"
         />
         <div className="absolute top-0 flex flex-col overflow-hidden h-screen w-full p-3 z-30 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500">
-          <div className="animates flex flex-row z-40 justify-between w-1/2">
-            <span className="animate right-1/2 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
-            <span className="animate top-9 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
-            <span className="animate bottom-96 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
-            <DiReact className="animate absolute bottom-96 opacity-0 text-amber-700 dark:text-white" />
-            <DiJavascript1 className="animate absolute -left-20 opacity-0 text-amber-700 dark:text-white" />
-            <AiFillHtml5 className="animate opacity-0 text-amber-700 dark:text-white" />
-            <DiCss3 className="animate opacity-0 text-amber-700 dark:text-white" />
-            <DiBootstrap className="animate opacity-0 text-amber-700 dark:text-white" />
-            <TbBrandNextjs className="animate opacity-0 text-amber-700 dark:text-white" />
-            <SiTailwindcss className="animate opacity-0 text-amber-700 dark:text-white" />
+          <div className="shooting-star-box flex flex-row z-40 justify-between w-1/2">
+            <span className="shooting-star-animation right-1/2 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
+            <span className="shooting-star-animation top-9 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
+            <span className="shooting-star-animation bottom-96 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
+            <DiReact className="shooting-star-animation absolute bottom-96 opacity-0 text-amber-700 dark:text-white" />
+            <DiJavascript1 className="shooting-star-animation absolute -left-20 opacity-0 text-amber-700 dark:text-white" />
+            <AiFillHtml5 className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
+            <DiCss3 className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
+            <DiBootstrap className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
+            <TbBrandNextjs className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
+            <SiTailwindcss className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
           </div>
           {/** tutaj zmienic src href na url strony po tym jak juz deploy */}
           <a href="#home" className="transition-all duration-300 ease-linear">
@@ -92,13 +92,13 @@ export default function Start({ handleDarkMode }) {
           </a>
           <div className="start-introduction flex flex-col h-full justify-end mb-40 ms-12 ">
             <span className="text-base">Hi! I'm</span>
-            <h1 className="font-bold lg:text-4xl animated-item hide2 delay-1000">
+            <h1 className="font-bold lg:text-4xl animated-item fade-in delay-[700ms]">
               {" "}
               Nicol Wesołowska
             </h1>
             <h5 className="lg:text-xl ">
-              <span className="italic text-base me-1">Fresh Baby </span>Front End
-              Developer
+              <span className="italic text-base me-1">Fresh Baby </span>Front
+              End Developer
             </h5>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#projects" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiCrystalGrowth className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-500">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[1s]">
                 Projects
               </span>
             </div>
@@ -114,7 +114,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#about" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiAlienStare className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-700">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[1.5s]">
                 About
               </span>
             </div>
@@ -122,7 +122,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#contact" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiUfo className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 hover:opacity-40 dark:text-white animated-item hide2 delay-1000">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[2s]">
                 Contact
               </span>
             </div>

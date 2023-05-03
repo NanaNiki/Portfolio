@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import { Montserrat } from "next/font/google";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["300"] });
 
 export function observeScroll(elements) {
   const observer = new IntersectionObserver((entries) => {

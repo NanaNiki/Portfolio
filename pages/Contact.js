@@ -23,19 +23,19 @@ export default function Contact() {
           target="_blank"
         >
           {" "}
-          <BsLinkedin className="icon hover:opacity-40 animated-item hide delay-700" />
+          <BsLinkedin className="icon hover:opacity-40 animated-item slide-in delay-700" />
         </Link>
         <Link href="https://github.com/NanaNiki" target="_blank">
           {" "}
-          <BsGithub className="icon hover:opacity-40 animated-item hide delay-500" />
+          <BsGithub className="icon hover:opacity-40 animated-item slide-in delay-500" />
         </Link>
         <Link href="https://www.freecodecamp.org/NanaNiki" target="_blank">
           {" "}
-          <FaFreeCodeCamp className="icon hover:opacity-40 animated-item hide delay-300" />
+          <FaFreeCodeCamp className="icon hover:opacity-40 animated-item slide-in delay-300" />
         </Link>
         <Link href="mailto:nicol.wesolowska@gmail.com" target="_blank">
           {" "}
-          <SiGmail className="icon hover:opacity-40 animated-item hide delay-100" />
+          <SiGmail className="icon hover:opacity-40 animated-item slide-in delay-100" />
         </Link>
         <div className="flex flex-row justify-end m-auto">
           <Link href="/CVNW.pdf" download target="_blank">

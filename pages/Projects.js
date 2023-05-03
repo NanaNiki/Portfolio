@@ -40,7 +40,7 @@ export default function Projects() {
       return (
         <div className="flex flex-row justify-end">
           <a href={project.code} target="_blank">
-            <BsGithub className="special-text-sm mx-2 mt-1.5 text-slate-900 text-xl   hover:text-blue-700" />
+            <BsGithub className="special-text-sm mx-2 mt-0.5 text-slate-900 text-xl   hover:text-blue-700" />
           </a>
           <a href={project.live} target="_blank">
             <button className="special-text-xs bg-gradient-to-t from-slate-100 to-slate-200 my-auto text-sm font-semibold px-1 py-0.5 rounded-full shadow-md text-slate-900  hover:shadow-blue-700 hover:shadow-md hover:text-blue-700 ">
@@ -82,11 +82,11 @@ export default function Projects() {
         ></path>
         <path d="M0,0H1200V5.63c-149.93,53.32-314.09,65.64-475.83,36.89-43-7.64-84.23-20.12-127.61-26.46-59-8.63-112.48,12.24-165.56,35.4C372.07,68.22,314,86.24,248.8,81c-86.53-7-172.46-45.71-248.8-84.81V0Z"></path>
       </svg>
-      <h1 className="z-50 text-center dark:text-white dark:text-opacity-80 font-bold lg:text-3xl lg:mt-12 animated-item hide2 delay-100">
+      <h1 className="z-50 text-center dark:text-white dark:text-opacity-80 font-bold lg:text-3xl lg:mt-12 animated-item fade-in delay-100">
         Projects
       </h1>
       <div className="special-flex-wrap flex flex-row my-auto">
-        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item hide delay-500">
+        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item slide-in delay-500">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
           <h2 className="font-bold text-lg my-2 dark:text-slate-900">
             E-commerce Webstie
@@ -96,7 +96,7 @@ export default function Projects() {
             elit eu odio posuere, vitae vestibulum est dictum.
           </p>
         </div>
-        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item hide delay-300">
+        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item slide-in delay-300">
           {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
           <h2 className="font-bold text-lg my-2 dark:text-slate-900">
             Emotions Menager
@@ -106,7 +106,7 @@ export default function Projects() {
             elit eu odio posuere, vitae vestibulum est dictum.
           </p>
         </div>
-        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item hide delay-100">
+        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item slide-in delay-100">
           <div className="flex flex-row justify-center">
             <Carousel />
           </div>

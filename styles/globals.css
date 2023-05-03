@@ -20,17 +20,17 @@
   @apply opacity-40 blur-0 transition-all duration-500 ease-linear;
 }
 
-.hide {
-  @apply opacity-0 transition-all duration-1000 ease-in blur-md transform -translate-x-full;
+.slide-in {
+  @apply opacity-0 duration-1000 ease-in blur-md transform -translate-x-full;
 }
-.hide2 {
-  @apply opacity-0 transition-all duration-700 ease-in blur-md;
+.fade-in {
+  @apply opacity-0 duration-1000 ease-in blur-md;
 }
 .show {
   @apply opacity-100 blur-none translate-x-0;
 }
 
-.animate {
+.shooting-star-animation {
   animation: animate 9.5s linear infinite;
 }
 
@@ -46,47 +46,47 @@
     opacity: 0%;
   }
 }
-.animates span:nth-child(1) {
+.shooting-star-box span:nth-child(1) {
   animation-delay: 7s;
   animation-timing-function: cubic-bezier(0.02, 1, 0.02, 1);
 }
 
-.animates span:nth-child(2) {
+.shooting-star-box span:nth-child(2) {
   animation-delay: 9s;
   animation-timing-function: cubic-bezier(0.19, 0, 0.22, 3);
 }
-.animates span:nth-child(3) {
+.shooting-star-box span:nth-child(3) {
   animation-delay: 4s;
   animation-timing-function: cubic-bezier(0.1, 1, 0.1, 1);
 }
 
-.animates svg:nth-child(4) {
+.shooting-star-box svg:nth-child(4) {
   animation-delay: 5s;
 }
 
-.animates svg:nth-child(5) {
+.shooting-star-box svg:nth-child(5) {
   animation-delay: 4.12s;
 }
 
-.animates svg:nth-child(6) {
+.shooting-star-box svg:nth-child(6) {
   animation-delay: 6s;
 }
 
-.animates svg:nth-child(7) {
+.shooting-star-box svg:nth-child(7) {
   animation-delay: 7s;
   animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.animates svg:nth-child(8) {
+.shooting-star-box svg:nth-child(8) {
   animation-delay: 9s;
   animation-timing-function: cubic-bezier(0.86, 0.84, 0.44, 1);
 }
 
-.animates svg:nth-child(9) {
+.shooting-star-box svg:nth-child(9) {
   animation-delay: 4.13s;
   animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-.animates svg:nth-child(10) {
+.shooting-star-box svg:nth-child(10) {
   animation-delay: 2.5s;
 }
 
@@ -94,13 +94,12 @@
   animation: loading 3s ease-out 1;
 }
 
-
 @keyframes loading {
   0% {
     filter: blur(0%);
   }
   100% {
-    filter: blur(100%);   
+    filter: blur(100%);
   }
 }
 
