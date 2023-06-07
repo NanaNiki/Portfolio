@@ -3,13 +3,12 @@ import { BsGithub } from "react-icons/bs";
 export default function PlanteaShop({ setShowPopUp, setSelectedPopUp }) {
   return (
     <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item slide-in delay-500">
-      <img src="images/plantea.gif" alt="E-commerce website gif" className="w-11/12 h-48 object-cover rounded-3xl mx-auto"/>
-      <h2 className="font-bold text-lg mt-2 mb-1 dark:text-slate-900">
+      <img src="images/plantea.png" alt="E-commerce website gif" className="w-11/12 h-[194px] object-cover rounded-3xl mx-auto"/>
+      <h2 className="font-bold text-lg my-2 dark:text-slate-900">
         E-commerce webstie: Plant Shop
       </h2>
       <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
-        Plantea Shop is an e-commerce website designed to showcase and sell a
-        variety of plants. The website offers intuitive user interface solutions
+        Plantea Shop is a demo plant shop website. The site offers intuitive user interface solutions
         and functionalities such as search bar, shopping cart, blog section
         displaying posts, sortable products with an option to add them to the
         shopping cart, and a simulated checkout process...{" "}
@@ -23,10 +22,10 @@ export default function PlanteaShop({ setShowPopUp, setSelectedPopUp }) {
       <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
         P.S. If you are fan of “The Office” click on Privacy Policy link 😊
       </p>
-      <div className="flex flex-row-reverse justify-between p-2">
+      <div className="flex flex-row-reverse justify-between p-2 mt-3">
         <div className="flex flex-row justify-end">
           <a href="https://github.com/NanaNiki/E-commerce" target="_blank">
-            <BsGithub className="mx-2 mt-1 text-slate-900 text-2xl   hover:text-blue-700" />
+            <BsGithub className="mx-2 mt-1 text-slate-900 text-2xl rounded-full hover:shadow-lg hover:text-blue-700" />
           </a>
           <a href="https://plantea-shop.netlify.app/" target="_blank">
             <button className="bg-gradient-to-t from-slate-100 to-slate-200 my-auto text-base font-semibold px-1.5 py-1 rounded-full shadow-md text-slate-900  hover:shadow-blue-700 hover:shadow-md hover:text-blue-700 ">

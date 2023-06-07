@@ -37,7 +37,7 @@ export default function FCCProjects () {
       const project = projectData.find((item) => item.id === id);
       if (project && project.id === selectedProject) {
         return (
-          <div className="flex flex-row justify-end">
+          <div className="flex flex-row justify-end align-middle">
             <a href={project.code} target="_blank">
               <BsGithub className="special-text-sm mx-2 mt-0.5 text-slate-900 text-xl   hover:text-blue-700" />
             </a>
@@ -64,13 +64,13 @@ export default function FCCProjects () {
           <h2 className="font-bold text-lg my-2 dark:text-slate-900">
             freeCodeCamp Projects
           </h2>
-          <div className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
+          <div className="text-gray-700 p-2 mt-3 text-justify md:text-base sm:text-sm special-text-xs">
             Earning the Front End development Libraries Certification I build
             five projects:
-            <ul className="list-inside list-disc m-2 text-start">
-              <div className="flex flex-row justify-between">
+            <ul className="list-inside list-disc m-2 text-start my-4">
+              <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="RQM"
                   onClick={() => toggleCodeAndLive("RQM")}
                 >
@@ -79,9 +79,9 @@ export default function FCCProjects () {
                 {getCodeAndLive("RQM")}
               </div>
 
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="MDP"
                   onClick={() => toggleCodeAndLive("MDP")}
                 >
@@ -90,9 +90,9 @@ export default function FCCProjects () {
                 {getCodeAndLive("MDP")}
               </div>
 
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="DM"
                   onClick={() => toggleCodeAndLive("DM")}
                 >
@@ -101,9 +101,9 @@ export default function FCCProjects () {
                 {getCodeAndLive("DM")}
               </div>
 
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="JSC"
                   onClick={() => toggleCodeAndLive("JSC")}
                 >
@@ -112,9 +112,9 @@ export default function FCCProjects () {
                 {getCodeAndLive("JSC")}
               </div>
 
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold"
+                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="PC"
                   onClick={() => toggleCodeAndLive("PC")}
                 >
@@ -123,10 +123,10 @@ export default function FCCProjects () {
                 {getCodeAndLive("PC")}
               </div>
             </ul>
-            <div className="font-semibold flex flex-row justify-end">
+          </div>
+          <div className="text-gray-700 mt-3 p-2 text-justify md:text-base sm:text-sm special-text-xs font-semibold flex flex-row justify-end">
               React JavaScript Html Bootsrap CSS
             </div>
-          </div>
         </div>
     )
 }
