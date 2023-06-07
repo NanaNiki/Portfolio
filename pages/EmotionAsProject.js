@@ -24,7 +24,7 @@ export default function EmotionAssistant({ setShowPopUp, setSelectedPopUp }) {
         </button>
       </p>
       <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
-        P.S. The whole app from blobs, UX/UI and idea is my original work. 😊
+        P.S. The whole app from blobs, UX/UI and idea is my original work 💪
       </p>
       <div className="flex flex-row-reverse justify-between p-2">
         <div className="flex flex-row justify-end">

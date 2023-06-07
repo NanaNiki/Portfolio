@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 export default function PlanteaShop({ setShowPopUp, setSelectedPopUp }) {
   return (
     <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item slide-in delay-500">
-      {/**<img src="image.jpg" alt="Card image" class="w-full h-48 object-cover">*/}
+      <img src="images/plantea.gif" alt="E-commerce website gif" className="w-11/12 h-48 object-cover rounded-3xl mx-auto"/>
       <h2 className="font-bold text-lg mt-2 mb-1 dark:text-slate-900">
         E-commerce webstie: Plant Shop
       </h2>
