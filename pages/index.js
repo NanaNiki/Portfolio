@@ -22,6 +22,7 @@ export function observeScroll(elements) {
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [showPopUp, setShowPopUp] = useState(false);
+  const [selectedPopUp, setSelectedPopUp] = useState(null);
 
   useEffect(() => {
     if (
@@ -53,22 +54,24 @@ export default function Home() {
     setShowPopUp(false);
   }
   return (
+    <>
     <main
       className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${
         darkMode ? "dark" : ""
-      } ${montserrat.className}`}
+      } ${montserrat.className} ${showPopUp ? "opacity-30" : ""}`}
     >
       <Start handleDarkMode={handleDarkMode} />
       <DynamicNavBar />
-      <DynamicProjects showPopUp={showPopUp} />
+      <DynamicProjects setShowPopUp={setShowPopUp} setSelectedPopUp={setSelectedPopUp}/>
       <DynamicAbout />
       <DynamicContact />
-     {showPopUp && <DynamicPopUp onHandleClose={onHandleClose}/>}
     </main>
+    {showPopUp && <DynamicPopUp onHandleClose={onHandleClose} selectedPopUp={selectedPopUp}/>}
+    </>
   );
 }
 const DynamicNavBar = dynamic(() => import("./NavBar"));
 const DynamicProjects = dynamic(() => import("./Projects"));
 const DynamicAbout = dynamic(() => import("./About"));
 const DynamicContact = dynamic(() => import("./Contact"));
-const DynamicPopUp = dynamic(() => import("./Popup"));
+const DynamicPopUp = dynamic(() => import("./PopUp"));
