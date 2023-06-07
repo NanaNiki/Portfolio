@@ -35,8 +35,7 @@ export default function Start({ handleDarkMode }) {
             <TbBrandNextjs className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
             <SiTailwindcss className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
           </div>
-          {/** tutaj zmienic src href na url strony po tym jak juz deploy */}
-          <a href="#home" className="transition-all duration-300 ease-linear">
+          <a href="/" className="transition-all duration-300 ease-linear">
             <svg
               width="48"
               height="48"
