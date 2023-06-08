@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { observeScroll } from "./index";
+import { observeScroll } from "../page";
 
 export default function About() {
   const [avatar, setAvatar] = useState({

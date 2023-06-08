@@ -1,4 +1,5 @@
-import Start from "./Start";
+"use client";
+import Start from "./components/Start";
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import { Montserrat } from "next/font/google";
@@ -52,26 +53,44 @@ export default function Home() {
 
   const onHandleClose = () => {
     setShowPopUp(false);
-  }
+  };
   return (
     <>
-    <main
-      className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${
-        darkMode ? "dark" : ""
-      } ${montserrat.className} ${showPopUp ? "opacity-30" : ""}`}
-    >
-      <Start handleDarkMode={handleDarkMode} />
-      <DynamicNavBar />
-      <DynamicProjects setShowPopUp={setShowPopUp} setSelectedPopUp={setSelectedPopUp}/>
-      <DynamicAbout />
-      <DynamicContact />
-    </main>
-    {showPopUp && <DynamicPopUp onHandleClose={onHandleClose} selectedPopUp={selectedPopUp}/>}
+      <main
+        className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${
+          darkMode ? "dark" : ""
+        } ${montserrat.className} ${showPopUp ? "opacity-30" : ""}`}
+      >
+        <Start handleDarkMode={handleDarkMode} />
+        <DynamicNavBar />
+        <DynamicProjects
+          setShowPopUp={setShowPopUp}
+          setSelectedPopUp={setSelectedPopUp}
+        />
+        <DynamicAbout />
+        <DynamicContact />
+      </main>
+      {showPopUp && (
+        <DynamicPopUp
+          onHandleClose={onHandleClose}
+          selectedPopUp={selectedPopUp}
+        />
+      )}
     </>
   );
 }
-const DynamicNavBar = dynamic(() => import("./NavBar"));
-const DynamicProjects = dynamic(() => import("./Projects"));
-const DynamicAbout = dynamic(() => import("./About"));
-const DynamicContact = dynamic(() => import("./Contact"));
-const DynamicPopUp = dynamic(() => import("./PopUp"));
+const DynamicNavBar = dynamic(() => import("./components/NavBar"), {
+  ssr: false,
+});
+const DynamicProjects = dynamic(() => import("./components/Projects"), {
+  ssr: false,
+});
+const DynamicAbout = dynamic(() => import("./components/About"), {
+  ssr: false,
+});
+const DynamicContact = dynamic(() => import("./components/Contact"), {
+  ssr: false,
+});
+const DynamicPopUp = dynamic(() => import("./components/PopUp"), {
+  ssr: false,
+});

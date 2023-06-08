@@ -5,7 +5,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiCrystalGrowth, GiAlienStare, GiUfo } from "react-icons/gi";
 import { DiJavascript1, DiCss3, DiBootstrap, DiReact } from "react-icons/di";
-import { observeScroll } from "./index";
+import { observeScroll } from "../page";
 
 export default function Start({ handleDarkMode }) {
   useEffect(() => {

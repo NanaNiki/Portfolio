@@ -2,12 +2,10 @@ import { useState, useEffect } from "react";
 import PlanteaShop from "./PlanteaProject";
 import EmotionAssistant from "./EmotionAsProject";
 import FCCProjects from "./fCCProjects";
-import { observeScroll } from "./index";
-
-
+import { observeScroll } from "../page";
 
 export default function Projects({ setShowPopUp, setSelectedPopUp }) {
-    useEffect(() => {
+  useEffect(() => {
     const animatedItems = document.querySelectorAll(".animated-item");
     observeScroll(animatedItems);
   }, []);
@@ -36,8 +34,14 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
         Projects
       </h1>
       <div className="flex-wrap sm:flex-nowrap flex flex-row my-auto pt-10">
-        <PlanteaShop setShowPopUp={setShowPopUp} setSelectedPopUp={setSelectedPopUp}/>
-        <EmotionAssistant setShowPopUp={setShowPopUp} setSelectedPopUp={setSelectedPopUp}/>
+        <PlanteaShop
+          setShowPopUp={setShowPopUp}
+          setSelectedPopUp={setSelectedPopUp}
+        />
+        <EmotionAssistant
+          setShowPopUp={setShowPopUp}
+          setSelectedPopUp={setSelectedPopUp}
+        />
         <FCCProjects />
       </div>
     </section>

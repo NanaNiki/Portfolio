@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SiGmail } from "react-icons/si";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaFreeCodeCamp } from "react-icons/fa";
-import { observeScroll } from "./index";
+import { observeScroll } from "../page";
 
 export default function Contact() {
   useEffect(() => {

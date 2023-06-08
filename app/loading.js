@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="bg-stone-200 h-screen w-full loading flex justify-center">
+    <div className={`bg-stone-200 h-screen w-full loading flex justify-center`}>
         <span className="z-10 m-auto p-2 fill-cyan-500 animate-pulse shadow-lg shadow-cyan-300 w-16 h-16 rounded-full ">
           <svg
             width="48"
