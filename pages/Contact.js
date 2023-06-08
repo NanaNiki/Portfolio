@@ -16,7 +16,7 @@ export default function Contact() {
       className="relative flex flex-col h-screen w-full pr-16 pl-3 bg-rose-400 rounded-ss-full dark:bg-gradient-to-b from-slate-950 to-rose-950"
       id="contact"
     >
-      <div className="special-text-contact text-end pr-20 pt-20 z-50">
+      <div className="text-end pr-0 pt-32 sm:pr-20 sm:pt-20 z-50">
         <h3 className="m-2 font-semibold">Where to find me?</h3>
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"

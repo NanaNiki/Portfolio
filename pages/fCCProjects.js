@@ -39,10 +39,10 @@ export default function FCCProjects () {
         return (
           <div className="flex flex-row justify-end align-middle">
             <a href={project.code} target="_blank">
-              <BsGithub className="special-text-sm mx-2 mt-0.5 text-slate-900 text-xl   hover:text-blue-700" />
+              <BsGithub className="text-sm mx-2 mt-0.5 text-slate-900 sm:text-xl   hover:text-blue-700" />
             </a>
             <a href={project.live} target="_blank">
-              <button className="special-text-xs bg-gradient-to-t from-slate-100 to-slate-200 my-auto text-sm font-semibold px-1 py-0.5 rounded-full shadow-md text-slate-900  hover:shadow-blue-700 hover:shadow-md hover:text-blue-700 ">
+              <button className="text-xs bg-gradient-to-t from-slate-100 to-slate-200 my-auto sm:text-sm font-semibold px-1 py-0.5 rounded-full shadow-md text-slate-900  hover:shadow-blue-700 hover:shadow-md hover:text-blue-700 ">
                 Live Demo
               </button>
             </a>
@@ -64,7 +64,7 @@ export default function FCCProjects () {
           <h2 className="font-bold text-lg my-2 dark:text-slate-900">
             freeCodeCamp Projects
           </h2>
-          <div className="text-gray-700 p-2 mt-3 text-justify md:text-base sm:text-sm special-text-xs">
+          <div className="text-gray-700 p-2 mt-3 text-justify md:text-base sm:text-sm text-xs">
             Earning the Front End development Libraries Certification I build
             five projects:
             <ul className="list-inside list-disc m-2 text-start my-4">
@@ -124,7 +124,7 @@ export default function FCCProjects () {
               </div>
             </ul>
           </div>
-          <div className="text-gray-700 mt-3 p-2 text-justify md:text-base sm:text-sm special-text-xs font-semibold flex flex-row justify-end">
+          <div className="text-gray-700 mt-3 p-2 text-justify md:text-base sm:text-sm text-xs font-semibold flex flex-row justify-end">
               React JavaScript Html Bootsrap CSS
             </div>
         </div>

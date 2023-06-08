@@ -46,7 +46,7 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
             <h1 className="text-center my-4 text-xl font-extrabold mt-2 mb-1 dark:text-slate-900">
               {projectPopUp.name}
             </h1>
-            <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
+            <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm text-xs">
               {projectPopUp.text1}
               {projectPopUp.link ? (
                 <a

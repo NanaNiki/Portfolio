@@ -11,7 +11,7 @@ export default function EmotionAssistant({ setShowPopUp, setSelectedPopUp }) {
       <h2 className="font-bold text-lg my-2 dark:text-slate-900">
         SPA like app: Emotions Assistant
       </h2>
-      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
+      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm text-xs">
         Emotions Assistant is an application designed to assist
         users in recognizing and managing their emotions effectively. The app
         offers breathing exercises, emotion notes, space for journaling and
@@ -27,7 +27,7 @@ export default function EmotionAssistant({ setShowPopUp, setSelectedPopUp }) {
           Read more
         </button>
       </p>
-      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
+      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm text-xs">
         P.S. The whole app from blobs, UX/UI and idea is my original work 💪
       </p>
       <div className="flex flex-row-reverse justify-between p-2 mt-3">
@@ -44,7 +44,7 @@ export default function EmotionAssistant({ setShowPopUp, setSelectedPopUp }) {
             </button>
           </a>
         </div>
-        <span className="text-gray-700 my-auto md:text-base sm:text-sm special-text-xs font-semibold">
+        <span className="text-gray-700 my-auto md:text-base sm:text-sm text-xs font-semibold">
           React.js Next.js Tailwind CSS
         </span>
       </div>

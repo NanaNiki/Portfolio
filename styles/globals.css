@@ -124,25 +124,6 @@
     height: 100px;
   }
 
-  .special-text-about {
-    @apply mt-3 px-5 text-xs;
-  }
-
-  .special-text-contact {
-    @apply pr-0 pt-32;
-  }
-
-  .special-text-sm {
-    @apply text-sm;
-  }
-
-  .special-text-xs {
-    @apply text-xs;
-  }
-
-  .special-flex-wrap {
-    @apply flex-wrap;
-  }
   .start-tags-box {
     @apply bottom-3 right-2 justify-end;
   }

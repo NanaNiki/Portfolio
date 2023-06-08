@@ -35,7 +35,7 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
       <h1 className="z-50 text-center dark:text-white dark:text-opacity-80 font-bold lg:text-3xl lg:mt-12 animated-item fade-in delay-100">
         Projects
       </h1>
-      <div className="special-flex-wrap flex flex-row my-auto pt-10">
+      <div className="flex-wrap sm:flex-nowrap flex flex-row my-auto pt-10">
         <PlanteaShop setShowPopUp={setShowPopUp} setSelectedPopUp={setSelectedPopUp}/>
         <EmotionAssistant setShowPopUp={setShowPopUp} setSelectedPopUp={setSelectedPopUp}/>
         <FCCProjects />

@@ -7,7 +7,7 @@ export default function PlanteaShop({ setShowPopUp, setSelectedPopUp }) {
       <h2 className="font-bold text-lg my-2 dark:text-slate-900">
         E-commerce webstie: Plant Shop
       </h2>
-      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
+      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm text-xs">
         Plantea Shop is a demo plant shop website. The site offers intuitive user interface solutions
         and functionalities such as search bar, shopping cart, blog section
         displaying posts, sortable products with an option to add them to the
@@ -19,7 +19,7 @@ export default function PlanteaShop({ setShowPopUp, setSelectedPopUp }) {
           Read more
         </button>
       </p>
-      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm special-text-xs">
+      <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm text-xs">
         P.S. If you are fan of “The Office” click on Privacy Policy link 😊
       </p>
       <div className="flex flex-row-reverse justify-between p-2 mt-3">
@@ -33,7 +33,7 @@ export default function PlanteaShop({ setShowPopUp, setSelectedPopUp }) {
             </button>
           </a>
         </div>
-        <span className="text-gray-700 my-auto md:text-base sm:text-sm special-text-xs font-semibold">
+        <span className="text-gray-700 my-auto md:text-base sm:text-sm text-xs font-semibold">
           React.js Next.js Tailwind CSS
         </span>
       </div>
