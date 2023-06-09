@@ -1,10 +1,10 @@
 "use client";
 import Start from "./components/Start";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
+import Loading from "./loading";
 import dynamic from "next/dynamic";
-import { useState, useEffect } from "react";
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["300"] });
+import { useState, Suspense } from "react";
 
 export function observeScroll(elements) {
   const observer = new IntersectionObserver((entries) => {
@@ -21,49 +21,23 @@ export function observeScroll(elements) {
 }
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
   const [showPopUp, setShowPopUp] = useState(false);
   const [selectedPopUp, setSelectedPopUp] = useState(null);
-
-  useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-      setDarkMode(true);
-    } else {
-      document.documentElement.classList.remove("dark");
-      setDarkMode(false);
-    }
-  }, []);
-
-  const handleDarkMode = () => {
-    if (darkMode) {
-      localStorage.theme = "light";
-      setDarkMode(false);
-      document.documentElement.classList.remove("dark");
-    } else {
-      localStorage.theme = "dark";
-      setDarkMode(true);
-      document.documentElement.classList.add("dark");
-    }
-  };
 
   const onHandleClose = () => {
     setShowPopUp(false);
   };
+
   return (
     <>
       <main
-        className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${
-          darkMode ? "dark" : ""
-        } ${montserrat.className} ${showPopUp ? "opacity-30" : ""}`}
+        className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${showPopUp ? "opacity-30" : ""}`}
       >
-        <Start handleDarkMode={handleDarkMode} />
-        <DynamicNavBar />
-        <DynamicProjects
+        <Suspense fallback={<Loading />}>
+          <Start />
+          <NavBar />
+        </Suspense>
+        <Projects
           setShowPopUp={setShowPopUp}
           setSelectedPopUp={setSelectedPopUp}
         />
@@ -79,12 +53,6 @@ export default function Home() {
     </>
   );
 }
-const DynamicNavBar = dynamic(() => import("./components/NavBar"), {
-  ssr: false,
-});
-const DynamicProjects = dynamic(() => import("./components/Projects"), {
-  ssr: false,
-});
 const DynamicAbout = dynamic(() => import("./components/About"), {
   ssr: false,
 });

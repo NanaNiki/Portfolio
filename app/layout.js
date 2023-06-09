@@ -1,6 +1,9 @@
 import "./globals.css";
-import Loading from "./loading";
-import { Suspense } from "react";;
+import { Montserrat } from "next/font/google";
+import Providers from "./components/ThemeProvider";
+import ThemeSwitcher from "./components/ThemeSwitcher";
+
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["300"] });
 
 export const metadata = {
   title: "Nicol Wesołowska Portfolio",
@@ -10,14 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-    <link rel="shortcut icon" type="image/png" href="/logotab.png" />
-    <Suspense
-        fallback={<Loading />}
-      >
-      <body>
-        {children}
+      <head />
+      <body className={`${montserrat.className}`}>
+        <Providers>
+          <ThemeSwitcher />
+          {children}
+        </Providers>
       </body>
-      </Suspense>
     </html>
   );
 }

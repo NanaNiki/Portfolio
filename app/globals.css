@@ -8,7 +8,7 @@
 
 .icon {
   @apply inline-flex items-center
-   cursor-pointer w-14 h-14 p-2 rounded-full text-black text-opacity-100 hover:opacity-40 transition-all duration-300 ease-linear
+   cursor-pointer w-14 h-14 p-2 rounded-full text-black text-opacity-100 hover:opacity-40 transition-all duration-200 ease-linear
    dark:text-white dark:text-opacity-30 dark:hover:text-opacity-90;
 }
 
@@ -122,12 +122,5 @@
   .image {
     width: 100px;
     height: 100px;
-  }
-
-  .start-tags-box {
-    @apply bottom-3 right-2 justify-end;
-  }
-  .start-introduction {
-    @apply mb-44 ms-2;
   }
 }

@@ -1,13 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillHtml5 } from "react-icons/ai";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiCrystalGrowth, GiAlienStare, GiUfo } from "react-icons/gi";
 import { DiJavascript1, DiCss3, DiBootstrap, DiReact } from "react-icons/di";
 import { observeScroll } from "../page";
 
-export default function Start({ handleDarkMode }) {
+export default function Start() {
   useEffect(() => {
     const animatedItems = document.querySelectorAll(".animated-item");
     observeScroll(animatedItems);
@@ -18,10 +17,6 @@ export default function Start({ handleDarkMode }) {
         className="relative z-20 h-screen bg-stone-100 dark:bg-gray-950 mb-8"
         id="home"
       >
-        <BsFillMoonStarsFill
-          onClick={handleDarkMode}
-          className="z-20 text-xl m-4 hover:text-blue-500 transition-all duration-200 ease-linear fixed top-0 right-0 cursor-pointer dark:text-blue-300 dark:hover:text-cyan-300"
-        />
         <div className="absolute top-0 flex flex-col overflow-hidden h-screen w-full p-3 z-30 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500">
           <div className="shooting-star-box flex flex-row z-40 justify-between w-1/2">
             <span className="shooting-star-animation right-1/2 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
@@ -89,9 +84,9 @@ export default function Start({ handleDarkMode }) {
               />
             </svg>
           </a>
-          <div className="start-introduction flex flex-col h-full justify-end mb-40 ms-12 ">
+          <div className="flex flex-col h-full justify-end sm:mb-40 sm:ms-12 mb-44 ms-2 dark:text-white">
             <span className="text-base">Hi! I'm</span>
-            <h1 className="font-bold lg:text-4xl animated-item fade-in delay-[700ms]">
+            <h1 className="font-bold lg:text-4xl animated-item fade-in delay-[300ms]">
               {" "}
               Nicol Wesołowska
             </h1>
@@ -101,11 +96,11 @@ export default function Start({ handleDarkMode }) {
             </h5>
           </div>
         </div>
-        <div className="start-tags-box h-1/6 w-full flex flex-col absolute justify-around lg:bottom-8 lg:right-8 md:bottom-5 md:right-4 sm:bottom-3 sm:right-2">
+        <div className="h-1/6 w-full flex flex-col absolute sm:justify-around justify-end lg:bottom-8 lg:right-8 md:bottom-5 md:right-4 sm:bottom-3 sm:right-2 bottom-3 right-2">
           <a href="#projects" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiCrystalGrowth className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[1s]">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[500ms]">
                 Projects
               </span>
             </div>
@@ -113,7 +108,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#about" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiAlienStare className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[1.5s]">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[700ms]">
                 About
               </span>
             </div>
@@ -121,7 +116,7 @@ export default function Start({ handleDarkMode }) {
           <a href="#contact" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiUfo className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[2s]">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[900ms]">
                 Contact
               </span>
             </div>
