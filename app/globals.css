@@ -8,8 +8,8 @@
 
 .icon {
   @apply inline-flex items-center
-   cursor-pointer w-14 h-14 p-2 rounded-full text-black text-opacity-100 hover:opacity-40 transition-all duration-200 ease-linear
-   dark:text-white dark:text-opacity-30 dark:hover:text-opacity-90;
+   cursor-pointer w-14 h-14 p-2 rounded-full text-black text-opacity-100 hover:text-opacity-40 hover:duration-200
+   dark:text-white dark:text-opacity-30 dark:hover:text-opacity-80;
 }
 
 .has-tooltip:hover .navbar-tooltip {

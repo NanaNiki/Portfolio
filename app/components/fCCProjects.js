@@ -39,7 +39,7 @@ export default function FCCProjects () {
         return (
           <div className="flex flex-row justify-end align-middle">
             <a href={project.code} target="_blank">
-              <BsGithub className="text-sm mx-2 mt-0.5 text-slate-900 sm:text-xl   hover:text-blue-700" />
+              <BsGithub className="text-sm mx-2 mt-0.5 text-slate-900 sm:text-xl hover:text-blue-700 dark:text-white dark:hover:text-blue-700" />
             </a>
             <a href={project.live} target="_blank">
               <button className="text-xs bg-gradient-to-t from-slate-100 to-slate-200 my-auto sm:text-sm font-semibold px-1 py-0.5 rounded-full shadow-md text-slate-900  hover:shadow-blue-700 hover:shadow-md hover:text-blue-700 ">
@@ -57,20 +57,20 @@ export default function FCCProjects () {
     };
 
     return (
-        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 animated-item slide-in delay-100">
+        <div className="z-10 w-full p-4 rounded-3xl shadow-lg m-2 bg-gray-300 shadow-slate-500 dark:bg-transparent dark:shadow-gray-600 animated-item slide-in delay-100">
           <div className="flex flex-row justify-center">
             <Carousel />
           </div>
-          <h2 className="font-bold text-lg my-2 dark:text-slate-900">
+          <h2 className="font-bold text-lg my-2 dark:text-white text-slate-900">
             freeCodeCamp Projects
           </h2>
-          <div className="text-gray-700 p-2 mt-3 text-justify md:text-base sm:text-sm text-xs">
+          <div className="dark:text-white text-gray-700 p-2 mt-3 text-justify md:text-base sm:text-sm text-xs">
             Earning the Front End development Libraries Certification I build
             five projects:
             <ul className="list-inside list-disc m-2 text-start my-4">
               <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
+                  className="cursor-pointer hover:text-blue-700 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="RQM"
                   onClick={() => toggleCodeAndLive("RQM")}
                 >
@@ -81,7 +81,7 @@ export default function FCCProjects () {
 
               <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
+                  className="cursor-pointer hover:text-blue-700 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="MDP"
                   onClick={() => toggleCodeAndLive("MDP")}
                 >
@@ -92,7 +92,7 @@ export default function FCCProjects () {
 
               <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
+                  className="cursor-pointer hover:text-blue-700 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="DM"
                   onClick={() => toggleCodeAndLive("DM")}
                 >
@@ -103,7 +103,7 @@ export default function FCCProjects () {
 
               <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
+                  className="cursor-pointer hover:text-blue-700 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="JSC"
                   onClick={() => toggleCodeAndLive("JSC")}
                 >
@@ -114,7 +114,7 @@ export default function FCCProjects () {
 
               <div className="flex flex-row justify-between py-0.5">
                 <li
-                  className="cursor-pointer hover:text-blue-800 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
+                  className="cursor-pointer hover:text-blue-700 hover:font-semibold active:text-blue-900 focus:font-bold py-0.5"
                   id="PC"
                   onClick={() => toggleCodeAndLive("PC")}
                 >
@@ -124,7 +124,7 @@ export default function FCCProjects () {
               </div>
             </ul>
           </div>
-          <div className="text-gray-700 mt-3 p-2 text-justify md:text-base sm:text-sm text-xs font-semibold flex flex-row justify-end">
+          <div className="text-gray-700 dark:text-white mt-3 p-2 text-justify md:text-base sm:text-sm text-xs font-semibold flex flex-row justify-end">
               React JavaScript Html Bootsrap CSS
             </div>
         </div>

@@ -100,7 +100,7 @@ export default function Start() {
           <a href="#projects" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiCrystalGrowth className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[500ms]">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white hover:opacity-40 hover:duration-300 hover:delay-0 animated-item fade-in delay-[500ms]">
                 Projects
               </span>
             </div>
@@ -108,7 +108,7 @@ export default function Start() {
           <a href="#about" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiAlienStare className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[700ms]">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white hover:opacity-40 hover:duration-300 hover:delay-0 animated-item fade-in delay-[700ms]">
                 About
               </span>
             </div>
@@ -116,7 +116,7 @@ export default function Start() {
           <a href="#contact" className="has-tooltip">
             <div className="flex flex-row justify-end">
               <GiUfo className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white transition hover:opacity-40 animated-item fade-in delay-[900ms]">
+              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white hover:opacity-40 hover:duration-300 hover:delay-0 animated-item fade-in delay-[900ms]">
                 Contact
               </span>
             </div>
