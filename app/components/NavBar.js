@@ -4,13 +4,13 @@ import { IoMdPlanet } from "react-icons/io";
 
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 right-0 h-screen w-14 z-10">
-      <ul className="flex flex-col h-screen justify-center mt-28">
+    <nav className="fixed right-0 top-0 z-10 h-screen w-14">
+      <ul className="mt-28 flex h-screen flex-col justify-center">
         <li className="has-tooltip">
           <a href="#home">
             <IoMdPlanet className="icon mt-2" />
           </a>
-          <span className="navbar-tooltip w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0 mx-1">
+          <span className="navbar-tooltip mx-1 w-auto rounded-md px-1.5 py-1 text-xs font-bold opacity-0 shadow-md">
             Home
           </span>
         </li>
@@ -18,7 +18,7 @@ export default function NavBar() {
           <a href="#projects">
             <GiCrystalGrowth className="icon mt-2" />
           </a>
-          <span className="navbar-tooltip w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0">
+          <span className="navbar-tooltip w-auto rounded-md px-1.5 py-1 text-xs font-bold opacity-0 shadow-md">
             Projects
           </span>
         </li>
@@ -26,7 +26,7 @@ export default function NavBar() {
           <a href="#about">
             <GiAlienStare className="icon mt-2" />
           </a>
-          <span className="navbar-tooltip mx-1 w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0">
+          <span className="navbar-tooltip mx-1 w-auto rounded-md px-1.5 py-1 text-xs font-bold opacity-0 shadow-md">
             About
           </span>
         </li>
@@ -34,7 +34,7 @@ export default function NavBar() {
           <a href="#contact">
             <GiUfo className="icon mt-2" />
           </a>
-          <span className="navbar-tooltip w-auto px-1.5 py-1 rounded-md shadow-md text-xs font-bold opacity-0">
+          <span className="navbar-tooltip w-auto rounded-md px-1.5 py-1 text-xs font-bold opacity-0 shadow-md">
             Contact
           </span>
         </li>

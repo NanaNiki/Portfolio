@@ -29,24 +29,24 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
   const projectPopUp = projectinfo.find((item) => item.id === selectedPopUp);
 
   return (
-    <div className="h-screen w-full flex flex-col items-center">
-      <div className="z-30 fixed top-[20%] h-fit w-6/12 rounded-3xl  bg-slate-300 bg-opacity-60 dark:bg-gradient-to-b from-gray-300 to-gray-200 dark:shadow-slate-500 text-slate-900 shadow-lg">
+    <div className="flex flex-col items-center w-full h-screen">
+      <div className="fixed top-[20%] z-30 h-fit md:w-6/12 w-full rounded-3xl  bg-slate-300 bg-opacity-60 from-gray-300 to-gray-200 text-slate-900 shadow-lg dark:bg-gradient-to-b dark:shadow-slate-500">
         <button
           onClick={onHandleClose}
           aria-label="Close the popup message"
-          className="text-gray-700 text-2xl font-extrabold hover:text-blue-700 text-end absolute right-8 top-6"
+          className="absolute text-2xl font-extrabold text-gray-700 right-8 top-6 text-end hover:text-blue-700"
         >
           <RxCross1 />
         </button>
         {projectPopUp.id === selectedPopUp ? (
           <div
             key={projectPopUp.index}
-            className="md:p-8 py-10 px-12 text-justify sm:text-lg text-base"
+            className="px-12 py-10 text-base text-justify sm:text-lg md:p-8"
           >
-            <h1 className="text-center my-4 text-xl font-extrabold mt-2 mb-1 dark:text-slate-900">
+            <h1 className="my-4 mt-2 mb-1 text-xl font-extrabold text-center dark:text-slate-900">
               {projectPopUp.name}
             </h1>
-            <p className="text-gray-700 p-2 text-justify md:text-base sm:text-sm text-xs">
+            <p className="p-2 text-xs text-justify text-gray-700 sm:text-sm md:text-base">
               {projectPopUp.text1}
               {projectPopUp.link ? (
                 <a
@@ -65,10 +65,10 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
             <div className="flex flex-row-reverse justify-between p-2">
               <div className="flex flex-row justify-end">
                 <a href={projectPopUp.github} target="_blank">
-                  <BsGithub className="mx-2 mt-1 text-slate-900 text-2xl   hover:text-blue-700" />
+                  <BsGithub className="mx-2 mt-1 text-2xl text-slate-900 hover:text-blue-700" />
                 </a>
                 <a href={projectPopUp.demo} target="_blank">
-                  <button className="bg-gradient-to-t from-slate-100 to-slate-200 my-auto text-base font-semibold px-1.5 py-1 rounded-full shadow-md text-slate-900  hover:shadow-blue-700 hover:shadow-md hover:text-blue-700 ">
+                  <button className="my-auto rounded-full bg-gradient-to-t from-slate-100 to-slate-200 px-1.5 py-1 text-base font-semibold text-slate-900 shadow-md  hover:text-blue-700 hover:shadow-md hover:shadow-blue-700 ">
                     Live Demo
                   </button>
                 </a>

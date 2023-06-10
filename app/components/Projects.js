@@ -12,13 +12,13 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
 
   return (
     <section
-      className="relative flex flex-col h-screen w-full pr-16 pl-3 text-center"
+      className="relative flex h-fit w-full flex-col pl-3 pr-16 text-center"
       id="projects"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 120"
-        className="top-0 right-0 absolute w-screen overflow-hidden fill-slate-400 rounded-full rotate-180"
+        className="absolute right-0 top-0 w-screen rotate-180 overflow-hidden rounded-full fill-slate-400"
       >
         <path
           d="M0,0H1200V46.29c-47.79,22.2-103.59,32.17-158,28-70.36-5.37-136.33-33.31-206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -30,10 +30,10 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
         ></path>
         <path d="M0,0H1200V5.63c-149.93,53.32-314.09,65.64-475.83,36.89-43-7.64-84.23-20.12-127.61-26.46-59-8.63-112.48,12.24-165.56,35.4C372.07,68.22,314,86.24,248.8,81c-86.53-7-172.46-45.71-248.8-84.81V0Z"></path>
       </svg>
-      <h1 className="z-50 text-center dark:text-white dark:text-opacity-80 font-bold lg:text-3xl lg:mt-12 animated-item fade-in delay-100">
+      <h1 className="animated-item fade-in z-50 text-center text-lg font-bold delay-100 dark:text-white dark:text-opacity-80 lg:mt-12 lg:text-3xl">
         Projects
       </h1>
-      <div className="flex-wrap sm:flex-nowrap flex flex-row my-auto pt-10">
+      <div className="my-auto flex flex-row flex-wrap pb-4 pt-14 md:flex-nowrap">
         <PlanteaShop
           setShowPopUp={setShowPopUp}
           setSelectedPopUp={setSelectedPopUp}

@@ -34,15 +34,15 @@ export default function About() {
   };
   return (
     <section
-      className="relative flex flex-col h-screen w-full pr-16 pl-3 bg-cyan-200 rounded-e-full shadow-inner shadow-teal-600 dark:bg-gradient-to-r from-slate-900 to-teal-950 dark:shadow-cyan-800"
+      className="relative flex h-screen w-full flex-col rounded-e-full bg-cyan-200 from-slate-900 to-teal-950 pl-3 pr-16 shadow-inner shadow-teal-600 dark:bg-gradient-to-r dark:shadow-cyan-800"
       id="about"
     >
-      <div className="sm:flex-nowrap flex-wrap flex flex-row my-auto justify-center lg:ms-12 md:ms-4 sm:ms-0 dark:text-white dark:text-opacity-80">
+      <div className="my-auto flex flex-row flex-wrap justify-center dark:text-white dark:text-opacity-80 sm:ms-0 sm:flex-nowrap md:ms-4 lg:ms-12">
         <div className="flex flex-col justify-center">
-          <h1 className="mb-3 text-center font-bold lg:text-3xl animated-item fade-in delay-75">
+          <h1 className="animated-item fade-in mb-3 text-center text-lg font-bold delay-75 lg:text-3xl">
             About me
           </h1>
-          <div className="flex flex-row mx-auto mb-3">
+          <div className="mx-auto mb-3 flex flex-row">
             <Image
               src={avatar.image}
               width={200}
@@ -53,27 +53,27 @@ export default function About() {
           </div>
           <div className="flex flex-row justify-center">
             <button
-              className="text-sm sm:text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2 hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white animated-item fade-in delay-75"
+              className="animated-item fade-in m-1 rounded-full border-b-2 border-transparent bg-gradient-to-r from-teal-400 to-cyan-400 px-3 py-1 text-sm text-white opacity-80 shadow-lg delay-75 hover:opacity-100 focus:border-teal-300 focus:opacity-100 dark:focus:border-white sm:text-base"
               onClick={() => changeAvatar("short")}
             >
               Short
             </button>
             <button
-              className="text-sm sm:text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2 hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white animated-item fade-in delay-100"
+              className="animated-item fade-in m-1 rounded-full border-b-2 border-transparent bg-gradient-to-r from-teal-400 to-cyan-400 px-3 py-1 text-sm text-white opacity-80 shadow-lg delay-100 hover:opacity-100 focus:border-teal-300 focus:opacity-100 dark:focus:border-white sm:text-base"
               onClick={() => changeAvatar("long")}
             >
               Long
             </button>
             <button
-              className="text-sm sm:text-base bg-gradient-to-r from-teal-400 to-cyan-400 text-white rounded-full py-1 px-3 m-1 shadow-lg opacity-80 border-transparent border-b-2 hover:opacity-100 focus:opacity-100 focus:border-teal-300 dark:focus:border-white animated-item fade-in delay-300"
+              className="animated-item fade-in m-1 rounded-full border-b-2 border-transparent bg-gradient-to-r from-teal-400 to-cyan-400 px-3 py-1 text-sm text-white opacity-80 shadow-lg delay-300 hover:opacity-100 focus:border-teal-300 focus:opacity-100 dark:focus:border-white sm:text-base"
               onClick={() => changeAvatar("funny")}
             >
               Funny
             </button>
           </div>
         </div>
-        <div className="flex align-middle my-auto">
-          <p className="text-justify mt-3 px-5 text-xs sm:mt-5 xl:px-32 md:px-10 sm:px-10 lg:text-lg md:text-base sm:text-sm">
+        <div className="my-auto flex align-middle">
+          <p className="mt-3 px-5 text-justify text-xs sm:mt-5 sm:px-10 sm:text-sm md:px-10 md:text-base lg:text-lg xl:px-32">
             {avatar.text.split("\n").map((paragraph, index) => (
               <React.Fragment key={index}>
                 {paragraph}

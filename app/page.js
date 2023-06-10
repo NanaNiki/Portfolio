@@ -31,7 +31,9 @@ export default function Home() {
   return (
     <>
       <main
-        className={`relative min-h-screen text-lg bg-stone-100 dark:bg-gray-950 ${showPopUp ? "opacity-30" : ""}`}
+        className={`relative min-h-screen bg-stone-100 text-lg dark:bg-gray-950 ${
+          showPopUp ? "opacity-30" : ""
+        }`}
       >
         <Suspense fallback={<Loading />}>
           <Start />
@@ -41,8 +43,8 @@ export default function Home() {
           setShowPopUp={setShowPopUp}
           setSelectedPopUp={setSelectedPopUp}
         />
-         <DynamicAbout />
-        <DynamicContact /> 
+        <DynamicAbout />
+        <DynamicContact />
       </main>
       {showPopUp && (
         <DynamicPopUp

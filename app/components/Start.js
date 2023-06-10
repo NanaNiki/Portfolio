@@ -14,21 +14,21 @@ export default function Start() {
   return (
     <>
       <section
-        className="relative z-20 h-screen bg-stone-100 dark:bg-gray-950 mb-8"
+        className="relative z-20 mb-8 h-screen bg-stone-100 dark:bg-gray-950"
         id="home"
       >
-        <div className="absolute top-0 flex flex-col overflow-hidden h-screen w-full p-3 z-30 rounded-ee-full bg-orange-200 shadow-xl shadow-orange-300 dark:bg-gradient-to-br from-slate-700 to-slate-950 dark:shadow-gray-500">
-          <div className="shooting-star-box flex flex-row z-40 justify-between w-1/2">
-            <span className="shooting-star-animation right-1/2 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
-            <span className="shooting-star-animation top-9 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
-            <span className="shooting-star-animation bottom-96 w-48 h-[1px] bg-amber-700 dark:bg-white opacity-0 rounded-full absolute"></span>
-            <DiReact className="shooting-star-animation absolute bottom-96 opacity-0 text-amber-700 dark:text-white" />
-            <DiJavascript1 className="shooting-star-animation absolute -left-20 opacity-0 text-amber-700 dark:text-white" />
-            <AiFillHtml5 className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
-            <DiCss3 className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
-            <DiBootstrap className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
-            <TbBrandNextjs className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
-            <SiTailwindcss className="shooting-star-animation opacity-0 text-amber-700 dark:text-white" />
+        <div className="absolute top-0 z-30 flex h-screen w-full flex-col overflow-hidden rounded-ee-full bg-orange-200 from-slate-700 to-slate-950 p-3 shadow-xl shadow-orange-300 dark:bg-gradient-to-br dark:shadow-gray-500">
+          <div className="shooting-star-box z-40 flex w-1/2 flex-row justify-between">
+            <span className="shooting-star-animation absolute right-1/2 h-[1px] w-48 rounded-full bg-amber-700 opacity-0 dark:bg-white"></span>
+            <span className="shooting-star-animation absolute top-9 h-[1px] w-48 rounded-full bg-amber-700 opacity-0 dark:bg-white"></span>
+            <span className="shooting-star-animation absolute bottom-96 h-[1px] w-48 rounded-full bg-amber-700 opacity-0 dark:bg-white"></span>
+            <DiReact className="shooting-star-animation absolute bottom-96 text-amber-700 opacity-0 dark:text-white" />
+            <DiJavascript1 className="shooting-star-animation absolute -left-20 text-amber-700 opacity-0 dark:text-white" />
+            <AiFillHtml5 className="shooting-star-animation text-amber-700 opacity-0 dark:text-white" />
+            <DiCss3 className="shooting-star-animation text-amber-700 opacity-0 dark:text-white" />
+            <DiBootstrap className="shooting-star-animation text-amber-700 opacity-0 dark:text-white" />
+            <TbBrandNextjs className="shooting-star-animation text-amber-700 opacity-0 dark:text-white" />
+            <SiTailwindcss className="shooting-star-animation text-amber-700 opacity-0 dark:text-white" />
           </div>
           <a href="/" className="transition-all duration-300 ease-linear">
             <svg
@@ -38,7 +38,7 @@ export default function Start() {
               version="1.1"
               id="svg5"
               xmlns="http://www.w3.org/2000/svg"
-              className=" fill-black dark:fill-slate-200 absolute top-12 left-12 p-0.5 hover:rounded-full hover:shadow-md hover:shadow-cyan-300"
+              className=" absolute left-12 top-12 fill-black p-0.5 hover:rounded-full hover:shadow-md hover:shadow-cyan-300 dark:fill-slate-200"
             >
               <rect
                 width="1.4601681"
@@ -84,39 +84,39 @@ export default function Start() {
               />
             </svg>
           </a>
-          <div className="flex flex-col h-full justify-end sm:mb-40 sm:ms-12 mb-44 ms-2 dark:text-white">
+          <div className="mb-44 ms-2 flex h-full flex-col justify-end dark:text-white sm:mb-40 sm:ms-12">
             <span className="text-base">Hi! I'm</span>
-            <h1 className="font-bold lg:text-4xl animated-item fade-in delay-[300ms]">
+            <h1 className="animated-item fade-in font-bold delay-[300ms] lg:text-4xl">
               {" "}
               Nicol Wesołowska
             </h1>
             <h5 className="lg:text-xl ">
-              <span className="italic text-base me-1">Fresh Baby </span>Front
+              <span className="me-1 text-base italic">Fresh Baby </span>Front
               End Developer
             </h5>
           </div>
         </div>
-        <div className="h-1/6 w-full flex flex-col absolute sm:justify-around justify-end lg:bottom-8 lg:right-8 md:bottom-5 md:right-4 sm:bottom-3 sm:right-2 bottom-3 right-2">
+        <div className="absolute bottom-3 right-2 flex h-1/6 w-full flex-col justify-end sm:bottom-3 sm:right-2 sm:justify-around md:bottom-5 md:right-4 lg:bottom-8 lg:right-8">
           <a href="#projects" className="has-tooltip">
             <div className="flex flex-row justify-end">
-              <GiCrystalGrowth className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white hover:opacity-40 hover:duration-300 hover:delay-0 animated-item fade-in delay-[500ms]">
+              <GiCrystalGrowth className="start-tag mx-2 h-8 w-8 rounded-md opacity-0 blur-sm dark:text-white" />
+              <span className="animated-item fade-in px-1.5 py-0.5 font-bold opacity-80 delay-[500ms] hover:opacity-40 hover:delay-0 hover:duration-300 dark:text-white lg:text-2xl">
                 Projects
               </span>
             </div>
           </a>
           <a href="#about" className="has-tooltip">
             <div className="flex flex-row justify-end">
-              <GiAlienStare className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white hover:opacity-40 hover:duration-300 hover:delay-0 animated-item fade-in delay-[700ms]">
+              <GiAlienStare className="start-tag mx-2 h-8 w-8 rounded-md opacity-0 blur-sm dark:text-white" />
+              <span className="animated-item fade-in px-1.5 py-0.5 font-bold opacity-80 delay-[700ms] hover:opacity-40 hover:delay-0 hover:duration-300 dark:text-white lg:text-2xl">
                 About
               </span>
             </div>
           </a>
           <a href="#contact" className="has-tooltip">
             <div className="flex flex-row justify-end">
-              <GiUfo className="start-tag w-8 h-8 rounded-md mx-2 blur-sm opacity-0 dark:text-white" />
-              <span className="font-bold lg:text-2xl px-1.5 py-0.5 opacity-80 dark:text-white hover:opacity-40 hover:duration-300 hover:delay-0 animated-item fade-in delay-[900ms]">
+              <GiUfo className="start-tag mx-2 h-8 w-8 rounded-md opacity-0 blur-sm dark:text-white" />
+              <span className="animated-item fade-in px-1.5 py-0.5 font-bold opacity-80 delay-[900ms] hover:opacity-40 hover:delay-0 hover:duration-300 dark:text-white lg:text-2xl">
                 Contact
               </span>
             </div>

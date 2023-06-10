@@ -13,33 +13,33 @@ export default function Contact() {
 
   return (
     <section
-      className="relative flex flex-col h-screen w-full pr-16 pl-3 bg-rose-400 rounded-ss-full dark:bg-gradient-to-b from-slate-950 to-rose-950"
+      className="relative flex h-screen w-full flex-col rounded-ss-full bg-rose-400 from-slate-950 to-rose-950 pl-3 pr-16 dark:bg-gradient-to-b"
       id="contact"
     >
-      <div className="text-end pr-0 pt-32 sm:pr-20 sm:pt-20 z-50">
+      <div className="z-50 pr-0 pt-32 text-end sm:pr-20 sm:pt-20">
         <h3 className="m-2 font-semibold">Where to find me?</h3>
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
           target="_blank"
         >
           {" "}
-          <BsLinkedin className="icon hover:opacity-40 animated-item slide-in delay-700" />
+          <BsLinkedin className="icon animated-item slide-in delay-700 hover:opacity-40" />
         </Link>
         <Link href="https://github.com/NanaNiki" target="_blank">
           {" "}
-          <BsGithub className="icon hover:opacity-40 animated-item slide-in delay-500" />
+          <BsGithub className="icon animated-item slide-in delay-500 hover:opacity-40" />
         </Link>
         <Link href="https://www.freecodecamp.org/NanaNiki" target="_blank">
           {" "}
-          <FaFreeCodeCamp className="icon hover:opacity-40 animated-item slide-in delay-300" />
+          <FaFreeCodeCamp className="icon animated-item slide-in delay-300 hover:opacity-40" />
         </Link>
         <Link href="mailto:nicol.wesolowska@gmail.com" target="_blank">
           {" "}
-          <SiGmail className="icon hover:opacity-40 animated-item slide-in delay-100" />
+          <SiGmail className="icon animated-item slide-in delay-100 hover:opacity-40" />
         </Link>
-        <div className="flex flex-row justify-end m-auto">
+        <div className="m-auto flex flex-row justify-end">
           <Link href="/CVNW.pdf" download target="_blank">
-            <button className="w-64 mt-3 font-semibold bg-gradient-to-tl from-rose-500 to-red-300 rounded-full p-2 m-1 shadow-lg shadow-rose-800 transition-all duration-100 hover:shadow-rose-300 active:border-2 active:border-rose-700 dark:opacity-60 dark:shadow-transparent dark:hover:shadow-rose-700 dark:hover:text-rose-700 dark:active:text-rose-900">
+            <button className="m-1 mt-3 w-64 rounded-full bg-gradient-to-tl from-rose-500 to-red-300 p-2 font-semibold shadow-lg shadow-rose-800 transition-all duration-100 hover:shadow-rose-300 active:border-2 active:border-rose-700 dark:opacity-60 dark:shadow-transparent dark:hover:text-rose-700 dark:hover:shadow-rose-700 dark:active:text-rose-900">
               Resume
             </button>
           </Link>
@@ -50,7 +50,7 @@ export default function Contact() {
         viewBox="0 0 900 500"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        className="bottom-0 left-0 absolute w-full overflow-hidden rounded-ss-full"
+        className="absolute bottom-0 left-0 w-full overflow-hidden rounded-ss-full"
       >
         <path
           d="M0 451L69 432L138 410L208 446L277 467L346 410L415 470L485 472L554 473L623 438L692 473L762 388L831 470L900 473L900 601L831 601L762 601L692 601L623 601L554 601L485 601L415 601L346 601L277 601L208 601L138 601L69 601L0 601Z"

@@ -1,7 +1,13 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const slideImages = ["/images/rqm.png", "/images/mdp.png", "/images/dm.png", "/images/jsc.png", "/images/pc.png"];
+const slideImages = [
+  "/images/rqm.png",
+  "/images/mdp.png",
+  "/images/dm.png",
+  "/images/jsc.png",
+  "/images/pc.png",
+];
 
 export default function Carousel({
   slides: customSlides,
@@ -26,7 +32,7 @@ export default function Carousel({
   return (
     <div className="w-48 overflow-hidden">
       <div
-        className="flex transition-transform ease-in duration-500"
+        className="flex transition-transform duration-500 ease-in"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {slides.map((src) => (
