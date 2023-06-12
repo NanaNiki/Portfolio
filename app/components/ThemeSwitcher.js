@@ -18,7 +18,7 @@ export default function ThemeSwitcher() {
 
   return (
     <>
-      <button className="fixed right-0 top-0 z-30 m-4 cursor-pointer text-3xl transition-all duration-200 ease-linear hover:text-cyan-500 dark:text-white dark:text-opacity-30 dark:hover:text-amber-300">
+      <button className="fixed right-0 top-0 z-30 m-4 cursor-pointer text-3xl transition-all duration-200 ease-linear hover:text-cyan-500 dark:text-white dark:text-opacity-30 dark:hover:text-amber-300" aria-label="darkmode or lightmode switch">
         {theme === "light" ? (
           <RxMoon className="text-[1.52rem]" onClick={() => setTheme("dark")} />
         ) : (

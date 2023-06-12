@@ -30,7 +30,11 @@ export default function Start() {
             <TbBrandNextjs className="shooting-star-animation text-amber-700 opacity-0 dark:text-white" />
             <SiTailwindcss className="shooting-star-animation text-amber-700 opacity-0 dark:text-white" />
           </div>
-          <a href="/" className="transition-all duration-300 ease-linear">
+          <a
+            href="/"
+            className="transition-all duration-300 ease-linear"
+            aria-label="Go to homepage"
+          >
             <svg
               width="48"
               height="48"
@@ -97,7 +101,11 @@ export default function Start() {
           </div>
         </div>
         <div className="absolute bottom-3 right-2 flex h-1/6 w-full flex-col justify-end sm:bottom-3 sm:right-2 sm:justify-around md:bottom-5 md:right-4 lg:bottom-8 lg:right-8">
-          <a href="#projects" className="has-tooltip">
+          <a
+            href="#projects"
+            className="has-tooltip"
+            aria-label="Go to procejts section"
+          >
             <div className="flex flex-row justify-end">
               <GiCrystalGrowth className="start-tag mx-2 h-8 w-8 rounded-md opacity-0 blur-sm dark:text-white" />
               <span className="animated-item fade-in px-1.5 py-0.5 font-bold opacity-80 delay-[500ms] hover:opacity-40 hover:delay-0 hover:duration-300 dark:text-white lg:text-2xl">
@@ -105,7 +113,11 @@ export default function Start() {
               </span>
             </div>
           </a>
-          <a href="#about" className="has-tooltip">
+          <a
+            href="#about"
+            className="has-tooltip"
+            aria-label="Go to about section"
+          >
             <div className="flex flex-row justify-end">
               <GiAlienStare className="start-tag mx-2 h-8 w-8 rounded-md opacity-0 blur-sm dark:text-white" />
               <span className="animated-item fade-in px-1.5 py-0.5 font-bold opacity-80 delay-[700ms] hover:opacity-40 hover:delay-0 hover:duration-300 dark:text-white lg:text-2xl">
@@ -113,7 +125,11 @@ export default function Start() {
               </span>
             </div>
           </a>
-          <a href="#contact" className="has-tooltip">
+          <a
+            href="#contact"
+            className="has-tooltip"
+            aria-label="Go to contact section"
+          >
             <div className="flex flex-row justify-end">
               <GiUfo className="start-tag mx-2 h-8 w-8 rounded-md opacity-0 blur-sm dark:text-white" />
               <span className="animated-item fade-in px-1.5 py-0.5 font-bold opacity-80 delay-[900ms] hover:opacity-40 hover:delay-0 hover:duration-300 dark:text-white lg:text-2xl">

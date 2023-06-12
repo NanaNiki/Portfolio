@@ -7,8 +7,8 @@
 }
 
 .icon {
-  @apply inline-flex items-center
-   cursor-pointer w-14 h-14 p-2 rounded-full text-black text-opacity-100 hover:text-opacity-40 hover:duration-200
+  @apply inline-flex h-14
+   w-14 cursor-pointer items-center rounded-full p-2 text-black text-opacity-100 hover:text-opacity-40 hover:duration-200
    dark:text-white dark:text-opacity-30 dark:hover:text-opacity-80;
 }
 
@@ -21,13 +21,13 @@
 }
 
 .slide-in {
-  @apply opacity-0 duration-1000 ease-in blur-md transform -translate-x-full;
+  @apply -translate-x-full transform opacity-0 blur-md duration-1000 ease-in;
 }
 .fade-in {
-  @apply opacity-0 duration-1000 ease-in blur-md;
+  @apply opacity-0 blur-md duration-1000 ease-in;
 }
 .show {
-  @apply opacity-100 blur-none translate-x-0;
+  @apply translate-x-0 opacity-100 blur-none;
 }
 
 .shooting-star-animation {

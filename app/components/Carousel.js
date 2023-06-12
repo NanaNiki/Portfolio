@@ -42,6 +42,7 @@ export default function Carousel({
             key={src}
             height={200}
             width={200}
+            alt="freeCodeCamp projects images"
           />
         ))}
       </div>

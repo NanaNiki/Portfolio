@@ -38,10 +38,20 @@ export default function FCCProjects() {
     if (project && project.id === selectedProject) {
       return (
         <div className="flex flex-row justify-end align-middle">
-          <a href={project.code} target="_blank" className="my-auto">
+          <a
+            href={project.code}
+            target="_blank"
+            className="my-auto"
+            aria-label="Go to GitHub repository"
+          >
             <BsGithub className="mx-2 mt-0.5 text-base text-slate-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-700 sm:text-xl" />
           </a>
-          <a href={project.live} target="_blank" className="my-auto">
+          <a
+            href={project.live}
+            target="_blank"
+            className="my-auto"
+            aria-label="Go to demo view"
+          >
             <button className="my-auto rounded-full bg-gradient-to-t from-slate-100 to-slate-200 px-1 py-0.5 text-xs font-semibold text-slate-900 shadow-md hover:text-blue-700  hover:shadow-md hover:shadow-blue-700 sm:text-sm ">
               <span className="hidden sm:inline">Live</span> Demo
             </button>

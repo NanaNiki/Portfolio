@@ -21,24 +21,38 @@ export default function Contact() {
         <Link
           href="https://www.linkedin.com/in/nicol-weso%C5%82owska-53165025b/"
           target="_blank"
+          aria-label="Go to LinkedIn profile"
         >
-          {" "}
           <BsLinkedin className="icon animated-item slide-in delay-700 hover:opacity-40" />
         </Link>
-        <Link href="https://github.com/NanaNiki" target="_blank">
-          {" "}
+        <Link
+          href="https://github.com/NanaNiki"
+          target="_blank"
+          aria-label="Go to GitHub profile"
+        >
           <BsGithub className="icon animated-item slide-in delay-500 hover:opacity-40" />
         </Link>
-        <Link href="https://www.freecodecamp.org/NanaNiki" target="_blank">
-          {" "}
+        <Link
+          href="https://www.freecodecamp.org/NanaNiki"
+          target="_blank"
+          aria-label="Go to freeCodeCamp profile"
+        >
           <FaFreeCodeCamp className="icon animated-item slide-in delay-300 hover:opacity-40" />
         </Link>
-        <Link href="mailto:nicol.wesolowska@gmail.com" target="_blank">
-          {" "}
+        <Link
+          href="mailto:nicol.wesolowska@gmail.com"
+          target="_blank"
+          aria-label="Write an email to me"
+        >
           <SiGmail className="icon animated-item slide-in delay-100 hover:opacity-40" />
         </Link>
         <div className="m-auto flex flex-row justify-end">
-          <Link href="/CVNW.pdf" download target="_blank">
+          <Link
+            href="/CVNW.pdf"
+            download
+            target="_blank"
+            aria-label="Here is my CV"
+          >
             <button className="m-1 mt-3 w-64 rounded-full bg-gradient-to-tl from-rose-500 to-red-300 p-2 font-semibold shadow-lg shadow-rose-800 transition-all duration-100 hover:shadow-rose-300 active:border-2 active:border-rose-700 dark:opacity-60 dark:shadow-transparent dark:hover:text-rose-700 dark:hover:shadow-rose-700 dark:active:text-rose-900">
               Resume
             </button>

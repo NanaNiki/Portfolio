@@ -29,24 +29,24 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
   const projectPopUp = projectinfo.find((item) => item.id === selectedPopUp);
 
   return (
-    <div className="flex flex-col items-center w-full h-screen">
-      <div className="fixed lg:top-[20%] md:top-[10%] sm:top-[20%] top-[15%] z-30 h-fit lg:w-6/12 md:w-10/12 w-full rounded-3xl bg-slate-300 bg-opacity-60 from-gray-300 to-gray-200 shadow-lg dark:bg-slate-700 dark:shadow-slate-500">
+    <div className="flex h-screen w-full flex-col items-center">
+      <div className="fixed top-[15%] z-30 h-fit w-full rounded-3xl bg-slate-300 bg-opacity-60 from-gray-300 to-gray-200 shadow-lg dark:bg-slate-700 dark:shadow-slate-500 sm:top-[20%] md:top-[10%] md:w-10/12 lg:top-[20%] lg:w-6/12">
         <button
           onClick={onHandleClose}
           aria-label="Close the popup message"
-          className="absolute text-2xl font-extrabold text-gray-700 dark:text-slate-200 md:right-8 md:top-6 top-4 right-4 text-end hover:text-blue-700"
+          className="absolute right-4 top-4 text-end text-2xl font-extrabold text-gray-700 hover:text-blue-700 dark:text-slate-200 md:right-8 md:top-6"
         >
           <RxCross1 />
         </button>
         {projectPopUp.id === selectedPopUp ? (
           <div
             key={projectPopUp.index}
-            className="md:px-12 md:py-10 p-4 text-base text-justify sm:text-lg md:p-8"
+            className="p-4 text-justify text-base sm:text-lg md:p-8 md:px-12 md:py-10"
           >
-            <h1 className="my-4 mt-2 mb-1 text-xl font-extrabold text-center dark:text-slate-900">
+            <h1 className="my-4 mb-1 mt-2 text-center text-xl font-extrabold dark:text-slate-900">
               {projectPopUp.name}
             </h1>
-            <p className="p-2 text-xs text-justify text-gray-700 dark:text-slate-200 sm:text-sm md:text-base">
+            <p className="p-2 text-justify text-xs text-gray-700 dark:text-slate-200 sm:text-sm md:text-base">
               {projectPopUp.text1}
               {projectPopUp.link ? (
                 <a
