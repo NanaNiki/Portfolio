@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsGithub } from "react-icons/bs";
+import { GiAlienFire } from "react-icons/gi";
 import Carousel from "./Carousel";
 
 const projectData = [
@@ -77,61 +78,71 @@ export default function FCCProjects() {
       <div className="mt-3 p-2 text-justify text-xs text-gray-700 dark:text-white sm:text-sm md:text-base">
         Earning the Front End development Libraries Certification I build five
         projects:
-        <ul className="m-2 my-4 list-inside list-disc text-start">
-          <div className="flex flex-row justify-between py-0.5">
-            <li
-              className="cursor-pointer py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900"
-              id="RQM"
-              onClick={() => toggleCodeAndLive("RQM")}
-            >
-              Random Quote Machine
-            </li>
-            {getCodeAndLive("RQM")}
-          </div>
+        <ul className="m-2 my-4 list-inside text-start">
+          <li id="RQM">
+            <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+              <button
+                className="flex flex-row py-0.5"
+                onClick={() => toggleCodeAndLive("RQM")}
+                aria-label="see more"
+              >
+                <GiAlienFire className="my-auto me-2" /> Random Quote Machine
+              </button>
+              {getCodeAndLive("RQM")}
+            </div>
+          </li>
 
-          <div className="flex flex-row justify-between py-0.5">
-            <li
-              className="cursor-pointer py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900"
-              id="MDP"
-              onClick={() => toggleCodeAndLive("MDP")}
-            >
-              Markdown Previewer
-            </li>
-            {getCodeAndLive("MDP")}
-          </div>
+          <li id="MDP">
+            <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+              <button
+                className="flex flex-row py-0.5"
+                onClick={() => toggleCodeAndLive("MDP")}
+                aria-label="see more"
+              >
+                <GiAlienFire className="my-auto me-2" /> Markdown Previewer
+              </button>
+              {getCodeAndLive("MDP")}
+            </div>
+          </li>
 
-          <div className="flex flex-row justify-between py-0.5">
-            <li
-              className="cursor-pointer py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900"
-              id="DM"
-              onClick={() => toggleCodeAndLive("DM")}
-            >
-              Drum Machine
-            </li>
-            {getCodeAndLive("DM")}
-          </div>
+          <li id="DM">
+            <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+              <button
+                className="flex flex-row py-0.5"
+                onClick={() => toggleCodeAndLive("DM")}
+                aria-label="see more"
+              >
+                <GiAlienFire className="my-auto me-2" /> Drum Machine
+              </button>
+              {getCodeAndLive("DM")}
+            </div>
+          </li>
 
-          <div className="flex flex-row justify-between py-0.5">
-            <li
-              className="cursor-pointer py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900"
-              id="JSC"
-              onClick={() => toggleCodeAndLive("JSC")}
-            >
-              JavaScript Calculator
-            </li>
-            {getCodeAndLive("JSC")}
-          </div>
+          <li id="JSC">
+            <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+              <button
+                className="flex flex-row py-0.5"
+                onClick={() => toggleCodeAndLive("JSC")}
+                aria-label="see more"
+              >
+                <GiAlienFire className="my-auto me-2" /> JavaScript Calculator
+              </button>
+              {getCodeAndLive("JSC")}
+            </div>
+          </li>
 
-          <div className="flex flex-row justify-between py-0.5">
-            <li
-              className="cursor-pointer py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900"
-              id="PC"
-              onClick={() => toggleCodeAndLive("PC")}
-            >
-              Pomodoro Clock
-            </li>
-            {getCodeAndLive("PC")}
-          </div>
+          <li id="PC">
+            <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+              <button
+                className="flex flex-row py-0.5"
+                onClick={() => toggleCodeAndLive("PC")}
+                aria-label="see more"
+              >
+                <GiAlienFire className="my-auto me-2" /> Pomodoro Clock
+              </button>
+              {getCodeAndLive("PC")}
+            </div>
+          </li>
         </ul>
       </div>
       <div className="mt-3 flex flex-row justify-end p-2 text-justify text-xs font-semibold text-gray-700 dark:text-white sm:text-base">
