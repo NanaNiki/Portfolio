@@ -6,7 +6,7 @@ import { observeScroll } from "../page";
 export default function About() {
   const [avatar, setAvatar] = useState({
     image: "/images/AVartsy.jpg",
-    text: "I'm a dedicated Junior Front-End Developer with a background in the art industry and a passion for coding user-friendly web applications. Working proffesionally in culture and commercial sector in Europe made me a creative problem solver with soft spot for a healthy and motivating working environment.\n\nAlso I love witnessing the process of building something from scratch and finding the best (of time being ‘now’ 😉)solutions to challenges along the way. I am excited to collaborate with a team that values creativity and communication.",
+    text: "I'm a dedicated Junior Front-End Developer with a background in the art industry and a passion for coding user-friendly web applications. Working profesionally in culture and commercial sector in Europe made me a creative problem solver with soft spot for a healthy and motivating working environment.\n\nAlso I love witnessing the process of building something from scratch and finding the best (of time being ‘now’ 😉)solutions to challenges along the way. I am excited to collaborate with a team that values creativity and communication.",
   });
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function About() {
     if (type === "short") {
       setAvatar({
         image: "/images/AVartsy.jpg",
-        text: "I'm a dedicated Junior Front-End Developer with a background in the art industry and a passion for coding user-friendly web applications. Working proffesionally in culture and commercial sector in Europe made me a creative problem solver with soft spot for a healthy and motivating working environment.\n\nAlso I love witnessing the process of building something from scratch and finding the best (of time being ‘now’ 😉)solutions to challenges along the way. I am excited to collaborate with a team that values creativity and communication.",
+        text: "I'm a dedicated Junior Front-End Developer with a background in the art industry and a passion for coding user-friendly web applications. Working profesionally in culture and commercial sector in Europe made me a creative problem solver with soft spot for a healthy and motivating working environment.\n\nAlso I love witnessing the process of building something from scratch and finding the best (of time being ‘now’ 😉)solutions to challenges along the way. I am excited to collaborate with a team that values creativity and communication.",
       });
     } else if (type === "long") {
       setAvatar({
