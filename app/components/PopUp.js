@@ -30,23 +30,23 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
 
   return (
     <div className="flex flex-col items-center w-full h-screen">
-      <div className="fixed top-[20%] z-30 h-fit md:w-6/12 w-full rounded-3xl  bg-slate-300 bg-opacity-60 from-gray-300 to-gray-200 text-slate-900 shadow-lg dark:bg-gradient-to-b dark:shadow-slate-500">
+      <div className="fixed lg:top-[20%] md:top-[10%] sm:top-[20%] top-[15%] z-30 h-fit lg:w-6/12 md:w-10/12 w-full rounded-3xl bg-slate-300 bg-opacity-60 from-gray-300 to-gray-200 shadow-lg dark:bg-slate-700 dark:shadow-slate-500">
         <button
           onClick={onHandleClose}
           aria-label="Close the popup message"
-          className="absolute text-2xl font-extrabold text-gray-700 right-8 top-6 text-end hover:text-blue-700"
+          className="absolute text-2xl font-extrabold text-gray-700 dark:text-slate-200 md:right-8 md:top-6 top-4 right-4 text-end hover:text-blue-700"
         >
           <RxCross1 />
         </button>
         {projectPopUp.id === selectedPopUp ? (
           <div
             key={projectPopUp.index}
-            className="px-12 py-10 text-base text-justify sm:text-lg md:p-8"
+            className="md:px-12 md:py-10 p-4 text-base text-justify sm:text-lg md:p-8"
           >
             <h1 className="my-4 mt-2 mb-1 text-xl font-extrabold text-center dark:text-slate-900">
               {projectPopUp.name}
             </h1>
-            <p className="p-2 text-xs text-justify text-gray-700 sm:text-sm md:text-base">
+            <p className="p-2 text-xs text-justify text-gray-700 dark:text-slate-200 sm:text-sm md:text-base">
               {projectPopUp.text1}
               {projectPopUp.link ? (
                 <a

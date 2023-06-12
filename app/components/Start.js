@@ -38,7 +38,7 @@ export default function Start() {
               version="1.1"
               id="svg5"
               xmlns="http://www.w3.org/2000/svg"
-              className=" absolute left-12 top-12 fill-black p-0.5 hover:rounded-full hover:shadow-md hover:shadow-cyan-300 dark:fill-slate-200"
+              className=" absolute left-12 top-12 fill-black p-0.5 hover:rounded-full hover:shadow-md hover:shadow-cyan-300 dark:fill-slate-200 dark:hover:shadow-cyan-700"
             >
               <rect
                 width="1.4601681"
