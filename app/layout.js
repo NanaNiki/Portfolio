@@ -6,7 +6,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher";
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["300"] });
 
 export const metadata = {
-  title: "Nicol Wesołowska Portfolio",
+  title: "Nicol Wesołowska",
   description: "Build with next.js, hosted by netlify <3",
 };
 
