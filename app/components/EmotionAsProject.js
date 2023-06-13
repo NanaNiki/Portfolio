@@ -51,7 +51,7 @@ export default function EmotionAssistant({ setShowPopUp, setSelectedPopUp }) {
             </button>
           </a>
         </div>
-        <span className="my-auto mt-2 text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:mt-0">
+        <span className="my-auto lg:mt-2 text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:mt-0">
           React.js Next.js Tailwind CSS
         </span>
       </div>

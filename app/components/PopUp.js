@@ -30,7 +30,7 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
 
   return (
     <div className="flex h-screen w-full flex-col items-center">
-      <div className="fixed top-[15%] z-30 h-fit w-full rounded-3xl bg-slate-300 bg-opacity-60 from-gray-300 to-gray-200 shadow-lg dark:bg-slate-700 dark:shadow-slate-500 sm:top-[20%] md:top-[10%] md:w-10/12 lg:top-[20%] lg:w-6/12">
+      <div className="fixed top-[15%] z-30 h-fit w-full rounded-3xl bg-slate-300 from-gray-300 to-gray-200 shadow-lg dark:bg-slate-700 dark:shadow-slate-500 sm:top-[20%] md:top-[10%] md:w-10/12 lg:top-[20%] lg:w-6/12">
         <button
           onClick={onHandleClose}
           aria-label="Close the popup message"
@@ -43,7 +43,7 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
             key={projectPopUp.index}
             className="p-4 text-justify text-base sm:text-lg md:p-8 md:px-12 md:py-10"
           >
-            <h1 className="my-4 mb-1 mt-2 text-center text-xl font-extrabold dark:text-slate-900">
+            <h1 className="my-4 mb-1 mt-2 text-center text-xl font-bold dark:text-slate-950">
               {projectPopUp.name}
             </h1>
             <p className="p-2 text-justify text-xs text-gray-700 dark:text-slate-200 sm:text-sm md:text-base">
