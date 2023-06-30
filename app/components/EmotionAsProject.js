@@ -19,7 +19,7 @@ export default function EmotionAssistant({ setShowPopUp, setSelectedPopUp }) {
         <button
           onClick={() => {
             setShowPopUp(true);
-            setSelectedPopUp(2);
+            setSelectedPopUp(3);
           }}
           className="my-auto rounded-full bg-transparent px-1.5 py-1 mx-1 text-xs font-semibold text-slate-900 shadow-none hover:text-gray-600 hover:shadow-md dark:text-white dark:hover:text-gray-300 dark:hover:shadow-gray-600 sm:text-base "
         >

@@ -52,7 +52,7 @@ export default function PlanteaShop({ setShowPopUp, setSelectedPopUp }) {
             </a>
           </div>
           <span className="lg:mt-2 text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:mt-0">
-            React.js Next.js Tailwind CSS
+            React.js Next.js Tailwind CSS <br></br>Uizard Design <a className="italic dark:italic hover:text-blue-700  dark:hover:text-blue-700" href="https://app.uizard.io/templates/O4Q0AGM8ZruJw9GpR5YQ?_gl=1*r55hdo*_ga*MTgwNzYxODk1MC4xNjgzMTE1NTQ5*_ga_FV1FRPC5G4*MTY4MzQ0OTg1NS4xMS4xLjE2ODM0NTE5NzMuNTAuMC4w">Template</a>
           </span>
         </div>
     </div>
