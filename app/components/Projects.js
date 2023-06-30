@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import PlanteaShop from "./PlanteaProject";
 import EmotionAssistant from "./EmotionAsProject";
+import SkySupport from "./SkySupProject"; 
 import FCCProjects from "./fCCProjects";
 import { observeScroll } from "../page";
 
@@ -33,12 +34,15 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
       <h1 className="animated-item fade-in z-50 text-center text-lg font-bold delay-100 dark:text-white dark:text-opacity-80 lg:mt-12 lg:text-3xl">
         Projects
       </h1>
-      <div className="my-auto flex flex-row flex-wrap pb-4 pt-14 md:flex-nowrap">
+      <div className="my-auto grid grid-col-1 pb-4 pt-14 md:flex-nowrap">
         <PlanteaShop
           setShowPopUp={setShowPopUp}
           setSelectedPopUp={setSelectedPopUp}
         />
-        <EmotionAssistant
+         <SkySupport setShowPopUp={setShowPopUp}
+          setSelectedPopUp={setSelectedPopUp}
+        />
+         <EmotionAssistant
           setShowPopUp={setShowPopUp}
           setSelectedPopUp={setSelectedPopUp}
         />
