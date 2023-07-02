@@ -68,23 +68,20 @@ export default function FCCProjects() {
   };
 
   return (
-    <div className="animated-item slide-in z-10 m-2 w-full grid grid-cols-3 justify-between rounded-3xl bg-gray-300 p-4 shadow-lg shadow-slate-500 delay-100 dark:bg-transparent dark:shadow-gray-600">
-      <div className="flex flex-row justify-center">
-        <Carousel />
-      </div>
+    <div className="m-2 min-w-fit flex flex-row justify-between rounded-3xl bg-gray-300 p-4 dark:bg-transparent">
       <div className="flex flex-col ms-4">
         <h2 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">
           freeCodeCamp Projects
         </h2>
-        <div className="mt-3 p-2 text-justify text-xs text-gray-700 dark:text-white sm:text-sm md:text-base">
-          Earning the Front End development Libraries Certification I build five
-          projects with:
-          <div className="flex flex-row justify-center pt-4 text-justify text-xs font-semibold text-gray-700 dark:text-white sm:text-base">
-            React JavaScript Html Bootsrap CSS
-          </div>
+        <div className="flex flex-row justify-center">
+          <Carousel />
+        </div>
+        
+        <div className="mt-2 flex flex-row justify-center text-justify text-xs font-semibold text-gray-700 dark:text-white sm:text-base">
+          React JavaScript Html Bootsrap CSS
         </div>
       </div>
-      <ul className="ms-4 list-inside text-start">
+      <ul className="my-auto list-inside text-start">
         <li id="RQM">
           <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
             <button

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  overflow-x: hidden;
+}
+
 .dark {
   color-scheme: dark;
 }
@@ -20,8 +24,11 @@
   @apply opacity-40 blur-0 transition-all duration-500 ease-linear;
 }
 
-.slide-in {
+.slide-in-left {
   @apply -translate-x-full transform opacity-0 blur-md duration-1000 ease-in;
+}
+.slide-in-right {
+  @apply translate-x-full transform opacity-0 blur-md duration-1000 ease-in;
 }
 .fade-in {
   @apply opacity-0 blur-md duration-1000 ease-in;
@@ -101,6 +108,71 @@
   100% {
     filter: blur(100%);
   }
+}
+
+
+@keyframes uncover {
+  0% {
+    opacity: 0;
+    transform: scaleX(0%) rotateY(100deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(100%) rotateY(0deg);
+  }
+}
+@keyframes cover {
+  0% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateY(100deg);
+  }
+}
+
+.has-animation:hover .uncover-animation {
+  animation: uncover 400ms ease-in-out forwards;
+}
+.has-animation:hover .cover-animation {
+  animation: cover 300ms ease-in-out forwards;
+}
+
+@keyframes slide-down {
+  0%{
+    opacity: 0;
+    transform: translateY(-100%) scale(0);
+    filter: blur(12px);
+    overflow-y: hidden;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    filter: blur(0px);
+  }
+}
+
+.slide-down{
+  animation: slide-down 1s ease-in-out 1 forwards;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%) translateX(0);
+  }
+
+  50% {
+    transform: translateY(5%) translateX(1%);
+  }
+
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite forwards;
 }
 
 @media (prefers-reduced-motion) {

@@ -1,9 +1,9 @@
 import { RxCross1 } from "react-icons/rx";
 import { BsGithub } from "react-icons/bs";
-import projectinfo from "../data/projectinfo.json";
+import popupinfo from "../data/popupinfo.json";
 
 export default function PopUp({ onHandleClose, selectedPopUp }) {
-  const projectPopUp = projectinfo.find((item) => item.id === selectedPopUp);
+  const projectPopUp = popupinfo.find((item) => item.id === selectedPopUp);
 
   return (
     <div className="flex h-screen w-full flex-col items-center">
@@ -11,7 +11,7 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
         <button
           onClick={onHandleClose}
           aria-label="Close the popup message"
-          className="absolute right-4 top-4 text-end text-2xl font-extrabold text-gray-700 hover:text-blue-700 dark:text-slate-200 md:right-8 md:top-6"
+          className="absolute right-4 top-4 text-end text-2xl font-extrabold text-gray-700 dark:hover:text-blue-700 hover:text-blue-700 dark:text-slate-200 md:right-8 md:top-6"
         >
           <RxCross1 />
         </button>

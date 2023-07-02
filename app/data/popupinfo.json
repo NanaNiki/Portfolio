@@ -1,0 +1,84 @@
+[
+    {
+      "id": 1,
+      "name": "Plantea Shop",
+      "text": "Demo e-commerce website designed as plant shop. The home page, product page, and pop-up message templates were sourced from Uizard. Building upon this foundation, I aimed to create a consistent style and atmosphere throughout the entire website, while also making strategic design decisions for other functional elements.",
+      "features": [
+        {
+          "title": "Product Catalog 🌱",
+          "content":
+            "providing categories, sorting and searching functionality"
+        },
+        {
+          "title": "Shopping Cart and Checkout 🛒",
+          "content":
+            "enables add products, review their selections, and proceed to the checkout process to symulate a purchasing experience"
+        },
+        {
+          "title": "Blog Section 📝",
+          "content":
+            "where users can explore informative and engaging posts related to plants"
+        },
+        {
+          "title": "Responsive Design 📱",
+          "content":
+            "ensuring compatibility across different devices and screen sizes"
+        }
+      ],
+      "demo": "https://plantea-shop.netlify.app/",
+      "github": "https://github.com/NanaNiki/E-commerce"
+    },
+    {
+      "id": 2,
+      "name": "Sky Support",
+      "text": "Web application designed to provide space for inspiration and enhanced focus with tailored sky images based on users preferences.",
+      "features": [
+        {
+          "title": "Personalized Sky Images ☁️",
+          "content":
+            "utilizing geolocation API, the app generates sky images that match your location or search terms"
+        },
+        {
+          "title": "Greek Philosophical Wisdom 🏺",
+          "content":
+            "in form of random quotes, to find inspiration and share it on Twitter or on Pinterest"
+        },
+        {
+          "title": "Soothing Sounds 🎵",
+          "content":
+            "provides serene atmosphere with calming sounds such as thunderstorms, chirping birds, classical music, or household sounds"
+        }
+      ],
+      "demo": "https://skysupport.netlify.app/",
+      "github": "https://github.com/NanaNiki/Sky-Support"
+    },
+    {
+        "id": 3,
+        "name": "Emotions Assistant",
+        "text": "Single-page web application (SPA) designed to assist users in recognizing and managing their emotions effectively. With a focus on emotional integration and well-being, the app provides a guided step-by-step process to help users navigate their emotions and cultivate self-care.",
+        "features": [
+          {
+            "title": "Guided Emotional Integration 🌈",
+            "content":
+              "starting with breathing exercises, then emotion selection, allowing users to select their current mood and provide additional context"
+          },
+          {
+            "title": "Emotion Journal 📔",
+            "content":
+              "where users can express and reflect on their emotions in a free flow of thoughts or using prompts with helpful questions to stimulate the journaling"
+          },
+          {
+            "title": "Personalized Report 📄",
+            "content":
+              "of emotional integration journey in PDF format, serving as a tangible record of progress and insights gained throughout the process"
+          },
+          {
+            "title": "Helpful Resources 📚",
+            "content":
+              "supporting users to seek or use free professional help in the journey of cultivating emotional well-being"
+          }
+        ],
+        "demo": "https://emotions-assistant.netlify.app/",
+        "github": "https://github.com/NanaNiki/Emotions-Assistant"
+      }
+  ]

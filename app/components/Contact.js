@@ -23,28 +23,28 @@ export default function Contact() {
           target="_blank"
           aria-label="Go to LinkedIn profile"
         >
-          <BsLinkedin className="icon animated-item slide-in delay-700 hover:delay-0" />
+          <BsLinkedin className="icon animated-item slide-in-left delay-700 hover:delay-0" />
         </Link>
         <Link
           href="https://github.com/NanaNiki"
           target="_blank"
           aria-label="Go to GitHub profile"
         >
-          <BsGithub className="icon animated-item slide-in delay-500 hover:delay-0" />
+          <BsGithub className="icon animated-item slide-in-left delay-500 hover:delay-0" />
         </Link>
         <Link
           href="https://www.freecodecamp.org/NanaNiki"
           target="_blank"
           aria-label="Go to freeCodeCamp profile"
         >
-          <FaFreeCodeCamp className="icon animated-item slide-in delay-300 hover:delay-0" />
+          <FaFreeCodeCamp className="icon animated-item slide-in-left delay-300 hover:delay-0" />
         </Link>
         <Link
           href="mailto:nicol.wesolowska@gmail.com"
           target="_blank"
           aria-label="Write an email to me"
         >
-          <SiGmail className="icon animated-item slide-in delay-100 hover:delay-0" />
+          <SiGmail className="icon animated-item slide-in-left delay-100 hover:delay-0" />
         </Link>
         <div className="m-auto flex flex-row justify-end">
           <Link

@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import PlanteaShop from "./PlanteaProject";
-import EmotionAssistant from "./EmotionAsProject";
-import SkySupport from "./SkySupProject"; 
 import FCCProjects from "./fCCProjects";
+import ProjectCard from "./ProjectCard";
 import { observeScroll } from "../page";
 
 export default function Projects({ setShowPopUp, setSelectedPopUp }) {
+  const [selectedProject, setSelectedProject] = useState();
   useEffect(() => {
     const animatedItems = document.querySelectorAll(".animated-item");
     observeScroll(animatedItems);
@@ -34,19 +33,31 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
       <h1 className="animated-item fade-in z-50 text-center text-lg font-bold delay-100 dark:text-white dark:text-opacity-80 lg:mt-12 lg:text-3xl">
         Projects
       </h1>
-      <div className="my-auto grid grid-col-1 pb-4 pt-14 md:flex-nowrap">
-        <PlanteaShop
-          setShowPopUp={setShowPopUp}
-          setSelectedPopUp={setSelectedPopUp}
-        />
-         <SkySupport setShowPopUp={setShowPopUp}
-          setSelectedPopUp={setSelectedPopUp}
-        />
-         <EmotionAssistant
-          setShowPopUp={setShowPopUp}
-          setSelectedPopUp={setSelectedPopUp}
-        />
-        <FCCProjects />
+      <div className="grid grid-cols-3 grid-rows-2 justify-evenly mx-auto pt-8 md:flex-nowrap">
+        <div className="animated-item slide-in-left delay-500 mx-2 my-4 rounded-3xl p-4 dark:bg-transparent w-[25rem] h-[20rem]">
+          <ProjectCard
+            selectedProject={1}
+            setShowPopUp={setShowPopUp}
+            setSelectedPopUp={setSelectedPopUp}
+          />
+        </div>
+        <div className="animated-item slide-in-right delay-700 mx-2 my-4 rounded-3xl p-4 dark:bg-transparent w-[25rem] h-[20rem]">
+          <ProjectCard
+            selectedProject={2}
+            setShowPopUp={setShowPopUp}
+            setSelectedPopUp={setSelectedPopUp}
+          />
+        </div>
+        <div className="animated-item slide-in-left delay-1000 mx-2 my-4 rounded-3xl p-4 dark:bg-transparent w-[25rem] h-[20rem]">
+          <ProjectCard
+            selectedProject={3}
+            setShowPopUp={setShowPopUp}
+            setSelectedPopUp={setSelectedPopUp}
+          />
+        </div>
+        <div className="animated-item slide-in-right delay-[1.2s] mx-auto mt-6 rounded-3xl p-4 dark:bg-transparent col-span-3 h-fit">
+          <FCCProjects />
+        </div>
       </div>
     </section>
   );
