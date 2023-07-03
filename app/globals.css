@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .dark {
@@ -28,7 +28,7 @@
   @apply -translate-x-full transform opacity-0 blur-md duration-1000 ease-in;
 }
 .slide-in-right {
-  @apply translate-x-full transform opacity-0 blur-md duration-1000 ease-in;
+  @apply translate-x-full transform overflow-x-hidden opacity-0 blur-md duration-1000 ease-in;
 }
 .fade-in {
   @apply opacity-0 blur-md duration-1000 ease-in;
@@ -110,15 +110,16 @@
   }
 }
 
-
 @keyframes uncover {
   0% {
     opacity: 0;
     transform: scaleX(0%) rotateY(100deg);
+    visibility: hidden;
   }
   100% {
     opacity: 1;
     transform: scaleX(100%) rotateY(0deg);
+    visibility: visible;
   }
 }
 @keyframes cover {
@@ -139,40 +140,39 @@
   animation: cover 300ms ease-in-out forwards;
 }
 
-@keyframes slide-down {
-  0%{
+@keyframes blur-in {
+  0% {
     opacity: 0;
-    transform: translateY(-100%) scale(0);
+    transform: scale(0);
     filter: blur(12px);
-    overflow-y: hidden;
   }
-  100%{
+  100% {
     opacity: 1;
-    transform: translateY(0%) scale(1);
+    transform: scale(1);
     filter: blur(0px);
   }
 }
 
-.slide-down{
-  animation: slide-down 1s ease-in-out 1 forwards;
+.blur-in {
+  animation: blur-in 500ms ease-in-out 1 forwards;
 }
 
 @keyframes floating {
   0% {
-    transform: translateY(0%) translateX(0);
+    transform: translateY(0%) translateX(0%) scale(98%);
   }
 
   50% {
-    transform: translateY(5%) translateX(1%);
+    transform: translateY(5%) translateX(5%) scale(90%);
   }
 
   100% {
-    transform: translateY(0%) translateX(0%);
+    transform: translateY(0%) translateX(0%) scale(98%);
   }
 }
 
 .floating {
-  animation: floating 3s ease-in-out infinite forwards;
+  animation: floating 5s ease-in-out infinite forwards;
 }
 
 @media (prefers-reduced-motion) {
@@ -181,12 +181,23 @@
   }
 }
 
+.w-inherit{
+  width: inherit;
+}
+
 @layer utilities {
   ::-webkit-scrollbar {
     @apply w-2 bg-transparent;
   }
   ::-webkit-scrollbar-thumb {
     @apply rounded-full bg-slate-500 bg-opacity-40;
+  }
+}
+
+@media screen and (min-width:505px) and (max-width:768px) {
+  .special-width {
+   width: 430px;
+   padding-top: 40px;
   }
 }
 

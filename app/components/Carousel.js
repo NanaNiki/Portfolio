@@ -30,7 +30,7 @@ export default function Carousel({
   }, []);
 
   return (
-    <div className="w-48 overflow-hidden">
+    <div className="w-48 mx-auto overflow-hidden">
       <div
         className="flex transition-transform duration-500 ease-in"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}

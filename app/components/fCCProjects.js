@@ -38,14 +38,14 @@ export default function FCCProjects() {
     const project = projectData.find((item) => item.id === id);
     if (project && project.id === selectedProject) {
       return (
-        <div className="flex flex-row justify-end align-middle">
+        <div className="blur-in my-auto flex flex-row justify-center align-middle md:justify-end">
           <a
             href={project.code}
             target="_blank"
             className="my-auto"
             aria-label="Go to GitHub repository"
           >
-            <BsGithub className="mx-2 mt-0.5 text-base text-slate-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-700 sm:text-xl" />
+            <BsGithub className="mx-3 my-auto rounded-full text-3xl text-slate-900 hover:text-blue-700 hover:shadow-lg dark:text-white dark:hover:text-blue-700" />
           </a>
           <a
             href={project.live}
@@ -53,8 +53,8 @@ export default function FCCProjects() {
             className="my-auto"
             aria-label="Go to demo view"
           >
-            <button className="my-auto rounded-full bg-gradient-to-t from-slate-100 to-slate-200 px-1 py-0.5 text-xs font-semibold text-slate-900 shadow-md hover:text-blue-700  hover:shadow-md hover:shadow-blue-700 sm:text-sm ">
-              <span className="hidden sm:inline">Live</span> Demo
+            <button className="my-auto rounded-full bg-gradient-to-t from-slate-100 to-slate-200 px-1.5 py-1 text-xs font-semibold text-slate-900 shadow-md hover:text-blue-700 hover:shadow-md hover:shadow-blue-700 dark:bg-slate-400 sm:text-base">
+              Live Demo
             </button>
           </a>
         </div>
@@ -68,85 +68,75 @@ export default function FCCProjects() {
   };
 
   return (
-    <div className="m-2 min-w-fit flex flex-row justify-between rounded-3xl bg-gray-300 p-4 dark:bg-transparent">
-      <div className="flex flex-col ms-4">
-        <h2 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">
-          freeCodeCamp Projects
-        </h2>
-        <div className="flex flex-row justify-center">
+    <div className="flex-col justify-between">
+      <div className="flex flex-col align-middle md:flex-row">
+        <div className="m-auto flex flex-col justify-center align-middle">
+          <h2 className="mb-2 text-center text-lg font-bold text-slate-900 dark:text-white">
+            freeCodeCamp Projects
+          </h2>
           <Carousel />
         </div>
-        
-        <div className="mt-2 flex flex-row justify-center text-justify text-xs font-semibold text-gray-700 dark:text-white sm:text-base">
-          React JavaScript Html Bootsrap CSS
-        </div>
-      </div>
-      <ul className="my-auto list-inside text-start">
-        <li id="RQM">
-          <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+
+        <ul className="mx-auto list-inside text-start text-sm sm:text-base xl:ms-4 md:pt-10 md:my-auto lg:mt-2">
+          <li id="RQM">
             <button
-              className="flex flex-row py-0.5"
+              className="flex flex-row py-1 hover:font-semibold hover:text-blue-700 focus:font-bold"
               onClick={() => toggleCodeAndLive("RQM")}
               aria-label="see more"
             >
               <GiAlienFire className="my-auto me-2" /> Random Quote Machine
             </button>
-            {getCodeAndLive("RQM")}
-          </div>
-        </li>
-
-        <li id="MDP">
-          <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+          </li>
+          <li id="MDP">
             <button
-              className="flex flex-row py-0.5"
+              className="flex flex-row py-1 hover:font-semibold hover:text-blue-700 focus:font-bold"
               onClick={() => toggleCodeAndLive("MDP")}
               aria-label="see more"
             >
               <GiAlienFire className="my-auto me-2" /> Markdown Previewer
             </button>
-            {getCodeAndLive("MDP")}
-          </div>
-        </li>
-
-        <li id="DM">
-          <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+          </li>
+          <li id="DM">
             <button
-              className="flex flex-row py-0.5"
+              className="flex flex-row py-1 hover:font-semibold hover:text-blue-700 focus:font-bold"
               onClick={() => toggleCodeAndLive("DM")}
               aria-label="see more"
             >
               <GiAlienFire className="my-auto me-2" /> Drum Machine
             </button>
-            {getCodeAndLive("DM")}
-          </div>
-        </li>
-
-        <li id="JSC">
-          <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+          </li>
+          <li id="JSC">
             <button
-              className="flex flex-row py-0.5"
+              className="flex flex-row py-1 hover:font-semibold hover:text-blue-700 focus:font-bold"
               onClick={() => toggleCodeAndLive("JSC")}
               aria-label="see more"
             >
               <GiAlienFire className="my-auto me-2" /> JavaScript Calculator
             </button>
-            {getCodeAndLive("JSC")}
-          </div>
-        </li>
-
-        <li id="PC">
-          <div className="flex cursor-pointer flex-row justify-between py-0.5 hover:font-semibold hover:text-blue-700 focus:font-bold active:text-blue-900">
+          </li>
+          <li id="PC">
             <button
-              className="flex flex-row py-0.5"
+              className="flex flex-row py-1 hover:font-semibold hover:text-blue-700 focus:font-bold"
               onClick={() => toggleCodeAndLive("PC")}
               aria-label="see more"
             >
               <GiAlienFire className="my-auto me-2" /> Pomodoro Clock
             </button>
-            {getCodeAndLive("PC")}
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div className="flex flex-col justify-between md:mt-2 md:flex-row">
+        <div className="my-2 flex flex-row justify-center text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:mt-4 md:text-center lg:text-start">
+          React JavaScript<br className="hidden md:inline lg:hidden"></br> Html
+          Bootsrap CSS
+        </div>
+        {getCodeAndLive("RQM")}
+        {getCodeAndLive("MDP")}
+        {getCodeAndLive("DM")}
+        {getCodeAndLive("JSC")}
+        {getCodeAndLive("PC")}
+      </div>
     </div>
   );
 }

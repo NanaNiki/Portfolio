@@ -11,7 +11,7 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
         <button
           onClick={onHandleClose}
           aria-label="Close the popup message"
-          className="absolute right-4 top-4 text-end text-2xl font-extrabold text-gray-700 dark:hover:text-blue-700 hover:text-blue-700 dark:text-slate-200 md:right-8 md:top-6"
+          className="absolute right-4 top-4 text-end text-2xl font-extrabold text-gray-700 hover:text-blue-700 dark:text-slate-200 dark:hover:text-blue-700 md:right-8 md:top-6"
         >
           <RxCross1 />
         </button>
@@ -29,7 +29,7 @@ export default function PopUp({ onHandleClose, selectedPopUp }) {
             <h2 className="my-2 text-center text-xl font-bold dark:text-slate-200">
               Features
             </h2>
-            <ul className="p-2 list-disc">
+            <ul className="list-disc p-2">
               {projectPopUp.features.map((feature, index) => {
                 return (
                   <li key={index}>

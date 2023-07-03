@@ -12,13 +12,13 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
 
   return (
     <section
-      className="relative flex h-fit w-full flex-col pl-3 pr-16 text-center"
+      className="relative flex h-fit w-screen flex-col pl-3 pr-16 text-center"
       id="projects"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 120"
-        className="absolute right-0 top-0 w-screen rotate-180 overflow-hidden rounded-full fill-slate-400"
+        className="absolute right-0 top-0 w-full rotate-180 overflow-hidden rounded-full fill-slate-400"
       >
         <path
           d="M0,0H1200V46.29c-47.79,22.2-103.59,32.17-158,28-70.36-5.37-136.33-33.31-206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -33,29 +33,29 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
       <h1 className="animated-item fade-in z-50 text-center text-lg font-bold delay-100 dark:text-white dark:text-opacity-80 lg:mt-12 lg:text-3xl">
         Projects
       </h1>
-      <div className="grid grid-cols-3 grid-rows-2 justify-evenly mx-auto pt-8 md:flex-nowrap">
-        <div className="animated-item slide-in-left delay-500 mx-2 my-4 rounded-3xl p-4 dark:bg-transparent w-[25rem] h-[20rem]">
+      <div className="special-width relative mx-auto grid h-fit justify-center align-middle overflow-x-hidden pt-4 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3 md:pt-10 lg:pt-16">
+        <div className="animated-item slide-in-left mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 delay-500 dark:bg-transparent md:mx-2 md:my-4">
           <ProjectCard
             selectedProject={1}
             setShowPopUp={setShowPopUp}
             setSelectedPopUp={setSelectedPopUp}
           />
         </div>
-        <div className="animated-item slide-in-right delay-700 mx-2 my-4 rounded-3xl p-4 dark:bg-transparent w-[25rem] h-[20rem]">
+        <div className="animated-item slide-in-right mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 delay-700 dark:bg-transparent md:mx-2 md:my-4">
           <ProjectCard
             selectedProject={2}
             setShowPopUp={setShowPopUp}
             setSelectedPopUp={setSelectedPopUp}
           />
         </div>
-        <div className="animated-item slide-in-left delay-1000 mx-2 my-4 rounded-3xl p-4 dark:bg-transparent w-[25rem] h-[20rem]">
+        <div className="animated-item slide-in-left mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 delay-1000 dark:bg-transparent md:mx-2 md:my-4">
           <ProjectCard
             selectedProject={3}
             setShowPopUp={setShowPopUp}
             setSelectedPopUp={setSelectedPopUp}
           />
         </div>
-        <div className="animated-item slide-in-right delay-[1.2s] mx-auto mt-6 rounded-3xl p-4 dark:bg-transparent col-span-3 h-fit">
+        <div className="animated-item lg:mx-auto slide-in-right w-inherit relative h-fit rounded-3xl bg-gray-300 p-4 lg:px-3 lg:py-14 md:py-0.5 md:px-1 md:mx-2 md:my-4 delay-[1.2s] dark:bg-transparent lg:w-fit xl:col-span-2">
           <FCCProjects />
         </div>
       </div>

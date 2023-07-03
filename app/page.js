@@ -34,10 +34,10 @@ export default function Home() {
           showPopUp ? "opacity-30" : ""
         }`}
       >
-        {/* <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loading />}>
           <Start />
           <NavBar />
-        </Suspense> */}
+        </Suspense>
         <Projects
           setShowPopUp={setShowPopUp}
           setSelectedPopUp={setSelectedPopUp}

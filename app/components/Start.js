@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { AiFillHtml5 } from "react-icons/ai";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
