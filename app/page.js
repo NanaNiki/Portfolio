@@ -42,8 +42,8 @@ export default function Home() {
           setShowPopUp={setShowPopUp}
           setSelectedPopUp={setSelectedPopUp}
         />
-        {/* <DynamicAbout />
-        <DynamicContact /> */}
+        <DynamicAbout />
+        <DynamicContact />
       </main>
       {showPopUp && (
         <DynamicPopUp

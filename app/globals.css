@@ -159,7 +159,7 @@
 
 @keyframes floating {
   0% {
-    transform: translateY(0%) translateX(0%) scale(98%);
+    transform: translateY(0%) translateX(0%) scale(99%);
   }
 
   50% {
@@ -167,7 +167,7 @@
   }
 
   100% {
-    transform: translateY(0%) translateX(0%) scale(98%);
+    transform: translateY(0%) translateX(0%) scale(99%);
   }
 }
 
@@ -181,10 +181,9 @@
   }
 }
 
-.w-inherit{
+.w-inherit {
   width: inherit;
 }
-
 @layer utilities {
   ::-webkit-scrollbar {
     @apply w-2 bg-transparent;
@@ -194,10 +193,10 @@
   }
 }
 
-@media screen and (min-width:505px) and (max-width:768px) {
+@media screen and (min-width: 505px) and (max-width: 768px) {
   .special-width {
-   width: 430px;
-   padding-top: 40px;
+    width: 430px;
+    padding-top: 40px;
   }
 }
 

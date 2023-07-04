@@ -12,32 +12,41 @@ export default function ProjectCard({
       <h2 className="text-center text-lg font-bold text-slate-900 dark:text-white">
         {project.name}
       </h2>
-      <div className="has-animation relative flex items-center m-auto">
-        <div className="cover-animation absolute lg:left-4 lg:right-4 left-0 right-0">
+      <div className="has-animation m-auto flex items-center py-4">
+        <div className="cover-animation relative">
           <img
             src={project.image}
             alt="Project image"
-            className="max-h-[210px] rounded-3xl object-cover shadow-lg shadow-slate-500 dark:shadow-gray-700"
+            className="rounded-3xl object-cover shadow-lg shadow-slate-500 dark:shadow-gray-700"
           />
           <img
             src="/images/uncovericon.svg"
-            className="floating absolute bottom-0 right-0 z-10 h-[40px] w-[40px] rounded-ee-3xl bg-slate-400 bg-opacity-70"
+            className="floating absolute bottom-0 right-0 z-10 h-10 w-10 rounded-ee-3xl bg-slate-400 bg-opacity-70"
           />
         </div>
-        <div className="uncover-animation invisible flex min-h-[176px] max-h-[210px] flex-col justify-center px-4 lg:px-12 md:px-4">
+        <div className="uncover-animation invisible absolute w-10/12">
           <p className="text-justify text-xs text-gray-700 dark:text-slate-300 sm:text-sm md:text-base">
             {project.text}
           </p>
-          {project.ps ? (
-            <p className="text-justify text-xs text-gray-700 dark:text-slate-300 sm:text-sm md:text-base">
-              {project.ps}
-            </p>
-          ) : (
-            " "
-          )}
+          <p className="text-justify text-xs text-gray-700 dark:text-slate-300 sm:text-sm md:text-base">
+            {project.ps}
+          </p>
         </div>
       </div>
-      <div className="mx-auto lg:mt-3 relative flex flex-col-reverse">
+      <div className="relative mx-auto flex flex-col lg:mt-3">
+        <span className="block text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:mt-0 lg:my-2">
+          {project.tech1} <br></br> {project.tech2}{" "}
+          {project.link ? (
+            <a
+              className="italic hover:text-blue-700 dark:italic  dark:hover:text-blue-700"
+              href="https://app.uizard.io/templates/O4Q0AGM8ZruJw9GpR5YQ?_gl=1*r55hdo*_ga*MTgwNzYxODk1MC4xNjgzMTE1NTQ5*_ga_FV1FRPC5G4*MTY4MzQ0OTg1NS4xMS4xLjE2ODM0NTE5NzMuNTAuMC4w"
+            >
+              Template
+            </a>
+          ) : (
+            ""
+          )}
+        </span>
         <div className="flex flex-row justify-between">
           <button
             onClick={() => {
@@ -69,19 +78,6 @@ export default function ProjectCard({
             </a>
           </div>
         </div>
-        <span className="text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:mt-0 lg:my-2">
-          {project.tech1} <br></br> {project.tech2}{" "}
-          {project.link ? (
-            <a
-              className="italic hover:text-blue-700 dark:italic  dark:hover:text-blue-700"
-              href="https://app.uizard.io/templates/O4Q0AGM8ZruJw9GpR5YQ?_gl=1*r55hdo*_ga*MTgwNzYxODk1MC4xNjgzMTE1NTQ5*_ga_FV1FRPC5G4*MTY4MzQ0OTg1NS4xMS4xLjE2ODM0NTE5NzMuNTAuMC4w"
-            >
-              Template
-            </a>
-          ) : (
-            ""
-          )}
-        </span>
       </div>
     </>
   );

@@ -33,29 +33,29 @@ export default function Projects({ setShowPopUp, setSelectedPopUp }) {
       <h1 className="animated-item fade-in z-50 text-center text-lg font-bold delay-100 dark:text-white dark:text-opacity-80 lg:mt-12 lg:text-3xl">
         Projects
       </h1>
-      <div className="special-width relative mx-auto grid h-fit justify-center align-middle overflow-x-hidden pt-4 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-3 md:pt-10 lg:pt-16">
-        <div className="animated-item slide-in-left mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 delay-500 dark:bg-transparent md:mx-2 md:my-4">
+      <div className="special-width relative mx-auto grid h-fit grid-cols-1 justify-center overflow-x-hidden px-2 pb-6 pt-4 align-middle md:grid-cols-2 md:pt-12 xl:grid-cols-3 xl:pt-12">
+        <div className="animated-item slide-in-left mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 shadow-lg shadow-slate-400 delay-500 dark:bg-transparent dark:shadow-none md:mx-2 md:my-4">
           <ProjectCard
             selectedProject={1}
             setShowPopUp={setShowPopUp}
             setSelectedPopUp={setSelectedPopUp}
           />
         </div>
-        <div className="animated-item slide-in-right mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 delay-700 dark:bg-transparent md:mx-2 md:my-4">
+        <div className="animated-item slide-in-right mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 shadow-lg shadow-slate-400 delay-700 dark:bg-transparent dark:shadow-none md:mx-2 md:my-4">
           <ProjectCard
             selectedProject={2}
             setShowPopUp={setShowPopUp}
             setSelectedPopUp={setSelectedPopUp}
           />
         </div>
-        <div className="animated-item slide-in-left mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 delay-1000 dark:bg-transparent md:mx-2 md:my-4">
+        <div className="animated-item slide-in-left mx-auto my-1 h-fit rounded-3xl bg-gray-300 p-4 shadow-lg shadow-slate-400 delay-1000 dark:bg-transparent dark:shadow-none md:mx-2 md:my-4">
           <ProjectCard
             selectedProject={3}
             setShowPopUp={setShowPopUp}
             setSelectedPopUp={setSelectedPopUp}
           />
         </div>
-        <div className="animated-item lg:mx-auto slide-in-right w-inherit relative h-fit rounded-3xl bg-gray-300 p-4 lg:px-3 lg:py-14 md:py-0.5 md:px-1 md:mx-2 md:my-4 delay-[1.2s] dark:bg-transparent lg:w-fit xl:col-span-2">
+        <div className="animated-item slide-in-right m-auto w-full rounded-3xl bg-gray-300 p-4 shadow-lg shadow-slate-400 delay-[1.2s] dark:bg-transparent dark:shadow-none md:mx-2 md:h-[92%] md:w-fit xl:col-span-3 xl:m-2 xl:h-fit">
           <FCCProjects />
         </div>
       </div>

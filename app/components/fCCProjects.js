@@ -38,7 +38,7 @@ export default function FCCProjects() {
     const project = projectData.find((item) => item.id === id);
     if (project && project.id === selectedProject) {
       return (
-        <div className="blur-in my-auto flex flex-row justify-center align-middle md:justify-end">
+        <div className="blur-in my-auto flex flex-row justify-end align-middle xl:justify-center">
           <a
             href={project.code}
             target="_blank"
@@ -68,16 +68,41 @@ export default function FCCProjects() {
   };
 
   return (
-    <div className="flex-col justify-between">
-      <div className="flex flex-col align-middle md:flex-row">
-        <div className="m-auto flex flex-col justify-center align-middle">
-          <h2 className="mb-2 text-center text-lg font-bold text-slate-900 dark:text-white">
-            freeCodeCamp Projects
-          </h2>
-          <Carousel />
-        </div>
+    <div className="z-10 mx-auto grid w-full grid-cols-1 justify-between  md:h-full md:grid-cols-2 md:pe-0 xl:grid-cols-3">
+      <div className="my-auto flex flex-col justify-center py-1">
+        <h2 className="mb-2 ms-4 text-lg font-bold text-slate-900 dark:text-white xl:hidden">
+          freeCodeCamp Projects
+        </h2>
+        <Carousel />
+        <span className="my-3 flex-row justify-center text-center text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:my-0 md:mt-6 md:flex xl:mb-3 xl:hidden">
+          React JavaScript<br></br>
+          Html Bootsrap CSS
+        </span>
+      </div>
 
-        <ul className="mx-auto list-inside text-start text-sm sm:text-base xl:ms-4 md:pt-10 md:my-auto lg:mt-2">
+      <div className="hidden xl:flex xl:flex-col">
+        <h2 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">
+          freeCodeCamp Projects
+        </h2>
+        <div className="mt-3 text-justify text-xs text-gray-700 dark:text-white sm:text-sm md:text-base">
+          Earning the Front End development Libraries Certification I build five
+          mini-projects.
+        </div>
+        <div className="flex flex-col justify-between">
+          <div className="my-4 flex flex-row justify-center text-center text-xs font-semibold text-gray-700 dark:text-white xl:text-base">
+            React JavaScript Html Bootsrap CSS
+          </div>
+          <div className="hidden justify-center xl:flex">
+            {getCodeAndLive("RQM")}
+            {getCodeAndLive("MDP")}
+            {getCodeAndLive("DM")}
+            {getCodeAndLive("JSC")}
+            {getCodeAndLive("PC")}
+          </div>
+        </div>
+      </div>
+      <div className="md:m-auto">
+        <ul className="list-inside text-start text-sm sm:text-base md:text-end md:text-sm lg:text-base">
           <li id="RQM">
             <button
               className="flex flex-row py-1 hover:font-semibold hover:text-blue-700 focus:font-bold"
@@ -124,18 +149,13 @@ export default function FCCProjects() {
             </button>
           </li>
         </ul>
-      </div>
-
-      <div className="flex flex-col justify-between md:mt-2 md:flex-row">
-        <div className="my-2 flex flex-row justify-center text-xs font-semibold text-gray-700 dark:text-white sm:text-base md:mt-4 md:text-center lg:text-start">
-          React JavaScript<br className="hidden md:inline lg:hidden"></br> Html
-          Bootsrap CSS
+        <div className="md:absolute md:bottom-8 md:right-8 xl:hidden">
+          {getCodeAndLive("RQM")}
+          {getCodeAndLive("MDP")}
+          {getCodeAndLive("DM")}
+          {getCodeAndLive("JSC")}
+          {getCodeAndLive("PC")}
         </div>
-        {getCodeAndLive("RQM")}
-        {getCodeAndLive("MDP")}
-        {getCodeAndLive("DM")}
-        {getCodeAndLive("JSC")}
-        {getCodeAndLive("PC")}
       </div>
     </div>
   );
