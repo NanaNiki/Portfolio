@@ -12,7 +12,7 @@ export default function ProjectCard({
       <h2 className="text-center text-lg font-bold text-slate-900 dark:text-white">
         {project.name}
       </h2>
-      <div className="has-animation m-auto flex items-center py-4">
+      <div className="has-animation m-auto flex items-center justify-center py-4">
         <div className="cover-animation relative">
           <img
             src={project.image}
