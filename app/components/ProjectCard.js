@@ -59,7 +59,7 @@ export default function ProjectCard({
           </button>
           <div className="my-2 flex flex-row justify-end">
             <a
-              href={projectinfo.github}
+              href={project.github}
               target="_blank"
               className="my-auto"
               aria-label="Go to GitHub repository"
