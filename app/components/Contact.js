@@ -39,14 +39,13 @@ export default function Contact() {
         >
           <FaFreeCodeCamp className="icon animated-item slide-in-left delay-300 hover:delay-0" />
         </Link>
-        <form action="mailto:nicol.wesolowska@gmail.com" method="get">
-        <button
-          type="submit"
+        <a
+          href="mailto://nicol.wesolowska@gmail.com"
+          target="_blank"
           aria-label="Write an email to me"
         >
           <SiGmail className="icon animated-item slide-in-left delay-100 hover:delay-0" />
-        </button>
-        </form>
+        </a>
         <div className="m-auto flex flex-row justify-end">
           <Link
             href="/CV_Nicol_Wesołowska.pdf"
